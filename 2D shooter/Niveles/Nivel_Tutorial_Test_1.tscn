@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Enemies/RedBasicEnemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Mapas/MapaTutorial.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Elements/DianaStatic.tscn" type="PackedScene" id=3]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=4]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2( 3, 3 )
+
+[node name="TutorialMap" parent="." instance=ExtResource( 2 )]
+
+[node name="DianaStatic" parent="TutorialMap" instance=ExtResource( 3 )]
+position = Vector2( 275.858, 179.693 )
+
+[node name="DianaStatic2" parent="TutorialMap" instance=ExtResource( 3 )]
+position = Vector2( 584.825, 68.0082 )
+
+[node name="DianaStatic3" parent="TutorialMap" instance=ExtResource( 3 )]
+position = Vector2( 1148.04, 180.816 )
+
+[node name="DianaStatic4" parent="TutorialMap" instance=ExtResource( 3 )]
+position = Vector2( 1559.6, 338.396 )
+
+[node name="RedBasicEnemy" parent="TutorialMap" instance=ExtResource( 1 )]
+position = Vector2( 1946.98, 398.35 )
+
+[node name="RedBasicEnemy2" parent="TutorialMap" instance=ExtResource( 1 )]
+position = Vector2( 2479.72, 397.161 )
+
+[node name="RedBasicEnemy3" parent="TutorialMap" instance=ExtResource( 1 )]
+position = Vector2( 2685.45, 395.972 )
+
+[node name="RedBasicEnemy4" parent="TutorialMap" instance=ExtResource( 1 )]
+position = Vector2( 2578.42, 398.35 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1432.43, 398.184 )
