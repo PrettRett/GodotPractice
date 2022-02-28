@@ -12,13 +12,61 @@ send start
 finished
 send shoot
 start shoot
-18
+13
+started
+send start
+finished
+send shoot
+start shoot
+7
+started
+send start
+finished
+send shoot
+start shoot
+4
 hit called
 1128.460236
 1068.955048
-791.91687
+840.959229
 moving
 end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+32
+started
+send start
+finished
+send shoot
+start shoot
+48
+hit called
+2364.328308
+2304.823181
+1727.836182
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+63
+hit called
+4617.188477
+4557.68335
+3446.895752
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+56
 started
 send start
 finished
@@ -31,24 +79,12 @@ finished
 send shoot
 start shoot
 60
-hit called
-2364.328308
-2304.823181
-1767.84082
-moving
-end pos(0, -50)
 started
 send start
 finished
 send shoot
 start shoot
-52
-started
-send start
-finished
-send shoot
-start shoot
-58
+66
 started
 send start
 finished
@@ -60,68 +96,17 @@ send start
 finished
 send shoot
 start shoot
-56
-hit called
-4617.188477
-4557.68335
-3448.588867
-moving
-end pos(0, -50)
-started
-send start
-finished
-send shoot
-start shoot
-42
-started
-send start
-finished
-send shoot
-start shoot
-58
-started
-send start
-finished
-send shoot
-start shoot
-56
-started
-send start
-finished
-send shoot
-start shoot
-42
-started
-send start
-finished
-send shoot
-start shoot
-46
-started
-send start
-finished
-send shoot
-start shoot
-50
+75
 hit called
 6263.428101
 6203.922729
-4693.426758
+4689.769531
 moving
 end pos(0, -50)
-started
-send start
-finished
-send shoot
-start shoot
-100
-started
-send start
-finished
-send shoot
-start shoot
-100
-hit called
+I've been hit
+(-900, -900)
+I've been hit
+(900, -900)
 I've been hit
 (-900, -900)
 I've been hit
@@ -133,13 +118,9 @@ I've been hit
 I've been hit
 (-900, -900)
 I've been hit
-(-900, -900)
+(900, -900)
 I've been hit
-(-900, -900)
+(900, -900)
 I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
+(900, -900)
 i Die

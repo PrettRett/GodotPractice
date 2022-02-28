@@ -12,11 +12,23 @@ send start
 finished
 send shoot
 start shoot
-18
+13
+started
+send start
+finished
+send shoot
+start shoot
+3
+started
+send start
+finished
+send shoot
+start shoot
+17
 hit called
 1128.460236
 1068.955048
-791.91687
+797.28833
 moving
 end pos(0, -50)
 started
@@ -24,19 +36,13 @@ send start
 finished
 send shoot
 start shoot
-38
+50
 started
 send start
 finished
 send shoot
 start shoot
-60
-hit called
-2364.328308
-2304.823181
-1767.84082
-moving
-end pos(0, -50)
+48
 started
 send start
 finished
@@ -48,23 +54,23 @@ send start
 finished
 send shoot
 start shoot
-58
+69
 started
 send start
 finished
 send shoot
 start shoot
-54
+69
 started
 send start
 finished
 send shoot
 start shoot
-56
+60
 hit called
-4617.188477
-4557.68335
-3448.588867
+2364.328308
+2304.823181
+1735.922119
 moving
 end pos(0, -50)
 started
@@ -72,12 +78,6 @@ send start
 finished
 send shoot
 start shoot
-42
-started
-send start
-finished
-send shoot
-start shoot
 58
 started
 send start
@@ -85,18 +85,6 @@ finished
 send shoot
 start shoot
 56
-started
-send start
-finished
-send shoot
-start shoot
-42
-started
-send start
-finished
-send shoot
-start shoot
-46
 started
 send start
 finished
@@ -104,9 +92,9 @@ send shoot
 start shoot
 50
 hit called
-6263.428101
-6203.922729
-4693.426758
+4617.188477
+4557.68335
+3467.410645
 moving
 end pos(0, -50)
 started
@@ -114,7 +102,20 @@ send start
 finished
 send shoot
 start shoot
-100
+46
+hit called
+6263.428101
+6203.922729
+4643.092773
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+12
+hit called
 started
 send start
 finished
@@ -122,24 +123,31 @@ send shoot
 start shoot
 100
 hit called
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-i Die
+started
+send start
+finished
+send shoot
+start shoot
+96
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+100
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+100
+hit called

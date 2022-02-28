@@ -6,6 +6,9 @@ extends HittedObj
 const DMG_MODIFIER = 0.1
 const HIT_VALUE = 10
 
+const MIN_move = 0.7
+const MAX_move = 5
+
 enum RedEnSt {
 	RED_ENE_INVISIBLE,
 	RED_ENE_IDLE,
@@ -21,7 +24,11 @@ onready var visNotifier = $VisibilityNotifier2D
 onready var myImg = $AnimatedSprite
 onready var enemyHealth = 1000.0
 
+var minHealthCmp = 50.0
+var maxHealthCmp = 200.0
+
 var hitNum = 0
+var LastDmg = 0.0
 
 var move = Vector2(0,0)
 var ready = false
@@ -78,7 +85,13 @@ func _physics_process(delta):
 				var Dir = 1.0
 				if move.x < 0.0:
 					Dir = -1.0
-				move.x = (GlobalInfo.MAX_SPEED*0.7*Dir)
+				if LastDmg < minHealthCmp:
+					move.x = (GlobalInfo.MAX_SPEED*MIN_move*Dir)
+				elif LastDmg > maxHealthCmp:
+					move.x = (GlobalInfo.MAX_SPEED*MAX_move*Dir)
+				else:
+					var xCalc = ((LastDmg - minHealthCmp)/(maxHealthCmp-minHealthCmp))*(MAX_move - MIN_move) + MIN_move
+					move.x = (GlobalInfo.MAX_SPEED*xCalc*Dir)
 				pass
 			RedEnSt.RED_ENE_DYING:
 				($CollisionShape2D as CollisionShape2D).disabled = true
@@ -111,7 +124,8 @@ func hitted(dmg_val,src,collision):
 		move.x = (GlobalInfo.MAX_SPEED*0.7*Dir)
 		move.y = (GlobalInfo.JUMP_H/4)
 		enemyState = RedEnSt.RED_ENE_RECV_DMG
-		enemyHealth -= dmg_val.length()*DMG_MODIFIER
+		LastDmg = dmg_val.length()*DMG_MODIFIER
+		enemyHealth -= LastDmg
 		hitNum += 1
 		if enemyHealth <= 0.0:
 			enemyHealth = 0.0

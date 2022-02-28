@@ -2,6 +2,7 @@ Godot Engine v3.4.2.stable.official.45eaa2daf - https://godotengine.org
 OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 1050/PCIe/SSE2
 OpenGL ES Batching: ON
  
+label1
 my pos is(0, 0)
 my pos is(0, 0)
 my pos is(0, 0)
@@ -11,11 +12,11 @@ send start
 finished
 send shoot
 start shoot
-11
+25
 hit called
 1128.460236
 1068.955048
-794.531433
+799.162964
 moving
 end pos(0, -50)
 started
@@ -23,70 +24,23 @@ send start
 finished
 send shoot
 start shoot
-42
-started
-send start
-finished
-send shoot
-start shoot
-55
+5
 hit called
-2364.328308
-2304.823181
-1752.637573
-moving
-end pos(0, -50)
-started
-send start
-finished
-send shoot
-start shoot
-44
-hit called
-4617.188477
-4557.68335
-3412.264404
-moving
-end pos(0, -50)
-started
-send start
-finished
-send shoot
-start shoot
-52
-started
-send start
-finished
-send shoot
-start shoot
-52
-hit called
-6263.428101
-6203.922729
-4675.092773
-moving
-end pos(0, -50)
-started
-send start
-finished
-send shoot
-start shoot
-16
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-32
-hit called
+1128.460236
+1068.955048
+816.333313
 started
 send start
 finished
 send shoot
 start shoot
 40
-hit called
+started
+send start
+finished
+send shoot
+start shoot
+36
 started
 send start
 finished
@@ -94,6 +48,59 @@ send shoot
 start shoot
 52
 hit called
+2364.328308
+2304.823181
+1757.224487
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+51
+hit called
+4617.188477
+4557.68335
+3457.24707
+moving
+end pos(0, -50)
 started
 send start
 finished
@@ -101,75 +108,62 @@ send shoot
 start shoot
 48
 hit called
+6263.428101
+6203.922729
+4664.391602
+moving
+end pos(0, -50)
 started
 send start
 finished
 send shoot
 start shoot
-28
-hit called
-I've been hit
-(-900, -900)
-I've been hit
-(900, -900)
-started
-send start
-finished
-send shoot
-start shoot
-54
-hit called
-I've been hit
-(900, -900)
-I've been hit
-(900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(900, -900)
-started
-send start
-finished
-send shoot
-start shoot
-19
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-8
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-1
-hit called
+22
 started
 send start
 finished
 send shoot
 start shoot
 0
+started
+send start
 hit called
+finished
+send shoot
+start shoot
+0
 started
 send start
 finished
 send shoot
 start shoot
 0
-hit called
-I've been hit
-(900, -900)
 started
 send start
+hit called
+hit called
+hit called
+finished
+send shoot
+start shoot
+3
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
 finished
 send shoot
 start shoot
@@ -187,88 +181,26 @@ send start
 finished
 send shoot
 start shoot
-33
+0
 hit called
-started
-send start
-finished
-send shoot
-start shoot
-17
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-13
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-14
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-32
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-28
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-26
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-19
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-42
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-44
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-58
-started
-send start
-finished
-send shoot
-start shoot
-48
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-50
-hit called
+I've been hit
+(-900, -900)
+I've been hit
+(900, -900)
+I've been hit
+(-900, -900)
+I've been hit
+(900, -900)
+I've been hit
+(900, -900)
+I've been hit
+(-900, -900)
+I've been hit
+(-900, -900)
+I've been hit
+(-900, -900)
+I've been hit
+(-900, -900)
+I've been hit
+(-900, -900)
+i Die

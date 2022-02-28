@@ -12,11 +12,11 @@ send start
 finished
 send shoot
 start shoot
-18
+19
 hit called
 1128.460236
 1068.955048
-791.91687
+792.650635
 moving
 end pos(0, -50)
 started
@@ -24,17 +24,11 @@ send start
 finished
 send shoot
 start shoot
-38
-started
-send start
-finished
-send shoot
-start shoot
-60
+48
 hit called
 2364.328308
 2304.823181
-1767.84082
+1723.426392
 moving
 end pos(0, -50)
 started
@@ -42,55 +36,7 @@ send start
 finished
 send shoot
 start shoot
-52
-started
-send start
-finished
-send shoot
-start shoot
-58
-started
-send start
-finished
-send shoot
-start shoot
-54
-started
-send start
-finished
-send shoot
-start shoot
-56
-hit called
-4617.188477
-4557.68335
-3448.588867
-moving
-end pos(0, -50)
-started
-send start
-finished
-send shoot
-start shoot
-42
-started
-send start
-finished
-send shoot
-start shoot
-58
-started
-send start
-finished
-send shoot
-start shoot
-56
-started
-send start
-finished
-send shoot
-start shoot
-42
+29
 started
 send start
 finished
@@ -102,11 +48,35 @@ send start
 finished
 send shoot
 start shoot
+81
+started
+send start
+finished
+send shoot
+start shoot
+44
+started
+send start
+finished
+send shoot
+start shoot
+56
+started
+send start
+finished
+send shoot
+start shoot
 50
+started
+send start
+finished
+send shoot
+start shoot
+78
 hit called
-6263.428101
-6203.922729
-4693.426758
+4617.188477
+4557.68335
+3449.479492
 moving
 end pos(0, -50)
 started
@@ -114,7 +84,32 @@ send start
 finished
 send shoot
 start shoot
-100
+53
+started
+send start
+finished
+send shoot
+start shoot
+50
+hit called
+6263.428101
+6203.922729
+4644.585449
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+16
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+89
 started
 send start
 finished
@@ -122,24 +117,31 @@ send shoot
 start shoot
 100
 hit called
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-i Die
+started
+send start
+finished
+send shoot
+start shoot
+100
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+100
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+93
+hit called
