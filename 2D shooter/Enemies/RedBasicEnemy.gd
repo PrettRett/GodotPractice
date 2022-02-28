@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends HittedObj
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -37,7 +37,7 @@ func _ready():
 func _physics_process(delta):
 	if ready and GlobalInfo.global_player != null:
 		#get player vector
-		var movDir = position.direction_to(GlobalInfo.global_player.position)
+		var movDir = self.position.direction_to(GlobalInfo.global_player.position)
 		match(enemyState):
 			RedEnSt.RED_ENE_INVISIBLE:
 				if visNotifier.is_on_screen():
@@ -83,6 +83,7 @@ func _physics_process(delta):
 			RedEnSt.RED_ENE_DYING:
 				($CollisionShape2D as CollisionShape2D).disabled = true
 				($CollisionShape2D2 as CollisionShape2D).disabled = true
+				self.z_index = 5
 				pass
 			_:
 				enemyState = RedEnSt.RED_ENE_IDLE

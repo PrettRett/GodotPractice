@@ -1,20 +1,755 @@
-Godot Engine v3.3.4.stable.official.faf3f883d - https://godotengine.org
-OpenGL ES 3.0 Renderer: GeForce GTX 1050/PCIe/SSE2
+Godot Engine v3.4.2.stable.official.45eaa2daf - https://godotengine.org
+OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 1050/PCIe/SSE2
 OpenGL ES Batching: ON
  
-I've been hit
-(-900, -900)
-I've been hit
-(900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(900, -900)
+my pos is(0, 0)
+my pos is(0, 0)
+my pos is(0, 0)
+my pos is(0, 0)
+started
+send start
+finished
+send shoot
+start shoot
+8
+hit called
+1128.460236
+1068.955048
+814.342346
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+22
+started
+send start
+finished
+send shoot
+start shoot
+48
+started
+send start
+finished
+send shoot
+start shoot
+36
+started
+send start
+finished
+send shoot
+start shoot
+56
+hit called
+2364.328308
+2304.823181
+1759.124146
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+46
+started
+send start
+finished
+send shoot
+start shoot
+34
+started
+send start
+finished
+send shoot
+start shoot
+54
+hit called
+4617.188477
+4557.68335
+3456.002686
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+69
+started
+send start
+finished
+send shoot
+start shoot
+52
+started
+send start
+finished
+send shoot
+start shoot
+40
+hit called
+6263.428101
+6203.922729
+4698.934082
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+36
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+58
+started
+send start
+finished
+send shoot
+start shoot
+17
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+5
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+hit called
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+12
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+hit called
+hit called
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+6
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+hit called
+hit called
+finished
+send shoot
+start shoot
+5
+started
+send start
+finished
+send shoot
+start shoot
+7
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+hit called
+start shoot
+0
+started
+send start
+finished
+send shoot
+hit called
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+hit called
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+hit called
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+hit called
+start shoot
+0
+started
+send start
+finished
+send shoot
+hit called
+start shoot
+0
+started
+send start
+finished
+send shoot
+hit called
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+hit called
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+hit called
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+hit called
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+34

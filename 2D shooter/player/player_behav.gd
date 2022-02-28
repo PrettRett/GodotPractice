@@ -9,6 +9,7 @@ const maxYCamOffset = 150
 var maxCamZoom = 0
 
 const ARROW_INITIAL_SPEED = 600
+const M_CAM_ZOOM = 1.5
 
 onready var sprite = $Sprite
 onready var bSprite = $BowSprite
@@ -113,10 +114,10 @@ func _physics_process(delta):
 			bSprite.flip_h = sprite.flip_h
 			shooting = false
 	else:
-		if camZoom > 1:
+		if camZoom > M_CAM_ZOOM:
 			camZoom -= maxCamZoom*delta/3
 		else:
-			camZoom = 1
+			camZoom = M_CAM_ZOOM
 	
 	myCam.zoom = Vector2(camZoom,camZoom)
 	
