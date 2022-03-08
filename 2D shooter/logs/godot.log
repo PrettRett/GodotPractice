@@ -12,11 +12,17 @@ send start
 finished
 send shoot
 start shoot
-18
+12
+started
+send start
+finished
+send shoot
+start shoot
+16
 hit called
 1128.460236
 1068.955048
-791.91687
+819.045044
 moving
 end pos(0, -50)
 started
@@ -24,7 +30,93 @@ send start
 finished
 send shoot
 start shoot
-38
+26
+started
+send start
+finished
+send shoot
+start shoot
+42
+started
+send start
+finished
+send shoot
+start shoot
+42
+started
+send start
+finished
+send shoot
+start shoot
+39
+started
+send start
+finished
+send shoot
+start shoot
+48
+hit called
+2364.328308
+2304.823181
+1719.769287
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+10
+started
+send start
+finished
+send shoot
+start shoot
+33
+started
+send start
+finished
+send shoot
+start shoot
+54
+hit called
+4617.188477
+4557.68335
+3455.51123
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+88
+hit called
+6263.428101
+6203.922729
+4677.999512
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+100
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+64
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+96
 started
 send start
 finished
@@ -32,83 +124,108 @@ send shoot
 start shoot
 60
 hit called
-2364.328308
-2304.823181
-1767.84082
-moving
-end pos(0, -50)
 started
 send start
 finished
 send shoot
 start shoot
-52
-started
-send start
-finished
-send shoot
-start shoot
-58
-started
-send start
-finished
-send shoot
-start shoot
-54
-started
-send start
-finished
-send shoot
-start shoot
-56
+68
 hit called
-4617.188477
-4557.68335
-3448.588867
-moving
-end pos(0, -50)
 started
 send start
 finished
 send shoot
 start shoot
-42
-started
-send start
-finished
-send shoot
-start shoot
-58
-started
-send start
-finished
-send shoot
-start shoot
-56
-started
-send start
-finished
-send shoot
-start shoot
-42
-started
-send start
-finished
-send shoot
-start shoot
-46
-started
-send start
-finished
-send shoot
-start shoot
-50
+18
 hit called
-6263.428101
-6203.922729
-4693.426758
-moving
-end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+51
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+64
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+84
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+80
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+60
+started
+send start
+finished
+send shoot
+start shoot
+60
+started
+send start
+finished
+send shoot
+start shoot
+51
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+0
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+hit called
+finished
+send shoot
+start shoot
+3
+started
+send start
+finished
+send shoot
+start shoot
+0
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+5
+hit called
+hit called
+started
+send start
+finished
+send shoot
+start shoot
+92
 started
 send start
 finished
@@ -122,24 +239,10 @@ send shoot
 start shoot
 100
 hit called
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-I've been hit
-(-900, -900)
-i Die
+started
+send start
+finished
+send shoot
+start shoot
+100
+hit called

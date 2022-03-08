@@ -89,8 +89,10 @@ margin_bottom = 551.903
 [node name="Score" parent="CanvasLayer" instance=ExtResource( 5 )]
 
 [node name="VidaBar" type="TextureProgress" parent="CanvasLayer"]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_right = 396.0
+margin_bottom = 53.0
+rect_scale = Vector2( 1, 0.8 )
+rect_pivot_offset = Vector2( 20, 20 )
 value = 100.0
 texture_under = ExtResource( 7 )
 texture_progress = ExtResource( 6 )
@@ -103,7 +105,12 @@ __meta__ = {
 wait_time = 0.5
 one_shot = true
 
+[node name="AttTimer" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true
+
 [connection signal="start_shooting" from="." to="CanvasLayer/FuerzaBar" method="_on_KinematicBody2D_start_shooting"]
 [connection signal="stop_shooting" from="." to="CanvasLayer/FuerzaBar" method="_on_KinematicBody2D_stop_shooting"]
 [connection signal="final_value" from="CanvasLayer/FuerzaBar" to="." method="_on_TextureProgress_final_value"]
 [connection signal="timeout" from="InvTimer" to="." method="_on_InvTimer_timeout"]
+[connection signal="timeout" from="AttTimer" to="." method="_on_AttTimer_timeout"]

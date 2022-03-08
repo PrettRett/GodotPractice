@@ -27,6 +27,7 @@ var yCamOffset = 0
 var camZoom = 1
 
 var shooting = false
+var recoil = false
 
 var health = 100.0
 var healthMax = 100.0
@@ -73,7 +74,7 @@ func _physics_process(delta):
 		myCam.offset.x = xCamOffset
 		myCam.offset.y = yCamOffset
 		
-		if Input.is_action_just_pressed("shoot"):
+		if Input.is_action_just_pressed("shoot") and recoil == false:
 			if shooting == false:
 				createdArrow = arrow.instance()
 				get_parent().add_child(createdArrow)
@@ -116,6 +117,8 @@ func _physics_process(delta):
 				bSprite.rotation = PI
 				bSprite.flip_h = sprite.flip_h
 				shooting = false
+				recoil = true
+				$AttTimer.start()
 		else:
 			if camZoom > M_CAM_ZOOM:
 				camZoom -= maxCamZoom*delta/3
@@ -201,4 +204,9 @@ func _on_TextureProgress_final_value(act_value):
 
 func _on_InvTimer_timeout():
 	invincible = false
+	pass # Replace with function body.
+
+
+func _on_AttTimer_timeout():
+	recoil = false
 	pass # Replace with function body.

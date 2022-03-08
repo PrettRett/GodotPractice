@@ -1,0 +1,39 @@
+Godot Engine v3.4.2.stable.official.45eaa2daf - https://godotengine.org
+OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 1050/PCIe/SSE2
+OpenGL ES Batching: ON
+ 
+label1
+my pos is(0, 0)
+my pos is(0, 0)
+my pos is(0, 0)
+my pos is(0, 0)
+started
+send start
+finished
+send shoot
+start shoot
+12
+hit called
+1128.460236
+1068.955048
+825.860718
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+39
+started
+send start
+finished
+send shoot
+start shoot
+57
+hit called
+2364.328308
+2304.823181
+1761.632324
+moving
+end pos(0, -50)

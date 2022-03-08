@@ -35,6 +35,7 @@ extents = Vector2( 10.6476, 11.1468 )
 extents = Vector2( 3.90118, 7.5752 )
 
 [node name="RedBasicEnemy" type="KinematicBody2D"]
+scale = Vector2( 1.5, 1.5 )
 script = ExtResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
