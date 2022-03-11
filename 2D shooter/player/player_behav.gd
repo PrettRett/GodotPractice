@@ -146,7 +146,7 @@ func death():
 	
 func damaged(dmg_val,src,coll_info):
 	if invincible == false:
-		health -= dmg_val
+		updateHealth(-dmg_val)
 		print("I've been hit")
 		invTimer.start()
 		var right_dir = (src.global_position.x - self.global_position.x) < 0
@@ -158,10 +158,17 @@ func damaged(dmg_val,src,coll_info):
 		if health <= 0:
 			death()
 		invincible = true
-		var perVida = health/healthMax
-		vidaBar.value = perVida*100.0
 		
-	
+
+func updateHealth(healthInc):
+	health += healthInc
+	if health > healthMax:
+		health = healthMax
+	elif health < 0:
+		health = 0
+	var perVida = health/healthMax
+	vidaBar.value = perVida*100.0
+	pass
 
 func _shoot(shoot_strenght):
 	print("start shoot")

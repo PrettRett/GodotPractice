@@ -12,17 +12,11 @@ send start
 finished
 send shoot
 start shoot
-12
-started
-send start
-finished
-send shoot
-start shoot
-16
+25
 hit called
 1128.460236
 1068.955048
-819.045044
+798.399902
 moving
 end pos(0, -50)
 started
@@ -30,25 +24,13 @@ send start
 finished
 send shoot
 start shoot
-26
+76
 started
 send start
 finished
 send shoot
 start shoot
 42
-started
-send start
-finished
-send shoot
-start shoot
-42
-started
-send start
-finished
-send shoot
-start shoot
-39
 started
 send start
 finished
@@ -58,45 +40,10 @@ start shoot
 hit called
 2364.328308
 2304.823181
-1719.769287
+1720.776733
 moving
 end pos(0, -50)
-started
-send start
-finished
-send shoot
-start shoot
-10
-started
-send start
-finished
-send shoot
-start shoot
-33
-started
-send start
-finished
-send shoot
-start shoot
-54
-hit called
-4617.188477
-4557.68335
-3455.51123
-moving
-end pos(0, -50)
-started
-send start
-finished
-send shoot
-start shoot
-88
-hit called
-6263.428101
-6203.922729
-4677.999512
-moving
-end pos(0, -50)
+1
 started
 send start
 finished
@@ -105,12 +52,40 @@ start shoot
 100
 started
 send start
-hit called
+finished
+send shoot
+start shoot
+54
+started
+send start
+finished
+send shoot
+start shoot
+51
+started
+send start
+finished
+send shoot
+start shoot
+68
+started
+send start
 finished
 send shoot
 start shoot
 64
-hit called
+started
+send start
+finished
+send shoot
+start shoot
+68
+started
+send start
+finished
+send shoot
+start shoot
+100
 started
 send start
 finished
@@ -122,110 +97,133 @@ send start
 finished
 send shoot
 start shoot
+54
+started
+send start
+finished
+send shoot
+start shoot
 60
-hit called
+started
+send start
+finished
+send shoot
+start shoot
+51
 started
 send start
 finished
 send shoot
 start shoot
 68
-hit called
 started
 send start
 finished
 send shoot
 start shoot
-18
-hit called
-started
-send start
-finished
-send shoot
-start shoot
-51
-hit called
+60
 started
 send start
 finished
 send shoot
 start shoot
 64
-hit called
 started
 send start
 finished
 send shoot
 start shoot
-84
-hit called
+64
 started
 send start
 finished
 send shoot
 start shoot
-80
-started
-send start
-hit called
-finished
-send shoot
-start shoot
-60
+68
 started
 send start
 finished
 send shoot
 start shoot
-60
+88
+started
+send start
+finished
+send shoot
+start shoot
+39
+started
+send start
+finished
+send shoot
+start shoot
+54
+started
+send start
+finished
+send shoot
+start shoot
+48
+started
+send start
+finished
+send shoot
+start shoot
+48
+started
+send start
+finished
+send shoot
+start shoot
+57
 started
 send start
 finished
 send shoot
 start shoot
 51
-hit called
 started
 send start
 finished
 send shoot
 start shoot
-0
+60
 started
 send start
 finished
 send shoot
 start shoot
-0
-hit called
-started
-send start
-hit called
-finished
-send shoot
-start shoot
-3
+33
 started
 send start
 finished
 send shoot
 start shoot
-0
-hit called
+51
 started
 send start
 finished
 send shoot
 start shoot
-5
-hit called
-hit called
+33
 started
 send start
 finished
 send shoot
 start shoot
-92
+39
+started
+send start
+finished
+send shoot
+start shoot
+45
+hit called
+4617.188477
+4557.68335
+3449.356689
+moving
+end pos(0, -50)
 started
 send start
 finished
@@ -239,10 +237,20 @@ send shoot
 start shoot
 100
 hit called
-started
-send start
-finished
-send shoot
-start shoot
-100
-hit called
+6263.428101
+6203.922729
+4685.558105
+moving
+end pos(0, -50)
+I've been hit
+(900, -900)
+1
+I've been hit
+(900, -900)
+I've been hit
+(900, -900)
+I've been hit
+(900, -900)
+I've been hit
+(900, -900)
+1

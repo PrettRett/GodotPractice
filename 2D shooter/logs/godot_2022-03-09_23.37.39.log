@@ -12,13 +12,31 @@ send start
 finished
 send shoot
 start shoot
-12
+24
 hit called
 1128.460236
 1068.955048
-806.107117
+837.662231
 moving
 end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+51
+hit called
+2364.328308
+2304.823181
+1726.714233
+moving
+end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+39
 started
 send start
 finished
@@ -30,28 +48,38 @@ send start
 finished
 send shoot
 start shoot
-57
-hit called
-2364.328308
-2304.823181
-1759.152832
-moving
-end pos(0, -50)
-started
-send start
-finished
-send shoot
-start shoot
-88
-started
-send start
-finished
-send shoot
-start shoot
-42
+45
 hit called
 4617.188477
 4557.68335
-3442.131104
+3443.571289
 moving
 end pos(0, -50)
+started
+send start
+finished
+send shoot
+start shoot
+54
+started
+send start
+finished
+send shoot
+start shoot
+57
+hit called
+6263.428101
+6203.922729
+4670.76123
+moving
+end pos(0, -50)
+I've been hit
+(900, -900)
+I've been hit
+(900, -900)
+I've been hit
+(900, -900)
+I've been hit
+(-900, -900)
+I've been hit
+(900, -900)
