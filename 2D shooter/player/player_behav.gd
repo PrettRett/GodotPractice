@@ -80,7 +80,6 @@ func _physics_process(delta):
 				get_parent().add_child(createdArrow)
 				add_collision_exception_with(createdArrow)
 				emit_signal("start_shooting")
-				print("send start")
 			shooting = true
 			
 		if false:
@@ -106,14 +105,13 @@ func _physics_process(delta):
 				camZoom += maxCamZoom*delta
 			var mousePos = get_local_mouse_position()
 			var auxPos = (bPos.position)
-			createdArrow.position =position + auxPos
+			createdArrow.position = position + auxPos
 			var velocityNormal = auxPos.direction_to(mousePos)
 			createdArrow.rotation = velocityNormal.angle() + (PI/2)
 			bSprite.rotation = velocityNormal.angle()
 			bSprite.flip_h=false
 			if Input.is_action_just_released("shoot"):
 				emit_signal("stop_shooting")
-				print("send shoot")
 				bSprite.rotation = PI
 				bSprite.flip_h = sprite.flip_h
 				shooting = false
@@ -154,7 +152,6 @@ func damaged(dmg_val,src,coll_info):
 		if right_dir:
 			jDir = (Vector2.RIGHT + Vector2.UP)
 		motion = jDir * GlobalInfo.MAX_SPEED*3
-		print(String(motion))
 		if health <= 0:
 			death()
 		invincible = true
@@ -171,7 +168,6 @@ func updateHealth(healthInc):
 	pass
 
 func _shoot(shoot_strenght):
-	print("start shoot")
 	pass
 	#var nArrow = arrow.instance()
 	var mousePos = get_local_mouse_position()
@@ -186,7 +182,6 @@ func _shoot(shoot_strenght):
 	#nArrow.linear_velocity = velocityNormal*ARROW_INITIAL_SPEED
 	#print("my pos is: ", nArrow.position)
 	#print("mouse pos is: ", mousePos)
-	print(shoot_strenght)
 	if shoot_strenght > 0:
 		if shoot_strenght < 10:
 			shoot_strenght = 0.1 # 10% shoot strenght

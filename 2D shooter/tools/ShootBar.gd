@@ -47,7 +47,6 @@ func _on_KinematicBody2D_start_shooting():
 	pass # Replace with function body.
 	value = 0
 	increase_me = true
-	print("started")
 
 
 func _on_KinematicBody2D_stop_shooting():
@@ -55,5 +54,4 @@ func _on_KinematicBody2D_stop_shooting():
 	increase_me = false
 	emit_signal("final_value",value)
 	value = 0
-	print("finished")
 	

@@ -29,6 +29,7 @@ var maxHealthCmp = 200.0
 
 var hitNum = 0
 var LastDmg = 0.0
+var hitDir = Vector2(0,0)
 
 var move = Vector2(0,0)
 var ready = false
@@ -68,11 +69,8 @@ func _physics_process(delta):
 				myImg.animation = "Run"
 				myImg.playing = true
 				var Dir = 1.0
-				if movDir.x < 0.0:
-					myImg.flip_h = true
+				if hitDir.x < 0.0:
 					Dir = -1.0
-				else:
-					myImg.flip_h = false
 				move.x = move.x+(GlobalInfo.ACCERELATION*0.7*Dir)
 				move.x = min(move.x,(GlobalInfo.MAX_SPEED*0.7))
 				move.x = max(move.x,(GlobalInfo.MAX_SPEED*-0.7))
@@ -117,9 +115,9 @@ func _physics_process(delta):
 
 func hitted(dmg_val,src,collision):
 	if enemyState != RedEnSt.RED_ENE_RECV_DMG:
-		var movDir = position.direction_to(GlobalInfo.global_player.position)
+		hitDir = position.direction_to(GlobalInfo.global_player.position)
 		var Dir = -1.0
-		if movDir.x < 0.0:
+		if hitDir.x < 0.0:
 			Dir = 1.0
 		move.x = (GlobalInfo.MAX_SPEED*0.7*Dir)
 		move.y = (GlobalInfo.JUMP_H/4)

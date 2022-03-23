@@ -31,7 +31,6 @@ func _physics_process(delta):
 				if !collided:
 					collided = true
 					if collision.get_collider().has_method("hitted"):
-						print("hit called")
 						collision.get_collider().hitted(speed.abs(),self,collision)
 			else:
 				speed = speed.bounce(collision.get_normal())*0.7

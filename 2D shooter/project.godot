@@ -18,10 +18,16 @@ _global_script_classes=[ {
 "class": "TriggeredObj",
 "language": "GDScript",
 "path": "res://Classes/Triggerable.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "normalEnemy",
+"language": "GDScript",
+"path": "res://Classes/BasicEneBehav.gd"
 } ]
 _global_script_class_icons={
 "HittedObj": "",
-"TriggeredObj": ""
+"TriggeredObj": "",
+"normalEnemy": ""
 }
 
 [application]
