@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Enemies/RedBasicEnemy.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mapas/MapaTutorial.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Elements/V3_2_Block.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Elements/healing.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Enemies/First_big_Boss.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Elements/PassArea.tscn" type="PackedScene" id=8]
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2( 3, 3 )
@@ -65,9 +66,15 @@ position = Vector2( 2503.24, 239.39 )
 position = Vector2( 2735.24, 127.39 )
 
 [node name="Node2D" parent="TutorialMap" instance=ExtResource( 7 )]
-position = Vector2( 3219.2, 340.723 )
+position = Vector2( 3645.35, 342.609 )
 scale = Vector2( 3, 3 )
 
+[node name="Area2D6" parent="TutorialMap" instance=ExtResource( 8 )]
+position = Vector2( 3026.65, 364.044 )
+
+[node name="V_block" parent="TutorialMap/Area2D6" instance=ExtResource( 5 )]
+position = Vector2( -129.892, 54.7389 )
+
 [node name="KinematicBody2D" parent="." instance=ExtResource( 4 )]
-position = Vector2( 3029.59, 364.994 )
+position = Vector2( 2941.81, 382.034 )
 scale = Vector2( 1.5, 1.5 )

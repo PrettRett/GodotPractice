@@ -77,6 +77,10 @@ func recvDmg_phase1(delta,iniMov,distToPlay):
 	iniMov.x = (GlobalInfo.MAX_SPEED*MIN_move*Dir)
 	return iniMov
 
+func iDie_phase1(delta,iniMov,distToPlay):
+	iniMov.y += GlobalInfo.gravity
+	return iniMov
+
 func attack_phase2(delta,iniMov,distToPlay):
 	myImg.animation = "Charge"
 	iniMov.x = 0.0
@@ -116,6 +120,7 @@ func _ready():
 	dicOfFunc[EnemySt.ENE_IDLE] = funcref(self, "idleMov_phase1")
 	dicOfFunc[EnemySt.ENE_RUNNIN] = funcref(self, "runMov_phase1")
 	dicOfFunc[EnemySt.ENE_RECV_DMG] = funcref(self, "recvDmg_phase1")
+	dicOfFunc[EnemySt.ENE_DYING] = funcref(self, "iDie_phase1")
 	MovBasicMult = 0.8
 	ready = true
 	pass # Replace with function body.
@@ -131,8 +136,7 @@ func _physics_process(delta):
 	
 	move.x = min(move.x,(GlobalInfo.MAX_SPEED*MovBasicMult))
 	move.x = max(move.x,-(GlobalInfo.MAX_SPEED*MovBasicMult))
-	move.y = min(move.y,(GlobalInfo.MAX_SPEED))
-	if is_on_floor():
+	if is_on_floor() and move.y > 0.0 and enemyState != EnemySt.ENE_DYING:
 		move.y = 0
 	move_and_slide(move,GlobalInfo.UP)
 
@@ -150,6 +154,14 @@ func hitted(dmg_val,src,collision):
 		enemyHealth -= LastDmg
 		hitNum += 1
 		var xCalc = ((LastDmg - minHealthCmp)/(maxHealthCmp-minHealthCmp))*(MAX_time - MIN_time) + MIN_time
+		if enemyHealth <= 0:
+			times_dead += 1
+			if times_dead > times_to_die:
+				($CollisionMove as CollisionShape2D).disabled = true
+				($Area2D/CollisionAttack as CollisionShape2D).disabled = true
+				GlobalInfo.global_score += 300.0/hitNum
+				enemyState = EnemySt.ENE_DYING
+				xCalc = 2.0
 		($DamageTimer as Timer).wait_time = xCalc
 		($DamageTimer as Timer).start()
 	pass
@@ -168,12 +180,12 @@ func _on_Area2D_body_entered(body):
 func _on_DamageTimer_timeout():
 	enemyState = EnemySt.ENE_RUNNIN
 	if enemyHealth <= 0.0:
-		if bossFightState == FirstBossStates.BASIC_STATE:
-			times_dead += 1
 		if times_dead > times_to_die:
-			GlobalInfo.global_score += 300.0/hitNum
 			endLevel()
+			queue_free()
 		else:
+			print("died once more", times_dead)
+			enemyHealth = 1000.0
 			bossFightState = FirstBossStates.CHARGE_STATE
 			updateBossState()
 			enemyState = EnemySt.ENE_ATTACKING

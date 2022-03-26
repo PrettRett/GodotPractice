@@ -33,6 +33,10 @@ func _process(delta):
 			if fat.times_hitted > 0:
 				print("moving")
 				move_me()
+		elif "passed" in fat:
+			if fat.passed > 0:
+				print("moving")
+				move_me()
 		else:
 			print("cant move")
 			moved = true
