@@ -12,6 +12,16 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "Run_fast",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Charge",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 2 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "Idle",
@@ -21,16 +31,6 @@ animations = [ {
 "loop": true,
 "name": "Run",
 "speed": 8.0
-}, {
-"frames": [ ExtResource( 4 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "Charge",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "Run_fast",
-"speed": 12.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -73,6 +73,12 @@ one_shot = true
 wait_time = 1.5
 one_shot = true
 
+[node name="RepeatAttack" type="Timer" parent="KinematicBody2D"]
+wait_time = 0.6
+one_shot = true
+
 [connection signal="body_entered" from="KinematicBody2D/Area2D" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="KinematicBody2D/Area2D" to="KinematicBody2D" method="_on_Area2D_body_exited"]
 [connection signal="timeout" from="KinematicBody2D/DamageTimer" to="KinematicBody2D" method="_on_DamageTimer_timeout"]
 [connection signal="timeout" from="KinematicBody2D/AttTimer" to="KinematicBody2D" method="_on_AttTimer_timeout"]
+[connection signal="timeout" from="KinematicBody2D/RepeatAttack" to="KinematicBody2D" method="_on_RepeatAttack_timeout"]

@@ -31,6 +31,8 @@ var hitDir = Vector2(0,0)
 var times_dead = 0
 var lastDistLock = Vector2(0,0)
 
+var enemDmg = Array()
+
 var move = Vector2(0,0)
 var ready = false
 
@@ -174,6 +176,8 @@ func hitted(dmg_val,src,collision):
 func _on_Area2D_body_entered(body):
 	if body.has_method("damaged"):
 		body.damaged(HIT_VALUE,self,null)
+		enemDmg.append(body)
+		($RepeatAttack as Timer).start()
 	pass # Replace with function body.
 
 
@@ -202,4 +206,16 @@ func _on_AttTimer_timeout():
 		enemyHealth = 1000.0
 		updateBossState()
 		enemyState = EnemySt.ENE_RUNNIN
+	pass # Replace with function body.
+
+
+func _on_RepeatAttack_timeout():
+	for ene in enemDmg:
+		ene.damaged(HIT_VALUE,self,null)
+	pass # Replace with function body.
+
+
+func _on_Area2D_body_exited(body):
+	if body in enemDmg:
+		enemDmg.erase(body)
 	pass # Replace with function body.

@@ -32,7 +32,7 @@ _global_script_class_icons={
 
 [application]
 
-run/main_scene="res://MainTitle.tscn"
+run/main_scene="res://Menus/MainTitle.tscn"
 
 [autoload]
 
