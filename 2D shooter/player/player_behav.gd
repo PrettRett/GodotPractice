@@ -140,6 +140,10 @@ func death():
 	print("i Die")
 	$CollisionShape2D.disabled = true
 	myCam.current = false
+	yield(get_tree().create_timer(1.5),"timeout")
+	myCam.current = true
+	queue_free()
+	print(get_tree().change_scene("res://Menus/LevelSelect.tscn"))
 	pass
 	
 func damaged(dmg_val,src,coll_info):

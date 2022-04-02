@@ -37,7 +37,7 @@ var move = Vector2(0,0)
 var ready = false
 
 func endLevel():
-	print("end the level")
+	get_tree().change_scene("res://Menus/LevelSelect.tscn")
 	pass
 
 func invisible(delta,iniMov,distToPlay):

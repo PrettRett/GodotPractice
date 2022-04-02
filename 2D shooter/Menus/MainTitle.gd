@@ -22,7 +22,7 @@ func _process(delta):
 func onFieldClicked(auxMux):
 	if auxMux == 0:
 		print("label1")
-		get_tree().change_scene("res://Niveles/Nivel_Tutorial_Test_1.tscn")
+		get_tree().change_scene("res://Menus/LevelSelect.tscn")
 		pass # option play level
 	if auxMux == 1:
 		print("label2")
