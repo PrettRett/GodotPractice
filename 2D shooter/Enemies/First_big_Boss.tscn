@@ -12,16 +12,6 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 4 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "Charge",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "Run_fast",
-"speed": 12.0
-}, {
 "frames": [ ExtResource( 2 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "Idle",
@@ -31,6 +21,16 @@ animations = [ {
 "loop": true,
 "name": "Run",
 "speed": 8.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Charge",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "Run_fast",
+"speed": 12.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]

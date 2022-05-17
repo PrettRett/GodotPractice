@@ -1,5 +1,6 @@
 extends Node
 
+var timeLabel = $MarginContainer/ColorRect/VBoxContainer/HBoxContainer/VBoxContainer/Label2 as Label
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -8,6 +9,8 @@ extends Node
 func onFieldClicked(auxMux):
 	if auxMux == 0:
 		print("label1")
+		GlobalInfo.global_score = 0
+		GlobalInfo.global_time = 0
 		get_tree().change_scene("res://Niveles/Nivel_Tutorial_Test_1.tscn")
 		pass # option play level
 	if auxMux == 1:
@@ -19,6 +22,16 @@ func onFieldClicked(auxMux):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	var myFile = File.new()
+	if (myFile.open(GlobalInfo.jsonFileSave,File.READ) != 0):
+		var DataJson = JSON.parse(myFile.get_as_text())
+		myFile.close()
+		var myDict = DataJson.result
+		if typeof(myDict) != TYPE_NIL:
+			if "FirstTime" in myDict:
+				timeLabel.set_text(myDict["FirstTime"])
+			if "FirstPoints" in myDict:
+				timeLabel.set_text("Clear Points:" + myDict["FirstPoints"])
 	pass # Replace with function body.
 
 

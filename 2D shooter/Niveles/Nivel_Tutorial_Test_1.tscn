@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Enemies/RedBasicEnemy.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mapas/MapaTutorial.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Enemies/First_big_Boss.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Elements/PassArea.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Terreno/HorizontalOneWayBlock.tscn" type="PackedScene" id=9]
+[ext_resource path="res://PauseMenu/PauseMenu.tscn" type="PackedScene" id=10]
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2( 3, 3 )
@@ -93,3 +94,7 @@ position = Vector2( 3043.82, 328.926 )
 [node name="KinematicBody2D" parent="." instance=ExtResource( 4 )]
 position = Vector2( 134.158, 142.576 )
 scale = Vector2( 1.5, 1.5 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource( 10 )]

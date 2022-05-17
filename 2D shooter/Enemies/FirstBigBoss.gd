@@ -2,7 +2,7 @@ extends normalEnemy
 
 onready var myImg = $AnimatedSprite
 onready var myVis = $VisibilityNotifier2D
-onready var enemyHealth = 1000.0
+onready var enemyHealth = 10.0
 
 enum FirstBossStates {
 	BASIC_STATE,
@@ -36,7 +36,29 @@ var enemDmg = Array()
 var move = Vector2(0,0)
 var ready = false
 
+func saveThisData():
+	var myDict = {}
+	var myFile = File.new()
+	if (myFile.open(GlobalInfo.jsonFileSave,File.READ) != 0):
+		var DataJson = JSON.parse(myFile.get_as_text())
+		myFile.close()
+		myDict = DataJson.result
+		if typeof(myDict) == TYPE_NIL:
+			myDict = {}
+	var minTime = int(GlobalInfo.global_time/60)
+	var secTime = int(fmod(GlobalInfo.global_time,60.0))
+	var tStr = String(minTime) + ":" + ("%06.3f" % secTime)
+	myDict["FirstTime"] = tStr
+	myDict["FirstPoints"] = GlobalInfo.global_score
+	myFile = File.new()
+	print(myFile.open(GlobalInfo.jsonFileSave,File.WRITE))
+	print(myDict)
+	myFile.store_string(to_json(myDict))
+	myFile.close()
+	pass
+
 func endLevel():
+	saveThisData()
 	get_tree().change_scene("res://Menus/LevelSelect.tscn")
 	pass
 
@@ -203,7 +225,7 @@ func _on_AttTimer_timeout():
 		($AttTimer as Timer).start()
 	elif enemyState == EnemySt.ENE_RUNNIN:
 		bossFightState = FirstBossStates.BASIC_STATE
-		enemyHealth = 1000.0
+		enemyHealth = 10.0
 		updateBossState()
 		enemyState = EnemySt.ENE_RUNNIN
 	pass # Replace with function body.
