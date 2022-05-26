@@ -69,7 +69,9 @@ func _physics_process(delta):
 				myImg.animation = "Run"
 				myImg.playing = true
 				var Dir = 1.0
+				myImg.flip_h = false
 				if movDir.x < 0.0:
+					myImg.flip_h = true
 					Dir = -1.0
 				move.x = move.x+(GlobalInfo.ACCERELATION*0.7*Dir)
 				move.x = min(move.x,(GlobalInfo.MAX_SPEED*0.7))

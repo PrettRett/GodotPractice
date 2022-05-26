@@ -17,7 +17,7 @@ func _ready():
 
 
 func _on_Area2D_body_entered(body):
-	print("1")
-	GlobalInfo.global_player.updateHealth(10)
-	queue_free()
-	pass # Replace with function body.
+	if body.is_in_group("Jugador"):
+		print("1")
+		GlobalInfo.global_player.updateHealth(10)
+		queue_free()

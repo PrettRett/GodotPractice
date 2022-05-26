@@ -54,23 +54,23 @@ font_data = SubResource( 5 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 10, 8.97897 )
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="KinematicBody2D" type="KinematicBody2D" groups=["Jugador"]]
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite" type="Sprite" parent="." groups=["Jugador"]]
 texture = ExtResource( 1 )
 hframes = 4
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." groups=["Jugador"]]
 playback_speed = 10.0
 anims/Stand = SubResource( 1 )
 anims/Walk = SubResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Jugador"]]
 position = Vector2( 0.0883904, 0.514288 )
 shape = SubResource( 3 )
 
-[node name="BowSprite" type="Sprite" parent="."]
+[node name="BowSprite" type="Sprite" parent="." groups=["Jugador"]]
 position = Vector2( -0.250282, 3.08682 )
 rotation = 3.14159
 scale = Vector2( 0.1, 0.1 )
@@ -78,10 +78,10 @@ texture = ExtResource( 3 )
 hframes = 6
 vframes = 2
 
-[node name="PositionBow" type="Position2D" parent="."]
+[node name="PositionBow" type="Position2D" parent="." groups=["Jugador"]]
 position = Vector2( 0.0775528, 2.67572 )
 
-[node name="CameraPlayer" type="Camera2D" parent="."]
+[node name="CameraPlayer" type="Camera2D" parent="." groups=["Jugador"]]
 position = Vector2( 1, 0 )
 current = true
 zoom = Vector2( 0.5, 0.5 )
@@ -89,17 +89,17 @@ smoothing_enabled = true
 drag_margin_left = 0.5
 drag_margin_top = 0.5
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." groups=["Jugador"]]
 
-[node name="FuerzaBar" parent="CanvasLayer" instance=ExtResource( 4 )]
+[node name="FuerzaBar" parent="CanvasLayer" groups=["Jugador"] instance=ExtResource( 4 )]
 margin_left = 39.1996
 margin_top = 498.903
 margin_right = 435.2
 margin_bottom = 551.903
 
-[node name="Score" parent="CanvasLayer" instance=ExtResource( 5 )]
+[node name="Score" parent="CanvasLayer" groups=["Jugador"] instance=ExtResource( 5 )]
 
-[node name="VidaBar" type="TextureProgress" parent="CanvasLayer"]
+[node name="VidaBar" type="TextureProgress" parent="CanvasLayer" groups=["Jugador"]]
 margin_right = 396.0
 margin_bottom = 53.0
 rect_scale = Vector2( 1, 0.8 )
@@ -112,14 +112,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" groups=["Jugador"]]
 margin_right = 1025.0
 margin_bottom = 57.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="CanvasLayer/CenterContainer"]
+[node name="Label" type="Label" parent="CanvasLayer/CenterContainer" groups=["Jugador"]]
 margin_left = 452.0
 margin_top = 12.0
 margin_right = 573.0
@@ -133,18 +133,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="InvTimer" type="Timer" parent="."]
+[node name="InvTimer" type="Timer" parent="." groups=["Jugador"]]
 wait_time = 0.5
 one_shot = true
 
-[node name="AttTimer" type="Timer" parent="."]
+[node name="AttTimer" type="Timer" parent="." groups=["Jugador"]]
 wait_time = 0.25
 one_shot = true
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." groups=["Jugador"]]
 collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=["Jugador"]]
 position = Vector2( 0, -1.02103 )
 shape = SubResource( 4 )
 

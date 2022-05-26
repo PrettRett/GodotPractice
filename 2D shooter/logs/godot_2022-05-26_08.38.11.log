@@ -8,12 +8,6 @@ ERROR: Cannot get path of node as it is not in a scene tree.
 ERROR: (Node not found: "MarginContainer/ColorRect/VBoxContainer/HBoxContainer/VBoxContainer/Label2" (relative to "").)
    at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
 label1
-label1
-my pos is(0, 0)
-my pos is(0, 0)
-my pos is(0, 0)
-my pos is(0, 0)
-my pos is(0, 0)
 my pos is(0, 0)
 my pos is(0, 0)
 my pos is(0, 0)
@@ -21,12 +15,6 @@ my pos is(0, 0)
 my pos is(0, 0)
 1128.460236
 1068.955048
-807.524658
+793.480103
 moving
 end pos(0, -50)
-2364.328308
-2304.823181
-1719.57251
-moving
-end pos(0, -50)
-1
