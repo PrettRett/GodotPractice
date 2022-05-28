@@ -52,7 +52,7 @@ func saveThisData():
 	myDict["FirstPoints"] = GlobalInfo.global_score
 	myFile = File.new()
 	print(myFile.open(GlobalInfo.jsonFileSave,File.WRITE))
-	print(myDict)
+	print(to_json(myDict))
 	myFile.store_string(to_json(myDict))
 	myFile.close()
 	pass

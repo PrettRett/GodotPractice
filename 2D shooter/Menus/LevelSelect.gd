@@ -1,6 +1,7 @@
 extends Node
 
-var timeLabel = $MarginContainer/ColorRect/VBoxContainer/HBoxContainer/VBoxContainer/Label2 as Label
+onready var timeLabel = $MarginContainer/ColorRect/VBoxContainer/HBoxContainer/VBoxContainer/Label2 as Label
+onready var scoreLabel = $MarginContainer/ColorRect/VBoxContainer/HBoxContainer/VBoxContainer/Label3 as Label
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -23,21 +24,22 @@ func onFieldClicked(auxMux):
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var myFile = File.new()
-	if (myFile.open(GlobalInfo.jsonFileSave,File.READ) != 0):
+	if (myFile.file_exists(GlobalInfo.jsonFileSave)):
+		print(myFile.open(GlobalInfo.jsonFileSave,File.READ))
 		var DataJson = JSON.parse(myFile.get_as_text())
 		myFile.close()
 		var myDict = DataJson.result
 		if typeof(myDict) != TYPE_NIL:
 			if "FirstTime" in myDict:
-				timeLabel.set_text(myDict["FirstTime"])
+				timeLabel.text = (String(myDict["FirstTime"]))
 			if "FirstPoints" in myDict:
-				timeLabel.set_text("Clear Points:" + myDict["FirstPoints"])
+				scoreLabel.text = ("Clear Points:" + String(myDict["FirstPoints"]))
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	pass
 
 
 func _on_CenterContainer_gui_input(event):

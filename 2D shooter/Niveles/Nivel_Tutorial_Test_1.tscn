@@ -92,9 +92,13 @@ position = Vector2( 3558.02, 330.339 )
 position = Vector2( 3043.82, 328.926 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 4 )]
-position = Vector2( 134.158, 142.576 )
+position = Vector2( 3022.27, 393.79 )
 scale = Vector2( 1.5, 1.5 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Control" parent="CanvasLayer" instance=ExtResource( 10 )]
+margin_left = 661.105
+margin_top = 12.7136
+margin_right = 661.105
+margin_bottom = 12.7136
