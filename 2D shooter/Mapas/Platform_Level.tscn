@@ -1,0 +1,101 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Mapas/AutoTileForest_light.tres" type="TileSet" id=1]
+[ext_resource path="res://Bg pack/03_distant_trees.png" type="Texture" id=2]
+[ext_resource path="res://Bg pack/02_trees and bushes.png" type="Texture" id=3]
+[ext_resource path="res://Bg pack/07_huge_clouds.png" type="Texture" id=4]
+[ext_resource path="res://Bg pack/08_clouds.png" type="Texture" id=5]
+[ext_resource path="res://Bg pack/05_hill1.png" type="Texture" id=6]
+[ext_resource path="res://Bg pack/04_bushes.png" type="Texture" id=7]
+[ext_resource path="res://Bg pack/11_background.png" type="Texture" id=8]
+[ext_resource path="res://Bg pack/01_ground.png" type="Texture" id=9]
+[ext_resource path="res://Bg pack/06_hill2.png" type="Texture" id=10]
+[ext_resource path="res://Bg pack/09_distant_clouds1.png" type="Texture" id=11]
+
+[node name="Plataforma_Level" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1, 0, 0, 2, 0, 2, 61, 0, 0, 62, 0, 2, 65537, 0, 65536, 65538, 0, 12, 65597, 0, 11, 65598, 0, 12, 131073, 0, 11, 131074, 0, 12, 131133, 0, 65536, 131134, 0, 65538, 196609, 0, 65536, 196610, 0, 12, 196669, 0, 11, 196670, 0, 65538, 262145, 0, 11, 262146, 0, 12, 262205, 0, 11, 262206, 0, 65538, 327681, 0, 11, 327682, 0, 65538, 327741, 0, 65536, 327742, 0, 12, 393217, 0, 11, 393218, 0, 12, 393277, 0, 65536, 393278, 0, 65538, 458753, 0, 11, 458754, 0, 12, 458813, 0, 65536, 458814, 0, 12, 524289, 0, 11, 524290, 0, 65538, 524349, 0, 65536, 524350, 0, 65538, 589825, 0, 65536, 589826, 0, 65538, 589885, 0, 11, 589886, 0, 65538, 655361, 0, 11, 655362, 0, 65538, 655421, 0, 11, 655422, 0, 65538, 720897, 0, 65536, 720898, 0, 12, 720957, 0, 11, 720958, 0, 65538, 786433, 0, 11, 786434, 0, 12, 786493, 0, 11, 786494, 0, 65538, 851969, 0, 11, 851970, 0, 12, 852029, 0, 11, 852030, 0, 12, 917505, 0, 11, 917506, 0, 65538, 917565, 0, 11, 917566, 0, 12, 983041, 0, 65536, 983042, 0, 12, 983101, 0, 65536, 983102, 0, 65538, 1048577, 0, 65536, 1048578, 0, 12, 1048637, 0, 11, 1048638, 0, 12, 1114113, 0, 11, 1114114, 0, 12, 1114173, 0, 11, 1114174, 0, 65538, 1179649, 0, 11, 1179650, 0, 12, 1179709, 0, 65536, 1179710, 0, 12, 1245185, 0, 65536, 1245186, 0, 65538, 1245245, 0, 11, 1245246, 0, 65538, 1310721, 0, 65536, 1310722, 0, 12, 1310781, 0, 11, 1310782, 0, 12, 1376257, 0, 11, 1376258, 0, 12, 1376317, 0, 65536, 1376318, 0, 65538, 1441793, 0, 11, 1441794, 0, 12, 1441853, 0, 11, 1441854, 0, 12, 1507329, 0, 11, 1507330, 0, 65538, 1507389, 0, 11, 1507390, 0, 12, 1572865, 0, 11, 1572866, 0, 12, 1572925, 0, 11, 1572926, 0, 65538, 1638401, 0, 11, 1638402, 0, 12, 1638461, 0, 65536, 1638462, 0, 65538, 1703937, 0, 65536, 1703938, 0, 12, 1703997, 0, 65536, 1703998, 0, 65538, 1769473, 0, 11, 1769474, 0, 65538, 1769533, 0, 65536, 1769534, 0, 12, 1835009, 0, 11, 1835010, 0, 65538, 1835069, 0, 65536, 1835070, 0, 65538, 1900545, 0, 11, 1900546, 0, 12, 1900605, 0, 65536, 1900606, 0, 12, 1966081, 0, 65536, 1966082, 0, 12, 1966141, 0, 65536, 1966142, 0, 65538, 2031617, 0, 11, 2031618, 0, 12, 2031677, 0, 65536, 2031678, 0, 65538, 2097153, 0, 65536, 2097154, 0, 65538, 2097213, 0, 65536, 2097214, 0, 65538, 2162689, 0, 11, 2162690, 0, 12, 2162749, 0, 11, 2162750, 0, 12, 2228225, 0, 65536, 2228226, 0, 12, 2228285, 0, 65536, 2228286, 0, 65538, 2293761, 0, 65536, 2293762, 0, 65538, 2293821, 0, 65536, 2293822, 0, 12, 2359297, 0, 11, 2359298, 0, 65538, 2359357, 0, 11, 2359358, 0, 12, 2424833, 0, 65536, 2424834, 0, 12, 2424893, 0, 65536, 2424894, 0, 65538, 2490369, 0, 65536, 2490370, 0, 65538, 2490429, 0, 11, 2490430, 0, 65538, 2555905, 0, 11, 2555906, 0, 65538, 2555965, 0, 11, 2555966, 0, 12, 2621441, 0, 11, 2621442, 0, 65538, 2621501, 0, 11, 2621502, 0, 12, 2686977, 0, 11, 2686978, 0, 65538, 2687037, 0, 65536, 2687038, 0, 65538, 2752513, 0, 11, 2752514, 0, 12, 2752573, 0, 65536, 2752574, 0, 65538, 2818049, 0, 11, 2818050, 0, 12, 2818109, 0, 11, 2818110, 0, 12, 2883585, 0, 131072, 2883586, 0, 131074, 2883645, 0, 11, 2883646, 0, 65538, 2949181, 0, 65536, 2949182, 0, 65538, 3014717, 0, 65536, 3014718, 0, 65538, 3080253, 0, 11, 3080254, 0, 12, 3145789, 0, 131072, 3145790, 0, 131074 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="TileMap"]
+scroll_ignore_camera_zoom = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="TileMap/ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/ParallaxBackground/ParallaxLayer"]
+texture = ExtResource( 8 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="TileMap/ParallaxBackground"]
+motion_scale = Vector2( 0.1, 0.1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/ParallaxBackground/ParallaxLayer2"]
+texture = ExtResource( 5 )
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="TileMap/ParallaxBackground"]
+motion_scale = Vector2( 0.15, 0.1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/ParallaxBackground/ParallaxLayer3"]
+texture = ExtResource( 11 )
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="TileMap/ParallaxBackground"]
+motion_scale = Vector2( 0.15, 0.1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/ParallaxBackground/ParallaxLayer4"]
+texture = ExtResource( 5 )
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="TileMap/ParallaxBackground"]
+motion_scale = Vector2( 0.25, 0.1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/ParallaxBackground/ParallaxLayer5"]
+texture = ExtResource( 4 )
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="TileMap/ParallaxBackground"]
+motion_scale = Vector2( 0.25, 0.1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/ParallaxBackground/ParallaxLayer6"]
+texture = ExtResource( 10 )
+
+[node name="ParallaxLayer7" type="ParallaxLayer" parent="TileMap/ParallaxBackground"]
+motion_scale = Vector2( 0.25, 0.1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/ParallaxBackground/ParallaxLayer7"]
+texture = ExtResource( 6 )
+
+[node name="ParallaxLayer8" type="ParallaxLayer" parent="TileMap/ParallaxBackground"]
+motion_scale = Vector2( 0.5, 0.1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/ParallaxBackground/ParallaxLayer8"]
+texture = ExtResource( 7 )
+
+[node name="ParallaxLayer9" type="ParallaxLayer" parent="TileMap/ParallaxBackground"]
+motion_scale = Vector2( 0.65, 0.1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/ParallaxBackground/ParallaxLayer9"]
+texture = ExtResource( 2 )
+
+[node name="ParallaxLayer10" type="ParallaxLayer" parent="TileMap/ParallaxBackground"]
+motion_scale = Vector2( 0.8, 0.1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/ParallaxBackground/ParallaxLayer10"]
+texture = ExtResource( 3 )
+
+[node name="ParallaxLayer11" type="ParallaxLayer" parent="TileMap/ParallaxBackground"]
+motion_scale = Vector2( 0.9, 0.1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/ParallaxBackground/ParallaxLayer11"]
+texture = ExtResource( 9 )

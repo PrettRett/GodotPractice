@@ -1,0 +1,110 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Menus/OldWizard.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Menus/AlegreyaSans-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Menus/onlineSelect.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 63
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 30
+font_data = ExtResource( 2 )
+
+[node name="Node" type="Node"]
+script = ExtResource( 3 )
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_top = 50
+custom_constants/margin_bottom = 50
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+margin_top = 50.0
+margin_right = 1024.0
+margin_bottom = 550.0
+color = Color( 0.258824, 0.192157, 0.192157, 1 )
+
+[node name="LabelOnline" type="Label" parent="MarginContainer/ColorRect"]
+margin_left = 351.0
+margin_right = 673.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 1 )
+text = "Online Mode"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="MarginContainer/ColorRect"]
+margin_left = 256.0
+margin_top = 119.0
+margin_right = 768.0
+margin_bottom = 165.0
+custom_fonts/font = SubResource( 2 )
+align = 1
+placeholder_text = "Enter IP address"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CreateButt" type="Button" parent="MarginContainer/ColorRect"]
+margin_left = 444.838
+margin_top = 208.544
+margin_right = 614.838
+margin_bottom = 250.544
+custom_fonts/font = SubResource( 3 )
+text = "Create Server"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="JoinButt" type="Button" parent="MarginContainer/ColorRect"]
+margin_left = 446.027
+margin_top = 292.977
+margin_right = 616.027
+margin_bottom = 334.977
+custom_fonts/font = SubResource( 3 )
+text = "Join Server"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelOnline2" type="Label" parent="MarginContainer/ColorRect"]
+margin_left = 256.0
+margin_top = 440.108
+margin_right = 768.0
+margin_bottom = 484.108
+custom_fonts/font = SubResource( 4 )
+text = "192.168.1.100"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="JoinButt2" type="Button" parent="MarginContainer/ColorRect"]
+margin_left = 59.215
+margin_top = 419.112
+margin_right = 229.215
+margin_bottom = 461.112
+custom_fonts/font = SubResource( 3 )
+text = "Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="MarginContainer/ColorRect/CreateButt" to="." method="_on_CreateButt_pressed"]
+[connection signal="pressed" from="MarginContainer/ColorRect/JoinButt" to="." method="_on_JoinButt_pressed"]
+[connection signal="pressed" from="MarginContainer/ColorRect/JoinButt2" to="." method="_on_JoinButt2_pressed"]

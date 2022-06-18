@@ -39,6 +39,14 @@ run/main_scene="res://Menus/MainTitle.tscn"
 GlobalInfo="*res://Global_info.gd"
 Hittable="*res://Classes/Hittable.gd"
 Triggerable="*res://Classes/Triggerable.gd"
+GlobalAction="*res://GlobalAction.gd"
+ConnServer="*res://Connections/ConnServer.gd"
+CommonPool="*res://Connections/CommonPool.tscn"
+
+[display]
+
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
 
 [input]
 

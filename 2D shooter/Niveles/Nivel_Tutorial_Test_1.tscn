@@ -14,6 +14,10 @@
 [node name="Node2D" type="Node2D"]
 scale = Vector2( 3, 3 )
 
+[node name="KinematicBody2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 118.718, 154.44 )
+scale = Vector2( 1.5, 1.5 )
+
 [node name="TutorialMap" parent="." instance=ExtResource( 2 )]
 
 [node name="DianaStatic" parent="TutorialMap" instance=ExtResource( 3 )]
@@ -91,14 +95,6 @@ position = Vector2( 3558.02, 330.339 )
 [node name="H_OneW_Block4" parent="TutorialMap/Terrain" instance=ExtResource( 9 )]
 position = Vector2( 3043.82, 328.926 )
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 4 )]
-position = Vector2( 3022.27, 393.79 )
-scale = Vector2( 1.5, 1.5 )
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Control" parent="CanvasLayer" instance=ExtResource( 10 )]
-margin_left = 661.105
-margin_top = 12.7136
-margin_right = 661.105
-margin_bottom = 12.7136

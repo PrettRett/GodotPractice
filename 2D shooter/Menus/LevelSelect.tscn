@@ -12,12 +12,12 @@ font_data = ExtResource( 1 )
 size = 26
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFontData" id=3]
+[sub_resource type="DynamicFontData" id=5]
 font_path = "res://Menus/OldWizard.ttf"
 
 [sub_resource type="DynamicFont" id=4]
 size = 26
-font_data = SubResource( 3 )
+font_data = SubResource( 5 )
 
 [node name="LevelSelect" type="Node"]
 script = ExtResource( 3 )
@@ -38,8 +38,8 @@ margin_bottom = 550.0
 color = Color( 0.258824, 0.192157, 0.192157, 1 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/ColorRect"]
-margin_right = 1024.0
-margin_bottom = 500.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

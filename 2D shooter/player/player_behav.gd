@@ -39,6 +39,7 @@ var createdArrow
 
 func _ready():
 	GlobalInfo.global_player = self
+	myCam
 
 func _exit_tree():
 	GlobalInfo.global_player = null

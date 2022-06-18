@@ -1,9 +1,8 @@
 extends Node
 
-onready var playStart = $MarginContainer/ColorRect/CenterContainer/VBoxContainer/CenterContainer2
-onready var settings = $MarginContainer/ColorRect/CenterContainer/VBoxContainer/CenterContainer3
-onready var exit = $MarginContainer/ColorRect/CenterContainer/VBoxContainer/CenterContainer4
-
+onready var playStart = $MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer/CenterContainer2
+onready var settings = $MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer/CenterContainer3
+onready var exit = $MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer/CenterContainer4
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"

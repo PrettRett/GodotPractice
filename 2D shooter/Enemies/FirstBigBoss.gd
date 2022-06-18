@@ -2,7 +2,7 @@ extends normalEnemy
 
 onready var myImg = $AnimatedSprite
 onready var myVis = $VisibilityNotifier2D
-onready var enemyHealth = 10.0
+onready var enemyHealth = 1000.0
 
 enum FirstBossStates {
 	BASIC_STATE,
