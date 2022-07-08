@@ -21,7 +21,7 @@ func username_set(newName):
 			proxyUsername = newName
 			
 
-func updateUsername():
+remote func updateUsername():
 	if get_tree().has_network_peer():
 		if is_network_master():
 			rset("puppet_username", proxyUsername)

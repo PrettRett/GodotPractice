@@ -48,7 +48,7 @@ func _process(_delta: float) -> void:
 			var ply = tagMap[tag][0]
 			var lbl = tagMap[tag][1]
 			
-			if (ply.proxyUsername != "") and (ply.proxyUsername != null):
+			if (ply.proxyUsername != null) and (ply.proxyUsername != ""):
 				lbl.text = ply.proxyUsername
 			else:
 				var proxyTemp = ply.proxy_username_get()
