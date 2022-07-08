@@ -64,6 +64,7 @@ func _on_CreateButt_pressed():
 func _on_JoinButt_pressed():
 	print("join butt")
 	ConnServer.ip_address = ipServerText.text
+	GlobalAction.localUsername = usernameLabel.text
 	
 	get_tree().change_scene("res://Connections/ConnPlayers.tscn")
 	pass # Replace with function body.

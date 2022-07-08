@@ -48,7 +48,6 @@ func _player_disconnected(id) -> void:
 	print("Player " + str(id) + " has disconnected")
 	
 	if CommonPool.has_node(str(id)):
-		CommonPool.get_node(str(id)).username_text_instance.queue_free()
 		CommonPool.get_node(str(id)).queue_free()
 
 func _on_Create_server_pressed():
@@ -73,7 +72,7 @@ func instance_player(id) -> void:
 	player_instance.set_network_master(id)
 	player_instance.username = GlobalAction.localUsername
 	yield(get_tree().create_timer(0.1), "timeout")
-	newLabel.text = str(player_instance.username)
+	newLabel.text = str(player_instance.puppet_username)
 	
 
 func _on_Start_game_pressed():
