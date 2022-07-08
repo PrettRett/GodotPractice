@@ -48,8 +48,8 @@ func _process(_delta: float) -> void:
 			var ply = tagMap[tag][0]
 			var lbl = tagMap[tag][1]
 			
-			if ply.proxy_username != "":
-				lbl.text = ply.proxy_username
+			if ply.proxyUsername != "":
+				lbl.text = ply.proxyUsername
 			else:
 				allUpdated = false
 		
