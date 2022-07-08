@@ -11,6 +11,10 @@ onready var baseLabel = $MarginContainer/ColorRect/MarginContainer/VBoxContainer
 onready var myLabel = $MarginContainer/ColorRect/MarginContainer/VBoxContainer/Player
 onready var startButt = $MarginContainer/ColorRect/Button
 
+var update_names = false
+
+var tagMap = {}
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	get_tree().connect("network_peer_connected", self, "_player_connected")
@@ -38,6 +42,19 @@ func _process(_delta: float) -> void:
 			startButt.show()
 		else:
 			startButt.hide()
+	if update_names:
+		var allUpdated = true
+		for tag in tagMap:
+			var ply = tagMap[tag][0]
+			var lbl = tagMap[tag][1]
+			
+			if ply.proxy_username != "":
+				lbl.text = ply.proxy_username
+			else:
+				allUpdated = false
+		
+		if allUpdated:
+			update_names = false
 
 func _player_connected(id) -> void:
 	print("Player " + str(id) + " has connected")
@@ -71,8 +88,8 @@ func instance_player(id) -> void:
 	player_instance.name = str(id)
 	player_instance.set_network_master(id)
 	player_instance.username = GlobalAction.localUsername
-	yield(get_tree().create_timer(0.1), "timeout")
-	newLabel.text = str(player_instance.puppet_username)
+	update_names = true
+	tagMap[id] = [player_instance,newLabel]
 	
 
 func _on_Start_game_pressed():
