@@ -66,6 +66,7 @@ margin_top = 208.544
 margin_right = 614.838
 margin_bottom = 250.544
 custom_fonts/font = SubResource( 3 )
+disabled = true
 text = "Create Server"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -77,6 +78,7 @@ margin_top = 292.977
 margin_right = 616.027
 margin_bottom = 334.977
 custom_fonts/font = SubResource( 3 )
+disabled = true
 text = "Join Server"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -101,6 +103,18 @@ margin_right = 229.215
 margin_bottom = 461.112
 custom_fonts/font = SubResource( 3 )
 text = "Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit2" type="LineEdit" parent="MarginContainer/ColorRect"]
+margin_left = 256.0
+margin_top = 63.5009
+margin_right = 768.0
+margin_bottom = 109.501
+custom_fonts/font = SubResource( 2 )
+align = 1
+placeholder_text = "Enter Username"
 __meta__ = {
 "_edit_use_anchors_": false
 }

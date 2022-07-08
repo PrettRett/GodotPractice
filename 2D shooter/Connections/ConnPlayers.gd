@@ -1,5 +1,7 @@
 extends Node
 
+var playerTemp = load("res://Connections/PlayerBase.tscn")
+var labelTemp = load("res://Connections/labelToCopy.tscn")
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -17,7 +19,8 @@ func _ready():
 	
 	
 	if get_tree().network_peer != null:
-		players_connected = 1
+		players_connected = 0
+		instance_player(get_tree().get_network_unique_id())
 		
 		myLabel.text = ConnServer.ip_address
 		
@@ -25,10 +28,62 @@ func _ready():
 			if player.is_in_group("Player"):
 				players_connected += 1
 	else:
+		ConnServer.join_server()
 		startButt.hide()
 	pass # Replace with function body.
 
+func _process(_delta: float) -> void:
+	if get_tree().network_peer != null:
+		if get_tree().get_network_connected_peers().size() >= 1 and get_tree().is_network_server():
+			startButt.show()
+		else:
+			startButt.hide()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _player_connected(id) -> void:
+	print("Player " + str(id) + " has connected")
+	
+	instance_player(id)
+
+func _player_disconnected(id) -> void:
+	print("Player " + str(id) + " has disconnected")
+	
+	if CommonPool.has_node(str(id)):
+		CommonPool.get_node(str(id)).username_text_instance.queue_free()
+		CommonPool.get_node(str(id)).queue_free()
+
+func _on_Create_server_pressed():
+	ConnServer.create_server()
+
+	instance_player(get_tree().get_network_unique_id())
+
+func _on_Join_server_pressed():
+	pass
+
+func _connected_to_server() -> void:
+	yield(get_tree().create_timer(0.1), "timeout")
+	instance_player(get_tree().get_network_unique_id())
+
+func instance_player(id) -> void:
+	var player_instance = GlobalAction.instance_node(playerTemp, CommonPool)
+	
+	var newLabel = GlobalAction.instance_node(labelTemp, baseLabel)
+	
+	players_connected += 1
+	player_instance.name = str(id)
+	player_instance.set_network_master(id)
+	player_instance.username = GlobalAction.localUsername
+	yield(get_tree().create_timer(0.1), "timeout")
+	newLabel.text = str(player_instance.username)
+	
+
+func _on_Start_game_pressed():
+	rpc("switch_to_game")
+
+sync func switch_to_game() -> void:
+	for child in CommonPool.get_children():
+		if child.is_in_group("Player"):
+			#prepare to start
+			pass
+	
+	#start game
+
