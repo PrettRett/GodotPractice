@@ -17,8 +17,9 @@ onready var collided = false
 func _ready():
 	anim.play("normal")
 	
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _physics_process(delta):
+func _process(delta):
 	if imShot:
 		speed.y += GRAVITY
 		rotation = speed.angle() + (PI/2)
@@ -34,3 +35,4 @@ func _physics_process(delta):
 						collision.get_collider().hitted(speed.abs(),self,collision)
 			else:
 				speed = speed.bounce(collision.get_normal())*0.7
+		

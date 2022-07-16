@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Terreno/Versus_platform.tscn" type="PackedScene" id=1]
+[ext_resource path="res://player/Jugador.png" type="Texture" id=2]
+[ext_resource path="res://player/Archer.png" type="Texture" id=3]
+[ext_resource path="res://multPlayer/platShoot/platPlayer.gd" type="Script" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8.41846, 14.9633 )
+
+[node name="platPlay" type="KinematicBody2D"]
+script = ExtResource( 4 )
+
+[node name="H_OneW_Block" parent="." instance=ExtResource( 1 )]
+position = Vector2( -38.891, 12.091 )
+
+[node name="Player" type="Sprite" parent="."]
+scale = Vector2( 2.5, 2.5 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 2, 1, 12, 15 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, 5 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 10, 12, 44, 70 )
+
+[node name="Position2D" type="Position2D" parent="Sprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -1.25 )
+scale = Vector2( 1.25, 1.25 )
+shape = SubResource( 1 )
+
+[node name="Tween" type="Tween" parent="."]

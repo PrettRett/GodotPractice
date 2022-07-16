@@ -67,6 +67,8 @@ func _player_disconnected(id) -> void:
 	
 	if CommonPool.has_node(str(id)):
 		CommonPool.get_node(str(id)).queue_free()
+		tagMap[id][1].queue_free()
+		tagMap.erase(id)
 
 func _on_Create_server_pressed():
 	ConnServer.create_server()

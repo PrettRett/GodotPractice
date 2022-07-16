@@ -1,0 +1,90 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Mapas/AutoTileForest_light.tres" type="TileSet" id=1]
+[ext_resource path="res://Elements/Diana.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 84.4338, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 4.10373, 4.1477 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 9.55849, 2.88484 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 13.4989, 1.19826 )
+
+[node name="Platform_Versus" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 65544, 2, 0, 1, 3, 0, 1, 4, 0, 65546, 5, 0, 65546, 6, 0, 1, 7, 0, 1, 8, 0, 1, 9, 0, 65544, 10, 0, 2, 65536, 0, 131072, 65537, 0, 131073, 65538, 0, 131073, 65539, 0, 131073, 65540, 0, 131073, 65541, 0, 131073, 65542, 0, 131073, 65543, 0, 131073, 65544, 0, 131073, 65545, 0, 131073, 65546, 0, 131074 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileMap"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 88.6294, 15.4597 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 14.1676, 0.841846 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="HighScoreArea" type="Area2D" parent="Sprite"]
+position = Vector2( 41.5305, -14.866 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/HighScoreArea"]
+position = Vector2( -31.2136, 6.9684 )
+rotation = 0.764454
+shape = SubResource( 2 )
+
+[node name="MedScoreArea" type="Area2D" parent="Sprite"]
+position = Vector2( 41.5305, -14.866 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/MedScoreArea"]
+position = Vector2( -31.6048, 6.73934 )
+rotation = 0.764454
+shape = SubResource( 3 )
+
+[node name="LowScoreArea" type="Area2D" parent="Sprite"]
+position = Vector2( 41.5305, -14.866 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/LowScoreArea"]
+position = Vector2( -31.1127, 6.54074 )
+rotation = 0.764454
+shape = SubResource( 4 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 39.1676, 28.8418 )
+scale = Vector2( 1, -1 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="HighScoreArea" type="Area2D" parent="Sprite2"]
+position = Vector2( 41.5305, -14.866 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2/HighScoreArea"]
+position = Vector2( -31.2136, 6.9684 )
+rotation = 0.764454
+shape = SubResource( 2 )
+
+[node name="MedScoreArea" type="Area2D" parent="Sprite2"]
+position = Vector2( 41.5305, -14.866 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2/MedScoreArea"]
+position = Vector2( -31.6048, 6.73934 )
+rotation = 0.764454
+shape = SubResource( 3 )
+
+[node name="LowScoreArea" type="Area2D" parent="Sprite2"]
+position = Vector2( 41.5305, -14.866 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2/LowScoreArea"]
+position = Vector2( -31.1127, 6.54074 )
+rotation = 0.764454
+shape = SubResource( 4 )
