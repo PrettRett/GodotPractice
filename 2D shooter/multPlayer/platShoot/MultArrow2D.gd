@@ -19,9 +19,21 @@ var collided = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	anim.play("normal")
+	
+
+func master_shoot(speedValue):
+	rpc("shoot",speedValue)
+
+sync func shoot(speedValue):
+	imShot = true
+	speed = speedValue
+	rset("imShot",true)
+	rset("speed",speedValue)
+	pass
 
 func set_speed(speed_value):
 	speed = speed_value
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -41,7 +53,14 @@ func _process(delta):
 			else:
 				speed = speed.bounce(collision.get_normal())*0.7
 
+func destroyer():
+	if is_network_master():
+		rpc("destroy")
+
+sync func destroy() -> void:
+	queue_free()
 
 func _on_selfDestroyer_timeout():
 	anim.play("fade")
+	imShot = false
 	pass # Replace with function body.
