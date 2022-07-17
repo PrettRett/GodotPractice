@@ -65,3 +65,9 @@ anims/normal = SubResource( 2 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PoolVector2Array( -1.7218, -1.39791, -8.08576, -8.64576, 0.0459595, -19.9595, 7.82413, -8.82253, 1.63696, -1.39791 )
+
+[node name="selfDestroyer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="selfDestroyer" to="." method="_on_selfDestroyer_timeout"]

@@ -38,7 +38,7 @@ func _ready():
 
 func _process(_delta: float) -> void:
 	if get_tree().network_peer != null:
-		if get_tree().get_network_connected_peers().size() >= 1 and get_tree().is_network_server():
+		if get_tree().get_network_connected_peers().size() >= 0 and get_tree().is_network_server():
 			startButt.show()
 		else:
 			startButt.hide()
@@ -100,9 +100,14 @@ func _on_Start_game_pressed():
 
 sync func switch_to_game() -> void:
 	for child in CommonPool.get_children():
-		if child.is_in_group("Player"):
-			#prepare to start
-			pass
+		print("passed :", child.name)
+		#prepare to start
+		pass
+	get_tree().change_scene("res://Niveles/NivelOnline.tscn")
 	
 	#start game
 
+
+
+func _on_Button_pressed():
+	rpc("switch_to_game")

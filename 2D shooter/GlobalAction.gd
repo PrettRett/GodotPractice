@@ -1,6 +1,6 @@
 extends Node
 
-const multPlayerBaseSpeed = 3000
+const multPlayerBaseSpeed = 300
 
 # Declare member variables here. Examples:
 # var a = 2

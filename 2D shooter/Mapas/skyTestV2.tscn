@@ -15,9 +15,9 @@ width = 600
 motion_scale = Vector2( 0, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxLayer"]
-position = Vector2( 1085.12, 325.103 )
+position = Vector2( 1085.12, -52.9199 )
 rotation = -1.5708
-scale = Vector2( 1.10222, 1097.63 )
+scale = Vector2( 2.3623, 2204.19 )
 texture = SubResource( 2 )
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]

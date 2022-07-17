@@ -17,6 +17,7 @@ position = Vector2( -38.891, 12.091 )
 [node name="Player" type="Sprite" parent="."]
 scale = Vector2( 2.5, 2.5 )
 texture = ExtResource( 2 )
+flip_h = true
 region_enabled = true
 region_rect = Rect2( 2, 1, 12, 15 )
 
@@ -36,3 +37,6 @@ scale = Vector2( 1.25, 1.25 )
 shape = SubResource( 1 )
 
 [node name="Tween" type="Tween" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+smoothing_enabled = true
