@@ -40,3 +40,9 @@ shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 smoothing_enabled = true
+
+[node name="NetUpdate" type="Timer" parent="."]
+wait_time = 0.03
+autostart = true
+
+[connection signal="timeout" from="NetUpdate" to="." method="_on_NetUpdate_timeout"]

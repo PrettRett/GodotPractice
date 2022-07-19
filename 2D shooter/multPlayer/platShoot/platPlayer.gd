@@ -12,7 +12,8 @@ onready var tween = $Tween
 var velocity = Vector2(0, 0)
 
 puppet var puppet_position = Vector2(0, 0) setget puppet_position_set
-puppet var puppet_velocity = Vector2()
+puppet var puppet_velocity = Vector2(0,0)
+puppet var puppet_flip_h = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -51,6 +52,10 @@ func _process(delta: float) -> void:
 			if false:#Input.is_action_pressed("click") and can_shoot and not is_reloading:
 				rpc("instance_bullet", get_tree().get_network_unique_id())
 		else:
+			if puppet_flip_h:
+				img.flip_h = true
+			else:
+				img.flip_h = false
 			#rotation = lerp_angle(rotation, puppet_rotation, delta * 8)
 			
 			if not tween.is_active():
@@ -63,3 +68,14 @@ func _process(delta: float) -> void:
 		if get_tree().has_network_peer():
 			if get_tree().is_network_server():
 				rpc("destroy")
+
+
+func _on_NetUpdate_timeout():
+	if get_tree().has_network_peer():
+		if is_network_master():
+			rset_unreliable("puppet_position", global_position)
+			rset_unreliable("puppet_velocity", velocity)
+			rset_unreliable("puppet_flip_h", img.flip_h)
+		else:
+			($NetUpdate as Timer).autostart = false
+			($NetUpdate as Timer).stop()
