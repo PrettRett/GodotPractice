@@ -45,4 +45,8 @@ smoothing_enabled = true
 wait_time = 0.03
 autostart = true
 
+[node name="AttTimer" type="Timer" parent="."]
+wait_time = 0.25
+
 [connection signal="timeout" from="NetUpdate" to="." method="_on_NetUpdate_timeout"]
+[connection signal="timeout" from="AttTimer" to="." method="_on_AttTimer_timeout"]
