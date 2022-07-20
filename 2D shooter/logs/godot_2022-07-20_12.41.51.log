@@ -1,0 +1,246 @@
+Godot Engine v3.4.4.stable.official.419e713a2 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Quadro P520/PCIe/SSE2
+OpenGL ES Batching: ON
+ 
+Create butt
+Player 1979722288 has connected
+passed :1
+passed :1979722288
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/KinematicArrow2D from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/KinematicArrow2D from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@11 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@11 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@12 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@12 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@13 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@13 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@14 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@14 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@15 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@15 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@16 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@16 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@17 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@17 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@18 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@18 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@19 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@19 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@20 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@20 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@21 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@21 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@22 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@22 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@23 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@23 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@24 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@24 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@25 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@25 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@26 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@26 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@27 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@27 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@28 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@28 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@29 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@29 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@30 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@30 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@31 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@31 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@32 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@32 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1979722288/platPlay/KinematicArrow2D from: 1979722288. Mode is 0, master is 1979722288.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@33 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@33 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@34 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@34 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@35 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@35 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@36 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@36 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@37 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@37 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@38 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@38 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@39 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@39 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@40 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@40 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@41 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@41 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@42 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@42 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@43 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@43 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@44 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@44 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@45 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@45 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@46 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@46 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@47 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@47 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@48 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@48 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@49 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@49 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@50 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@50 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@51 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@51 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@52 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@52 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@53 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@53 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@54 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@54 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@55 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@55 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@56 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@56 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@57 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@57 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@58 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@58 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@59 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@59 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@60 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@60 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@61 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@61 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@62 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@62 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@63 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@63 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@64 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@64 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@65 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@65 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@66 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@66 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@67 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@67 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'imShot' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@68 from: 1979722288. Mode is 3, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.
+ERROR: RSET 'speed' is not allowed on node /root/CommonPool/1/platPlay/@KinematicArrow2D@68 from: 1979722288. Mode is 0, master is 1.
+   at: _process_rset (core/io/multiplayer_api.cpp:337) - Condition "!can_call" is true.

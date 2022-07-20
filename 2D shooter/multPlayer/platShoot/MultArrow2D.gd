@@ -8,9 +8,9 @@ onready var anim = $AnimationPlayer
 
 const GRAVITY = 40.0
 
-puppet var pup_speed = Vector2(1,0)
+var pup_speed = Vector2(1,0)
 puppet var pup_position = Vector2(1,0)
-puppet var imShot = false
+var imShot = false
 
 var speed = Vector2(1,0) setget set_speed
 
@@ -25,10 +25,8 @@ func master_shoot(speedValue):
 	rpc("shoot",speedValue)
 
 sync func shoot(speedValue):
-	imShot = true
 	speed = speedValue
-	rset("imShot",true)
-	rset("speed",speedValue)
+	imShot = true
 	pass
 
 func set_speed(speed_value):
