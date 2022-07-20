@@ -18,13 +18,14 @@ var collided = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	rpc_config("shoot",MultiplayerAPI.RPC_MODE_REMOTESYNC)
 	anim.play("normal")
 	
 
 func master_shoot(speedValue):
 	rpc("shoot",speedValue)
 
-sync func shoot(speedValue):
+remotesync func shoot(speedValue):
 	speed = speedValue
 	imShot = true
 	pass
