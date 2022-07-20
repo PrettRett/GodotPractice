@@ -53,7 +53,8 @@ scale = Vector2( 0.2, 0.2 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -0.314972, 20.1587 )
+position = Vector2( 0, 30 )
+scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )
 hframes = 10
 vframes = 2
@@ -64,6 +65,7 @@ anims/fade = SubResource( 1 )
 anims/normal = SubResource( 2 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2( 1.5, 1.5 )
 polygon = PoolVector2Array( -1.7218, -1.39791, -8.08576, -8.64576, 0.0459595, -19.9595, 7.82413, -8.82253, 1.63696, -1.39791 )
 
 [node name="selfDestroyer" type="Timer" parent="."]
