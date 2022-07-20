@@ -9,6 +9,9 @@ onready var block = $H_OneW_Block/TileMap/StaticBody2D/CollisionShape2D
 onready var img = $Player
 onready var tween = $Tween
 onready var bSprite = ($Sprite)
+onready var tweenLife = $TweenLife
+onready var userNameLabel = $Container/Label
+onready var healthBar = $Container/VidaBar
 
 var velocity = Vector2(0, 0)
 
@@ -16,20 +19,26 @@ puppet var puppet_position = Vector2(0, 0) setget puppet_position_set
 puppet var puppet_velocity = Vector2(0,0)
 puppet var puppet_flip_h = true
 
-puppet var health = 100.0
+puppet var health = 100.0 setget health_change
 
 var dmg_modifier = 0.1
 var speed_modifier = 1.0
 
 var recoil = false
 var shooting = false
+var can_shoot = true
 var createdArrow = null
+var finalSpeed = Vector2(0,0)
 	
 var arrow = preload("res://multPlayer/platShoot/MultArrow2D.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	block.disabled = true
+	var nameToWrite = get_parent().username
+	if nameToWrite.length() > 10:
+		nameToWrite.erase(10,nameToWrite.length()-10)
+	userNameLabel.text = nameToWrite
 	pass # Replace with function body.
 
 func puppet_position_set(new_value) -> void:
@@ -37,6 +46,11 @@ func puppet_position_set(new_value) -> void:
 	
 	tween.interpolate_property(self, "global_position", global_position, puppet_position, 0.1)
 	tween.start()
+
+func health_change(newHealth):
+	tweenLife.interpolate_property(healthBar, "Value", health, newHealth, 0.5)
+	tweenLife.start()
+	health = newHealth
 
 func _process(delta: float) -> void:
 	#if username_text_instance != null:
@@ -53,14 +67,14 @@ func _process(delta: float) -> void:
 					img.flip_h = true
 				elif x_input < 0:
 					img.flip_h = false
-				velocity = Vector2(x_input, y_input).normalized()
-				
-				move_and_collide(velocity * GlobalAction.multPlayerBaseSpeed*delta*speed_modifier)
+			velocity = Vector2(x_input, y_input).normalized()
+			finalSpeed = velocity * GlobalAction.multPlayerBaseSpeed*delta*speed_modifier
+			move_and_collide(finalSpeed)
 			
 			if false:#Input.is_action_pressed("click") and can_shoot and not is_reloading:
 				rpc("instance_bullet", get_tree().get_network_unique_id())
 				
-			if Input.is_action_just_pressed("shoot") and recoil == false:
+			if can_shoot and Input.is_action_just_pressed("shoot") and recoil == false:
 				if shooting == false:
 					rpc("createArrow", get_tree().get_network_unique_id())
 					#emit_signal("start_shooting")
@@ -76,12 +90,13 @@ func _process(delta: float) -> void:
 				bSprite.flip_h=false
 				if Input.is_action_just_released("shoot"):
 					#emit_signal("stop_shooting")
-					createdArrow.master_shoot(velocityNormal.normalized()*600)
+					createdArrow.master_shoot(velocityNormal.normalized()*600 + (finalSpeed/delta))
 					bSprite.rotation = PI
 					bSprite.flip_h = img.flip_h
 					shooting = false
 					recoil = true
 					$AttTimer.start()
+					createdArrow = null
 			
 		else:
 			if puppet_flip_h:
@@ -105,6 +120,9 @@ remotesync func destroy() -> void:
 	print("i died: ", get_parent().name)
 	speed_modifier = 3.0
 	visible = false
+	can_shoot = false
+	if createdArrow != null:
+		createdArrow.destroyer()
 	($CollisionShape2D as CollisionShape2D).disabled = true
 
 sync func createArrow(id):
