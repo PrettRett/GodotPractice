@@ -6,7 +6,7 @@ extends KinematicBody2D
 # var b = "text"
 onready var anim = $AnimationPlayer
 
-const GRAVITY = 40.0
+const GRAVITY = 800.0
 
 var pup_speed = Vector2(1,0)
 puppet var pup_position = Vector2(1,0)
@@ -48,7 +48,7 @@ func _process(delta):
 				if !collided:
 					collided = true
 					if collision.get_collider().has_method("hitted"):
-						collision.get_collider().hitted(speed.abs(),self,collision)
+						collision.get_collider().hitted(speed,self,collision)
 			else:
 				speed = speed.bounce(collision.get_normal())*0.7
 
@@ -56,7 +56,7 @@ func destroyer():
 	if is_network_master():
 		rpc("destroy")
 
-sync func destroy() -> void:
+remotesync func destroy() -> void:
 	queue_free()
 
 func _on_selfDestroyer_timeout():

@@ -16,6 +16,11 @@ puppet var puppet_position = Vector2(0, 0) setget puppet_position_set
 puppet var puppet_velocity = Vector2(0,0)
 puppet var puppet_flip_h = true
 
+puppet var health = 100.0
+
+var dmg_modifier = 0.1
+var speed_modifier = 1.0
+
 var recoil = false
 var shooting = false
 var createdArrow = null
@@ -50,7 +55,7 @@ func _process(delta: float) -> void:
 					img.flip_h = false
 				velocity = Vector2(x_input, y_input).normalized()
 				
-				move_and_collide(velocity * GlobalAction.multPlayerBaseSpeed*delta)
+				move_and_collide(velocity * GlobalAction.multPlayerBaseSpeed*delta*speed_modifier)
 			
 			if false:#Input.is_action_pressed("click") and can_shoot and not is_reloading:
 				rpc("instance_bullet", get_tree().get_network_unique_id())
@@ -71,7 +76,7 @@ func _process(delta: float) -> void:
 				bSprite.flip_h=false
 				if Input.is_action_just_released("shoot"):
 					#emit_signal("stop_shooting")
-					createdArrow.master_shoot(velocityNormal.normalized()*500)
+					createdArrow.master_shoot(velocityNormal.normalized()*600)
 					bSprite.rotation = PI
 					bSprite.flip_h = img.flip_h
 					shooting = false
@@ -88,7 +93,7 @@ func _process(delta: float) -> void:
 			if not tween.is_active():
 				move_and_collide(puppet_velocity * GlobalAction.multPlayerBaseSpeed*delta)
 	
-	if false:#hp <= 0:
+	if health <= 0:
 		#if username_text_instance != null:
 		#	username_text_instance.visible = false
 		
@@ -96,10 +101,22 @@ func _process(delta: float) -> void:
 			if get_tree().is_network_server():
 				rpc("destroy")
 
+remotesync func destroy() -> void:
+	print("i died: ", get_parent().name)
+	speed_modifier = 3.0
+	visible = false
+	($CollisionShape2D as CollisionShape2D).disabled = true
+
 sync func createArrow(id):
-	createdArrow = GlobalAction.instance_node_at_location(arrow,self,self.global_position)
+	createdArrow = GlobalAction.instance_node_at_location(arrow,get_parent(),self.global_position)
 	createdArrow.set_network_master(id)
 	add_collision_exception_with(createdArrow)
+
+func hitted(dmg_val,src,collision):
+	if get_tree().has_network_peer():
+		if get_tree().is_network_server():
+			health += dmg_val.abs().length()*dmg_modifier
+			rset("health",health)
 
 func _on_NetUpdate_timeout():
 	if get_tree().has_network_peer():
