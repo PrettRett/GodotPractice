@@ -26,7 +26,7 @@ var speed_modifier = 1.0
 
 var recoil = false
 var shooting = false
-var can_shoot = true
+var is_alive = true
 var createdArrow = null
 var finalSpeed = Vector2(0,0)
 	
@@ -74,7 +74,7 @@ func _process(delta: float) -> void:
 			if false:#Input.is_action_pressed("click") and can_shoot and not is_reloading:
 				rpc("instance_bullet", get_tree().get_network_unique_id())
 				
-			if can_shoot and Input.is_action_just_pressed("shoot") and recoil == false:
+			if is_alive and Input.is_action_just_pressed("shoot") and recoil == false:
 				if shooting == false:
 					rpc("createArrow", get_tree().get_network_unique_id())
 					#emit_signal("start_shooting")
@@ -120,10 +120,13 @@ remotesync func destroy() -> void:
 	print("i died: ", get_parent().name)
 	speed_modifier = 3.0
 	visible = false
-	can_shoot = false
+	is_alive = false
 	if createdArrow != null:
 		createdArrow.destroyer()
 	($CollisionShape2D as CollisionShape2D).disabled = true
+
+func is_player_dead():
+	return not is_alive
 
 sync func createArrow(id):
 	createdArrow = GlobalAction.instance_node_at_location(arrow,get_parent(),self.global_position)
