@@ -19,7 +19,7 @@ puppet var puppet_position = Vector2(0, 0) setget puppet_position_set
 puppet var puppet_velocity = Vector2(0,0)
 puppet var puppet_flip_h = true
 
-puppet var health = 100.0 setget health_change
+remotesync var health = 100.0 setget health_change
 
 var dmg_modifier = 0.1
 var speed_modifier = 1.0

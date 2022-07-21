@@ -1,10 +1,46 @@
-Godot Engine v3.4.4.stable.official.419e713a2 - https://godotengine.org
-OpenGL ES 3.0 Renderer: Quadro P520/PCIe/SSE2
+Godot Engine v3.4.2.stable.official.45eaa2daf - https://godotengine.org
+OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 1050/PCIe/SSE2
 OpenGL ES Batching: ON
  
-Create butt
-Player 1024831399 has connected
+join butt
+Player 1 has connected
+Successfully connected to the server
+ERROR: (Node not found: "CommonPool/1451139052" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: CommonPool/1451139052.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: CommonPool/1451139052.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1451139052" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: CommonPool/1451139052.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: CommonPool/1451139052.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1451139052" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1451139052.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1451139052.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1451139052" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1451139052.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1451139052.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1451139052" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1451139052.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1451139052.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1451139052" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1451139052.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1451139052.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
 passed :1
-passed :1024831399
-i died: 1
-game has ended, for all
+passed :1451139052
+Disconnected from the server
