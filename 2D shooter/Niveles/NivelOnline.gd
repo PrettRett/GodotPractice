@@ -32,7 +32,7 @@ func _process(delta):
 func _on_CheckEnd_timeout():
 	var nAlive = 0
 	for child in CommonPool.get_children():
-		for player in child:
+		for player in child.get_children():
 			if player.has_method("is_player_dead"):
 				if not player.is_player_dead():
 					nAlive += 1

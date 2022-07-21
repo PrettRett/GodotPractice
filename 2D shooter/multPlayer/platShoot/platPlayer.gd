@@ -35,7 +35,7 @@ var arrow = preload("res://multPlayer/platShoot/MultArrow2D.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	block.disabled = true
-	var nameToWrite = get_parent().username
+	var nameToWrite = get_parent().proxy_username_get()
 	if nameToWrite.length() > 10:
 		nameToWrite.erase(10,nameToWrite.length()-10)
 	userNameLabel.text = nameToWrite
@@ -48,7 +48,7 @@ func puppet_position_set(new_value) -> void:
 	tween.start()
 
 func health_change(newHealth):
-	tweenLife.interpolate_property(healthBar, "Value", health, newHealth, 0.5)
+	tweenLife.interpolate_property(healthBar, "value", health, newHealth, 0.5)
 	tweenLife.start()
 	health = newHealth
 
@@ -57,7 +57,7 @@ func _process(delta: float) -> void:
 	#	username_text_instance.name = "username" + name
 	
 	if get_tree().has_network_peer():
-		if is_network_master() and visible:
+		if is_network_master():
 			($Camera2D as Camera2D).current = true
 			var x_input = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
 			var y_input = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
@@ -108,12 +108,12 @@ func _process(delta: float) -> void:
 			if not tween.is_active():
 				move_and_collide(puppet_velocity * GlobalAction.multPlayerBaseSpeed*delta)
 	
-	if health <= 0:
+	if health <= 0 and is_alive:
 		#if username_text_instance != null:
 		#	username_text_instance.visible = false
 		
 		if get_tree().has_network_peer():
-			if get_tree().is_network_server():
+			if is_network_master():
 				rpc("destroy")
 
 remotesync func destroy() -> void:
@@ -121,7 +121,7 @@ remotesync func destroy() -> void:
 	speed_modifier = 3.0
 	visible = false
 	is_alive = false
-	if createdArrow != null:
+	if is_instance_valid(createdArrow):
 		createdArrow.destroyer()
 	($CollisionShape2D as CollisionShape2D).disabled = true
 
@@ -135,8 +135,8 @@ sync func createArrow(id):
 
 func hitted(dmg_val,src,collision):
 	if get_tree().has_network_peer():
-		if get_tree().is_network_server():
-			health += dmg_val.abs().length()*dmg_modifier
+		if is_network_master():
+			health += -1* dmg_val.abs().length()*dmg_modifier
 			rset("health",health)
 
 func _on_NetUpdate_timeout():
