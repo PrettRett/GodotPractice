@@ -39,6 +39,7 @@ func _ready():
 	if nameToWrite.length() > 10:
 		nameToWrite.erase(10,nameToWrite.length()-10)
 	userNameLabel.text = nameToWrite
+	($Camera2D as Camera2D).current = true
 	pass # Replace with function body.
 
 func puppet_position_set(new_value) -> void:
@@ -58,7 +59,6 @@ func _process(delta: float) -> void:
 	
 	if get_tree().has_network_peer():
 		if is_network_master():
-			($Camera2D as Camera2D).current = true
 			var x_input = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
 			var y_input = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
 			

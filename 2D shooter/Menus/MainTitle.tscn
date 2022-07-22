@@ -42,13 +42,13 @@ __meta__ = {
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/ColorRect/CenterContainer"]
 margin_left = 258.0
-margin_top = 100.0
+margin_top = 76.0
 margin_right = 765.0
-margin_bottom = 400.0
+margin_bottom = 424.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/ColorRect/CenterContainer/MarginContainer"]
 margin_right = 507.0
-margin_bottom = 300.0
+margin_bottom = 348.0
 
 [node name="CenterContainer" type="CenterContainer" parent="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer"]
 margin_right = 507.0
@@ -75,10 +75,22 @@ margin_bottom = 44.0
 custom_fonts/font = SubResource( 2 )
 text = "Play singleplayer"
 
-[node name="CenterContainer3" type="CenterContainer" parent="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer"]
+[node name="CenterContainerMult" type="CenterContainer" parent="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer"]
 margin_top = 208.0
 margin_right = 507.0
 margin_bottom = 252.0
+
+[node name="Label" type="Label" parent="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer/CenterContainerMult"]
+margin_left = 102.0
+margin_right = 405.0
+margin_bottom = 44.0
+custom_fonts/font = SubResource( 2 )
+text = "Play Multiplayer"
+
+[node name="CenterContainer3" type="CenterContainer" parent="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer"]
+margin_top = 256.0
+margin_right = 507.0
+margin_bottom = 300.0
 
 [node name="Label" type="Label" parent="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer/CenterContainer3"]
 margin_left = 181.0
@@ -88,9 +100,9 @@ custom_fonts/font = SubResource( 2 )
 text = "Settings"
 
 [node name="CenterContainer4" type="CenterContainer" parent="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer"]
-margin_top = 256.0
+margin_top = 304.0
 margin_right = 507.0
-margin_bottom = 300.0
+margin_bottom = 348.0
 
 [node name="Label" type="Label" parent="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer/CenterContainer4"]
 margin_left = 215.0
@@ -100,5 +112,6 @@ custom_fonts/font = SubResource( 2 )
 text = "Quit"
 
 [connection signal="gui_input" from="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer/CenterContainer2" to="." method="_on_CenterContainer2_gui_input"]
+[connection signal="gui_input" from="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer/CenterContainerMult" to="." method="_on_CenterContainerMult_gui_input"]
 [connection signal="gui_input" from="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer/CenterContainer3" to="." method="_on_CenterContainer3_gui_input"]
 [connection signal="gui_input" from="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer/CenterContainer4" to="." method="_on_CenterContainer4_gui_input"]
