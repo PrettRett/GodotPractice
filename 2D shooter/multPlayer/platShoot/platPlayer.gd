@@ -27,6 +27,7 @@ var speed_modifier = 1.0
 var recoil = false
 var shooting = false
 var is_alive = true
+var cameraToSet = true
 var createdArrow = null
 var finalSpeed = Vector2(0,0)
 var score = 0
@@ -40,7 +41,6 @@ func _ready():
 	if nameToWrite.length() > 10:
 		nameToWrite.erase(10,nameToWrite.length()-10)
 	userNameLabel.text = nameToWrite
-	($Camera2D as Camera2D).current = true
 	pass # Replace with function body.
 
 func puppet_position_set(new_value) -> void:
@@ -66,6 +66,8 @@ func _process(delta: float) -> void:
 	
 	if get_tree().has_network_peer():
 		if is_network_master():
+			if cameraToSet:
+				($Camera2D as Camera2D).current = true
 			var x_input = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
 			var y_input = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
 			

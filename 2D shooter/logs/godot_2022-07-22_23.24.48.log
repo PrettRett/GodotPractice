@@ -3,9 +3,11 @@ OpenGL ES 3.0 Renderer: Quadro P520/PCIe/SSE2
 OpenGL ES Batching: ON
  
 label4
-Create butt
+join butt
+Player 1 has connected
+Successfully connected to the server
 passed :1
+passed :815851660
+[1:[Node:2251], 815851660:[Node:2255]]
+i died: 1
 game has ended, for all
-[platPlay:[KinematicBody2D:2286]]
-passed :1
-passed :@1@11
