@@ -5,4 +5,9 @@ OpenGL ES Batching: ON
 label4
 Create butt
 passed :1
+[1:[Node:2055]]
 game has ended, for all
+[platPlay:[KinematicBody2D:2430]]
+passed :1
+passed :@1@11
+[1:[Node:2055], @1@11:[Node:2896]]

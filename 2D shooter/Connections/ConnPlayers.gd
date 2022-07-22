@@ -103,11 +103,17 @@ sync func switch_to_game() -> void:
 		print("passed :", child.name)
 		#prepare to start
 		pass
-	get_tree().change_scene("res://Niveles/NivelOnline.tscn")
+	($MarginContainer).visible = false
+	startButt.disabled = true
+	var auxLoad = load("res://Niveles/NivelOnline.tscn")
+	GlobalAction.instance_node(auxLoad,self)
 	
 	#start game
 
-
+func returnToMenu():
+	($MarginContainer).visible = true
+	startButt.disabled = false
+	pass
 
 func _on_Button_pressed():
 	rpc("switch_to_game")

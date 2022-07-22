@@ -35,6 +35,12 @@ func proxy_username_get():
 	
 	return proxyUsername
 
+func add_score(value):
+	for child in get_children():
+		if child.has_method("add_score"):
+			child.add_score(value)
+	pass
+
 func puppet_username_set (newName):
 	puppet_username = newName
 	

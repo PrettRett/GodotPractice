@@ -49,6 +49,7 @@ func _process(delta):
 					collided = true
 					if collision.get_collider().has_method("hitted"):
 						collision.get_collider().hitted(speed,self,collision)
+						get_parent().add_score(speed.length())
 			else:
 				speed = speed.bounce(collision.get_normal())*0.7
 

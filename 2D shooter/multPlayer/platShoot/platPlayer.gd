@@ -29,6 +29,7 @@ var shooting = false
 var is_alive = true
 var createdArrow = null
 var finalSpeed = Vector2(0,0)
+var score = 0
 	
 var arrow = preload("res://multPlayer/platShoot/MultArrow2D.tscn")
 
@@ -52,6 +53,12 @@ func health_change(newHealth):
 	tweenLife.interpolate_property(healthBar, "value", health, newHealth, 0.5)
 	tweenLife.start()
 	health = newHealth
+
+func add_score(value):
+	score += value
+
+func get_score():
+	return score
 
 func _process(delta: float) -> void:
 	#if username_text_instance != null:
