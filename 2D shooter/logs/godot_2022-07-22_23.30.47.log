@@ -3,10 +3,9 @@ OpenGL ES 3.0 Renderer: Quadro P520/PCIe/SSE2
 OpenGL ES Batching: ON
  
 label4
-Create butt
-Player 379901787 has connected
+join butt
+Player 1 has connected
+Successfully connected to the server
 passed :1
-passed :379901787
-[1:[Node:2030], 379901787:[Node:2036]]
-Player 379901787 has disconnected
-game has ended, for all
+passed :1633794347
+[1:[Node:2066], 1633794347:[Node:2070]]

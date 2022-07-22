@@ -12,6 +12,7 @@ onready var bSprite = ($Sprite)
 onready var tweenLife = $TweenLife
 onready var userNameLabel = $Container/Label
 onready var healthBar = $Container/VidaBar
+onready var myCamera = $Camera2D
 
 var velocity = Vector2(0, 0)
 
@@ -67,7 +68,8 @@ func _process(delta: float) -> void:
 	if get_tree().has_network_peer():
 		if is_network_master():
 			if cameraToSet:
-				($Camera2D as Camera2D).current = true
+				myCamera.current = true
+				cameraToSet = false
 			var x_input = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
 			var y_input = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
 			

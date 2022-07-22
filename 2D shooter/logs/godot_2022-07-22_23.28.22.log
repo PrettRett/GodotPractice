@@ -4,6 +4,7 @@ OpenGL ES Batching: ON
  
 label4
 Create butt
+Player 734963980 has connected
 passed :1
-[1:[Node:2029]]
-game has ended, for all
+passed :734963980
+[1:[Node:1912], 734963980:[Node:2166]]
