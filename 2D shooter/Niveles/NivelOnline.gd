@@ -10,13 +10,19 @@ onready var endScreen = preload("res://multPlayer/platShoot/onlineEnd.tscn")
 onready var position_1 = $Positions/Position_1
 onready var position_2 = $Positions/Position_2
 
-var nPosQ = 3
+var nPosQ = 5
 
 var only_one_player = false
 var player_alive = null
 
+remotesync var xPosArray = []
+remotesync var yPosArray = []
+
+remotesync var boolForSync = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	($CheckEnd as Timer).autostart = false
+	($CheckEnd as Timer).stop()
 	erase_all_characters()
 	
 	
@@ -24,25 +30,33 @@ func _ready():
 	
 	var TotalPos = CommonPool.get_children().size()
 	
-	var xPosArray = []
-	var yPosArray = []
-	
-	for i in range(TotalPos):
-		var hVal = int(rand_range(0,nPosQ+1))
-		while xPosArray.count(hVal) != 0:
-			hVal = int(rand_range(0,nPosQ+1))
-		xPosArray.append(hVal)
-		var vVal = int(rand_range(0,nPosQ+1))
-		while xPosArray.count(vVal) != 0:
-			vVal = int(rand_range(0,nPosQ+1))
-		yPosArray.append(vVal)
+	if get_tree().has_network_peer():
+		if get_tree().is_network_server():
+			for i in range(TotalPos):
+				var hVal = int(rand_range(0,nPosQ+1))
+				while xPosArray.count(hVal) != 0:
+					hVal = int(rand_range(0,nPosQ+1))
+				xPosArray.append(float(hVal))
+				var vVal = int(rand_range(0,nPosQ+1))
+				while xPosArray.count(vVal) != 0:
+					vVal = int(rand_range(0,nPosQ+1))
+				yPosArray.append(float(vVal))
+			rset("yPosArray",yPosArray)
+			rset("xPosArray",xPosArray)
+			rset("boolForSync",true)
+		else:
+			while boolForSync == false:
+				yield(get_tree().create_timer(0.05), "timeout")
+		
 	var auxIndex = 0
-	print(CommonPool.get_children())
+	
 	for child in CommonPool.get_children():
 		var startPosition = Vector2(xPosArray[auxIndex]*posDelta.x,yPosArray[auxIndex]*posDelta.y)
 		instance_character(int(child.name), child,startPosition)
 		#Create player
 		pass
+	($CheckEnd as Timer).autostart = true
+	($CheckEnd as Timer).start()
 	
 
 func erase_all_characters():
@@ -76,11 +90,15 @@ func _on_CheckEnd_timeout():
 	for child in CommonPool.get_children():
 		for player in child.get_children():
 			if player.has_method("is_player_dead"):
-				player.updateScore()
 				if not player.is_player_dead():
 					player_alive = player
 					nAlive += 1
 	if nAlive <= 1:
+		for child in CommonPool.get_children():
+			for player in child.get_children():
+				if player.has_method("is_player_dead"):
+					player.updateScore()
+		yield(get_tree().create_timer(0.3), "timeout")
 		only_one_player = true
 		print("game has ended, for all")
 		($CheckEnd as Timer).autostart = false
