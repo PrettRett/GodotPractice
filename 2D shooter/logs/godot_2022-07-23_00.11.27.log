@@ -1,0 +1,136 @@
+Godot Engine v3.4.2.stable.official.45eaa2daf - https://godotengine.org
+OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 1050/PCIe/SSE2
+OpenGL ES Batching: ON
+ 
+label4
+Create butt
+Player 1633268957 has connected
+passed :1
+passed :1633268957
+[1:[Node:1969], 1633268957:[Node:3525]]
+SCRIPT ERROR: Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+   at: _process (res://multPlayer/platShoot/platPlayer.gd:125) - Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+SCRIPT ERROR: Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+   at: _process (res://multPlayer/platShoot/platPlayer.gd:125) - Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+SCRIPT ERROR: Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+   at: _process (res://multPlayer/platShoot/platPlayer.gd:125) - Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+SCRIPT ERROR: Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+   at: _process (res://multPlayer/platShoot/platPlayer.gd:125) - Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+SCRIPT ERROR: Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+   at: _process (res://multPlayer/platShoot/platPlayer.gd:125) - Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+SCRIPT ERROR: Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+   at: _process (res://multPlayer/platShoot/platPlayer.gd:125) - Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+SCRIPT ERROR: Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+   at: _process (res://multPlayer/platShoot/platPlayer.gd:125) - Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+SCRIPT ERROR: Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+   at: _process (res://multPlayer/platShoot/platPlayer.gd:125) - Invalid set index 'global_position' (on base: 'Nil') with value of type 'Vector2'.
+ERROR: (Node not found: "CommonPool/1633268957/@KinematicArrow2D@66" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@66.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@66.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/@KinematicArrow2D@96" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@96.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@96.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/@KinematicArrow2D@96" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1633268957/@KinematicArrow2D@96.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1633268957/@KinematicArrow2D@96.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/@KinematicArrow2D@103" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@103.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@103.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/@KinematicArrow2D@109" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@109.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@109.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/@KinematicArrow2D@103" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1633268957/@KinematicArrow2D@103.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1633268957/@KinematicArrow2D@103.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/@KinematicArrow2D@111" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@111.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@111.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/@KinematicArrow2D@109" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1633268957/@KinematicArrow2D@109.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1633268957/@KinematicArrow2D@109.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/@KinematicArrow2D@111" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1633268957/@KinematicArrow2D@111.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1633268957/@KinematicArrow2D@111.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/@KinematicArrow2D@131" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@131.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@131.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/@KinematicArrow2D@131" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1633268957/@KinematicArrow2D@131.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1633268957/@KinematicArrow2D@131.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/@KinematicArrow2D@160" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@160.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: CommonPool/1633268957/@KinematicArrow2D@160.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+i died: 1633268957
+game has ended, for all
+ERROR: (Node not found: "CommonPool/1633268957/platPlay" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1633268957/platPlay.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1633268957/platPlay.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/platPlay" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1633268957/platPlay.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1633268957/platPlay.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/platPlay" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1633268957/platPlay.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1633268957/platPlay.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/platPlay" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1633268957/platPlay.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1633268957/platPlay.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/platPlay" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1633268957/platPlay.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1633268957/platPlay.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1633268957/platPlay" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1633268957/platPlay.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1633268957/platPlay.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.

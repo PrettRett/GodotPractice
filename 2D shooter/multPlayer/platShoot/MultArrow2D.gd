@@ -16,16 +16,22 @@ var speed = Vector2(1,0) setget set_speed
 
 var collided = false
 
+var followObj = null
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	rpc_config("shoot",MultiplayerAPI.RPC_MODE_REMOTESYNC)
 	anim.play("normal")
 	
 
-func master_shoot(speedValue):
-	rpc("shoot",speedValue)
+func bind_postion(obj):
+	followObj = obj
 
-remotesync func shoot(speedValue):
+func master_shoot(speedValue,initPos):
+	rpc("shoot",speedValue,initPos)
+
+remotesync func shoot(speedValue,initPos):
+	global_position = initPos
 	speed = speedValue
 	imShot = true
 	pass
@@ -52,6 +58,9 @@ func _process(delta):
 						get_parent().add_score(speed.length())
 			else:
 				speed = speed.bounce(collision.get_normal())*0.7
+	else:
+		if is_instance_valid(followObj):
+			global_position = followObj.global_position
 
 func destroyer():
 	if is_network_master():

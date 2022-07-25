@@ -31,7 +31,7 @@ var is_alive = true
 var cameraToSet = true
 var createdArrow = null
 var finalSpeed = Vector2(0,0)
-var score = 0
+remotesync var score = 0
 	
 var arrow = preload("res://multPlayer/platShoot/MultArrow2D.tscn")
 
@@ -57,6 +57,9 @@ func health_change(newHealth):
 
 func add_score(value):
 	score += value
+	if get_tree().has_network_peer():
+		if is_network_master():
+			rset("score",value)
 
 func get_score():
 	return score
@@ -94,14 +97,13 @@ func _process(delta: float) -> void:
 			if shooting and createdArrow != null:
 				var mousePos = get_local_mouse_position()
 				var auxPos = (($Sprite/Position2D as Position2D).position)
-				createdArrow.global_position = global_position + auxPos
 				var velocityNormal = auxPos.direction_to(mousePos)
 				createdArrow.rotation = velocityNormal.angle() + (PI/2)
 				bSprite.rotation = velocityNormal.angle()
 				bSprite.flip_h=false
 				if Input.is_action_just_released("shoot"):
 					#emit_signal("stop_shooting")
-					createdArrow.master_shoot(velocityNormal.normalized()*600 + (finalSpeed/delta))
+					createdArrow.master_shoot(velocityNormal.normalized()*600 + (finalSpeed/delta),createdArrow.global_position)
 					bSprite.rotation = PI
 					bSprite.flip_h = img.flip_h
 					shooting = false
@@ -118,6 +120,7 @@ func _process(delta: float) -> void:
 			
 			if not tween.is_active():
 				move_and_collide(puppet_velocity * GlobalAction.multPlayerBaseSpeed*delta)
+				var auxPos = (($Sprite/Position2D as Position2D).position)
 	
 	if health <= 0 and is_alive:
 		#if username_text_instance != null:
@@ -142,6 +145,7 @@ func is_player_dead():
 sync func createArrow(id):
 	createdArrow = GlobalAction.instance_node_at_location(arrow,get_parent(),self.global_position)
 	createdArrow.set_network_master(id)
+	createdArrow.bind_postion(($Sprite/Position2D as Position2D))
 	add_collision_exception_with(createdArrow)
 
 func hitted(dmg_val,src,collision):
