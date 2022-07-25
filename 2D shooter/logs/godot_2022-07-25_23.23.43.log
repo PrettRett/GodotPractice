@@ -3,7 +3,11 @@ OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 1050/PCIe/SSE2
 OpenGL ES Batching: ON
  
 label4
-Create butt
+join butt
+Player 1 has connected
+Successfully connected to the server
 passed :1
-[1:[Node:1994]]
+passed :44570817
+[1:[Node:2130], 44570817:[Node:2158]]
+i died: 1
 game has ended, for all

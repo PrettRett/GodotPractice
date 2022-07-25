@@ -61,6 +61,11 @@ func add_score(value):
 		if is_network_master():
 			rset("score",value)
 
+func updateScore():
+	if get_tree().has_network_peer():
+		if is_network_master():
+			rset("score",score)
+
 func get_score():
 	return score
 

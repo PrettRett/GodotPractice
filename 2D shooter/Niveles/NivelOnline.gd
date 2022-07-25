@@ -76,6 +76,7 @@ func _on_CheckEnd_timeout():
 	for child in CommonPool.get_children():
 		for player in child.get_children():
 			if player.has_method("is_player_dead"):
+				player.updateScore()
 				if not player.is_player_dead():
 					player_alive = player
 					nAlive += 1
