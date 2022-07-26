@@ -14,9 +14,9 @@ autostart = true
 [node name="Positions" type="Node" parent="."]
 
 [node name="Position_1" type="Position2D" parent="Positions"]
-position = Vector2( 41.5304, 67.9589 )
+position = Vector2( -252.958, -230.305 )
 
 [node name="Position_2" type="Position2D" parent="Positions"]
-position = Vector2( 994.843, 558.773 )
+position = Vector2( 1113.82, 657.55 )
 
 [connection signal="timeout" from="CheckEnd" to="." method="_on_CheckEnd_timeout"]

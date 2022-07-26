@@ -62,7 +62,7 @@ func add_score(value):
 	score += value
 	if get_tree().has_network_peer():
 		if is_network_master():
-			rset("score",value)
+			rset("score",score)
 
 func updateScore():
 	if get_tree().has_network_peer():
@@ -162,7 +162,7 @@ remotesync func spawn(position):
 func is_player_dead():
 	return not is_alive
 
-sync func createArrow(id):
+remotesync func createArrow(id):
 	createdArrow = GlobalAction.instance_node_at_location(arrow,get_parent(),self.global_position)
 	createdArrow.set_network_master(id)
 	createdArrow.bind_postion(($Sprite/Position2D as Position2D))
