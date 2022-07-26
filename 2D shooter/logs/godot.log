@@ -1,0 +1,29 @@
+Godot Engine v3.4.4.stable.official.419e713a2 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Quadro P520/PCIe/SSE2
+OpenGL ES Batching: ON
+ 
+label4
+join butt
+Player 1 has connected
+Successfully connected to the server
+ERROR: (Node not found: "CommonPool/816921019" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: CommonPool/816921019.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: CommonPool/816921019.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+passed :1
+passed :816921019
+[1:[Node:2372], 816921019:[Node:2392]]
+i died: 1
+game has ended, for all
+passed :1
+passed :816921019
+[1:[Node:2372], 816921019:[Node:2392]]
+i died: 816921019
+game has ended, for all
+passed :1
+passed :816921019
+[1:[Node:2372], 816921019:[Node:2392]]
+i died: 1
+game has ended, for all

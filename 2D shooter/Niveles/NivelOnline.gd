@@ -52,9 +52,9 @@ func erase_all_characters():
 	
 
 func instance_character(id, parent, position):
-	var character_instance = GlobalAction.instance_node_at_location(charBase, parent, position)
+	var character_instance = GlobalAction.instance_node(charBase, parent)
 	character_instance.set_network_master(id)
-	pass
+	character_instance.masterSpawn(position)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

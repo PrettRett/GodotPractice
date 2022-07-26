@@ -42,6 +42,9 @@ func _ready():
 	if nameToWrite.length() > 10:
 		nameToWrite.erase(10,nameToWrite.length()-10)
 	userNameLabel.text = nameToWrite
+    
+	visible = false
+	($CollisionShape2D as CollisionShape2D).disabled = true
 	pass # Replace with function body.
 
 func puppet_position_set(new_value) -> void:
@@ -144,6 +147,18 @@ remotesync func destroy() -> void:
 		createdArrow.destroyer()
 	($CollisionShape2D as CollisionShape2D).disabled = true
 
+func masterSpawn(position):
+	if get_tree().has_network_peer():
+		if is_network_master():
+			rpc("spawn",position)
+
+remotesync func spawn(position):
+	global_position = position
+	speed_modifier = 1.0
+	visible = true
+	is_alive = true
+	($CollisionShape2D as CollisionShape2D).disabled = false
+
 func is_player_dead():
 	return not is_alive
 
@@ -162,9 +177,10 @@ func hitted(dmg_val,src,collision):
 func _on_NetUpdate_timeout():
 	if get_tree().has_network_peer():
 		if is_network_master():
-			rset_unreliable("puppet_position", global_position)
-			rset_unreliable("puppet_velocity", velocity)
-			rset_unreliable("puppet_flip_h", img.flip_h)
+			if is_alive:
+				rset_unreliable("puppet_position", global_position)
+				rset_unreliable("puppet_velocity", velocity)
+				rset_unreliable("puppet_flip_h", img.flip_h)
 		else:
 			($NetUpdate as Timer).autostart = false
 			($NetUpdate as Timer).stop()
