@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+signal start_shooting
+signal stop_shooting
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -90,8 +92,8 @@ func _process(delta: float) -> void:
 				elif x_input < 0:
 					img.flip_h = false
 			velocity = Vector2(x_input, y_input).normalized()
-			finalSpeed = velocity * GlobalAction.multPlayerBaseSpeed*delta*speed_modifier
-			move_and_collide(finalSpeed)
+			finalSpeed = velocity * GlobalAction.multPlayerBaseSpeed*speed_modifier
+			move_and_collide(finalSpeed*delta)
 			
 			if false:#Input.is_action_pressed("click") and can_shoot and not is_reloading:
 				rpc("instance_bullet", get_tree().get_network_unique_id())
@@ -99,7 +101,7 @@ func _process(delta: float) -> void:
 			if is_alive and Input.is_action_just_pressed("shoot") and recoil == false:
 				if shooting == false:
 					rpc("createArrow", get_tree().get_network_unique_id())
-					#emit_signal("start_shooting")
+					emit_signal("start_shooting")
 				shooting = true
 			
 			if shooting and createdArrow != null:
@@ -110,14 +112,8 @@ func _process(delta: float) -> void:
 				bSprite.rotation = velocityNormal.angle()
 				bSprite.flip_h=false
 				if Input.is_action_just_released("shoot"):
-					#emit_signal("stop_shooting")
-					createdArrow.master_shoot(velocityNormal.normalized()*600 + (finalSpeed/delta),createdArrow.global_position)
-					bSprite.rotation = PI
-					bSprite.flip_h = img.flip_h
-					shooting = false
-					recoil = true
-					$AttTimer.start()
-					createdArrow = null
+					emit_signal("stop_shooting")
+					#createdArrow.master_shoot(velocityNormal.normalized()*600 + (finalSpeed),createdArrow.global_position)
 			
 		else:
 			if puppet_flip_h:
@@ -146,6 +142,11 @@ remotesync func destroy() -> void:
 	if is_instance_valid(createdArrow):
 		createdArrow.destroyer()
 	($CollisionShape2D as CollisionShape2D).disabled = true
+
+func connectShoot(obj):
+	if get_tree().has_network_peer():
+		if is_network_master():
+			obj.connect("final_value", self, "_on_Final_Value")
 
 func masterSpawn(position):
 	if get_tree().has_network_peer():
@@ -185,6 +186,18 @@ func _on_NetUpdate_timeout():
 			($NetUpdate as Timer).autostart = false
 			($NetUpdate as Timer).stop()
 
+func _on_Final_Value(value):
+	if is_instance_valid(createdArrow):
+		var mousePos = get_local_mouse_position()
+		var velocityNormal = (($Sprite/Position2D as Position2D).position).direction_to(mousePos)
+		var modifier = (value/100*0.75) + 0.75
+		createdArrow.master_shoot((velocityNormal.normalized()*600 + (finalSpeed))*modifier,createdArrow.global_position)
+		bSprite.rotation = PI
+		bSprite.flip_h = img.flip_h
+		shooting = false
+		recoil = true
+		$AttTimer.start()
+		createdArrow = null
 
 func _on_AttTimer_timeout():
 	recoil = false

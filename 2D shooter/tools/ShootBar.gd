@@ -24,6 +24,12 @@ func _ready():
 func reset():
 	value = 0
 
+func connectSignals(obj):
+	if get_tree().has_network_peer():
+		if is_network_master():
+			obj.connect("start_shooting", self, "_on_KinematicBody2D_start_shooting")
+			obj.connect("stop_shooting", self, "_on_KinematicBody2D_stop_shooting")
+
 func _process(delta):
 	if increase_me and (value < max_value):
 		signaled_max = false
@@ -44,13 +50,11 @@ func _process(delta):
 
 
 func _on_KinematicBody2D_start_shooting():
-	pass # Replace with function body.
 	value = 0
 	increase_me = true
 
 
 func _on_KinematicBody2D_stop_shooting():
-	pass # Replace with function body.
 	increase_me = false
 	emit_signal("final_value",value)
 	value = 0

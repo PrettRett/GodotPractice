@@ -20,6 +20,7 @@ outline_color = Color( 0, 0, 0, 1 )
 font_data = SubResource( 2 )
 
 [node name="platPlay" type="KinematicBody2D"]
+z_index = 2
 script = ExtResource( 4 )
 
 [node name="H_OneW_Block" parent="." instance=ExtResource( 1 )]

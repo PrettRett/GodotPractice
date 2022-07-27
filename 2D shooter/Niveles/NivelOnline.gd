@@ -9,6 +9,7 @@ onready var endScreen = preload("res://multPlayer/platShoot/onlineEnd.tscn")
 
 onready var position_1 = $Positions/Position_1
 onready var position_2 = $Positions/Position_2
+onready var shootBar = ($CanvasLayer/TextureProgress)
 
 var nPosQ = 5
 
@@ -25,6 +26,8 @@ func _ready():
 	($CheckEnd as Timer).stop()
 	erase_all_characters()
 	
+	
+	shootBar.set_network_master(get_tree().get_network_unique_id())
 	
 	var posDelta = (position_2.global_position - position_1.global_position)/nPosQ
 	print(posDelta)
@@ -73,6 +76,8 @@ func instance_character(id, parent, position):
 	var character_instance = GlobalAction.instance_node(charBase, parent)
 	character_instance.set_network_master(id)
 	character_instance.masterSpawn(position)
+	character_instance.connectShoot($CanvasLayer/TextureProgress)
+	shootBar.connectSignals(character_instance)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -97,7 +102,7 @@ func _on_CheckEnd_timeout():
 				if not player.is_player_dead():
 					player_alive = player
 					nAlive += 1
-	if nAlive <= 1:
+	if false:#nAlive <= 1:
 		for child in CommonPool.get_children():
 			for player in child.get_children():
 				if player.has_method("is_player_dead"):
