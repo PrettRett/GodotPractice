@@ -30,7 +30,6 @@ motion_mirroring = Vector2( 1024, 600 )
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
 
 [node name="TileMap" type="TileMap" parent="ParallaxLayer3"]
-position = Vector2( -634, -280 )
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
