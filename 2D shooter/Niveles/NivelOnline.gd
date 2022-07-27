@@ -44,6 +44,8 @@ func _ready():
 			rset("yPosArray",yPosArray)
 			rset("xPosArray",xPosArray)
 			rset("boolForSync",true)
+			print(yPosArray)
+			print(xPosArray)
 		else:
 			while boolForSync == false:
 				yield(get_tree().create_timer(0.05), "timeout")
@@ -52,6 +54,7 @@ func _ready():
 	
 	for child in CommonPool.get_children():
 		var startPosition = Vector2(xPosArray[auxIndex]*posDelta.x,yPosArray[auxIndex]*posDelta.y)
+		print(startPosition)
 		instance_character(int(child.name), child,startPosition)
 		#Create player
 		pass
