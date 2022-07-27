@@ -27,6 +27,7 @@ func _ready():
 	
 	
 	var posDelta = (position_2.global_position - position_1.global_position)/nPosQ
+	print(posDelta)
 	
 	var TotalPos = CommonPool.get_children().size()
 	
@@ -54,7 +55,7 @@ func _ready():
 	
 	for child in CommonPool.get_children():
 		var startPosition = Vector2(xPosArray[auxIndex]*posDelta.x,yPosArray[auxIndex]*posDelta.y)
-		print(startPosition)
+		auxIndex += 1
 		instance_character(int(child.name), child,startPosition)
 		#Create player
 		pass
