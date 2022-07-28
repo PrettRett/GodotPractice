@@ -167,7 +167,7 @@ remotesync func createArrow(id):
 	createdArrow = GlobalAction.instance_node_at_location(arrow,get_parent(),self.global_position)
 	createdArrow.set_network_master(id)
 	createdArrow.bind_postion(($Sprite/Position2D as Position2D))
-	add_collision_exception_with(createdArrow)
+	createdArrow.avoid(self)
 
 func hitted(dmg_val,src,collision):
 	if get_tree().has_network_peer():
