@@ -30,5 +30,10 @@ tile_data = PoolIntArray( -5111921, 0, 0, -5111920, 0, 65546, -5111919, 0, 65546
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TextureProgress" parent="CanvasLayer" instance=ExtResource( 4 )]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -53.0
+margin_right = 396.0
+margin_bottom = 0.0
 
 [connection signal="timeout" from="CheckEnd" to="." method="_on_CheckEnd_timeout"]

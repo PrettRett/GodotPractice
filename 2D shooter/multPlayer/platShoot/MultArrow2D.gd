@@ -1,12 +1,19 @@
 extends KinematicBody2D
 
+enum arrowType {
+	DEFAULT,
+	LONG,
+	EXPLOSIVE,
+	MULTIPLE,
+}
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 onready var anim = $AnimationPlayer
+onready var selfType = arrowType.DEFAULT
 
-const GRAVITY = 800.0
+var GRAVITY = 800.0
 
 var pup_speed = Vector2(1,0)
 puppet var pup_position = Vector2(1,0)
@@ -22,7 +29,17 @@ var followObj = null
 func _ready():
 	rpc_config("shoot",MultiplayerAPI.RPC_MODE_REMOTESYNC)
 	anim.play("normal")
-	
+
+func setArrowType(type):
+	if type == arrowType.DEFAULT:
+		pass
+	elif type == arrowType.LONG:
+		pass
+	elif type == arrowType.EXPLOSIVE:
+		pass
+	elif type == arrowType.MULTIPLE:
+		pass
+	pass
 
 func bind_postion(obj):
 	followObj = obj
