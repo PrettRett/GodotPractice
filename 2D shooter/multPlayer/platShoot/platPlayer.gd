@@ -24,7 +24,7 @@ puppet var puppet_flip_h = true
 
 remotesync var health = 100.0 setget health_change
 
-var dmg_modifier = 0.1
+var dmg_modifier = 0.02
 var speed_modifier = 1.0
 
 var recoil = false
@@ -34,7 +34,10 @@ var cameraToSet = true
 var createdArrow = null
 var finalSpeed = Vector2(0,0)
 remotesync var score = 0
-	
+
+var pushed_val = Vector2(0,0)
+var pushed_time = 0
+
 var arrow = preload("res://multPlayer/platShoot/MultArrow2D.tscn")
 
 # Called when the node enters the scene tree for the first time.
@@ -93,6 +96,9 @@ func _process(delta: float) -> void:
 					img.flip_h = false
 			velocity = Vector2(x_input, y_input).normalized()
 			finalSpeed = velocity * GlobalAction.multPlayerBaseSpeed*speed_modifier
+			if pushed_time > 0:
+				pushed_time -= delta
+				finalSpeed += pushed_val
 			move_and_collide(finalSpeed*delta)
 			
 			if false:#Input.is_action_pressed("click") and can_shoot and not is_reloading:
@@ -174,6 +180,12 @@ func hitted(dmg_val,src,collision):
 		if is_network_master():
 			health += -1* dmg_val.abs().length()*dmg_modifier
 			rset("health",health)
+
+func push(push_val,duration):
+	if get_tree().has_network_peer():
+		if is_network_master():
+			pushed_val = push_val
+			pushed_time = duration
 
 func _on_NetUpdate_timeout():
 	if get_tree().has_network_peer():

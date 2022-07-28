@@ -131,7 +131,7 @@ func _process(delta):
 			else:
 				speed = speed.bounce(collision.get_normal())*0.7
 	else:
-		if is_instance_valid(followObj):
+		if is_instance_valid(followObj) and !collided:
 			global_position = followObj.global_position
 
 func destroyer():
@@ -144,4 +144,6 @@ remotesync func destroy() -> void:
 func _on_selfDestroyer_timeout():
 	anim.play("fade")
 	imShot = false
-	pass # Replace with function body.
+	if selfType != arrowType.EXPLOSIVE and !collided:
+		#explote it
+		pass
