@@ -6,6 +6,7 @@ extends Node
 # var b = "text"
 onready var charBase = preload("res://multPlayer/platShoot/platPlayer.tscn")
 onready var endScreen = preload("res://multPlayer/platShoot/onlineEnd.tscn")
+onready var powerUp = preload("res://Elements/powerups.tscn")
 
 onready var position_1 = $Positions/Position_1
 onready var position_2 = $Positions/Position_2
@@ -112,4 +113,13 @@ func _on_CheckEnd_timeout():
 		print("game has ended, for all")
 		($CheckEnd as Timer).autostart = false
 		($CheckEnd as Timer).stop()
+	pass # Replace with function body.
+
+
+func _on_SpawnPowerUp_timeout():
+	var newxPos = rand_range(position_2.global_position.x, position_1.global_position.x)
+	var newyPos = rand_range(position_2.global_position.y, position_1.global_position.y)
+	
+	
+	
 	pass # Replace with function body.

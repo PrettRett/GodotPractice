@@ -128,14 +128,15 @@ func _process(delta):
 			if (abs(collision.get_normal().angle_to(speed))< (PI/4)) or (abs(collision.get_normal().angle_to(speed))> (3*PI/4)) or speed.length() < 500.0:
 				imShot = false
 				($CollisionPolygon2D as CollisionPolygon2D).disabled = true
-				anim.play("fade")
 				if !collided:
 					collided = true
 					if selfType != arrowType.EXPLOSIVE:
+						anim.play("fade")
 						if collision.get_collider().has_method("hitted"):
 							collision.get_collider().hitted(speed*dmgModifier,self,collision)
 							get_parent().add_score(speed.length())
 					else:
+						anim.play("Explosion")
 						#get objects to attack
 						var vecDmg = Vector2(blastDmg,0)
 						for obj in explodeArea.get_overlapping_bodies():
@@ -160,8 +161,10 @@ remotesync func destroy() -> void:
 	queue_free()
 
 func _on_selfDestroyer_timeout():
-	anim.play("fade")
 	imShot = false
 	if selfType != arrowType.EXPLOSIVE and !collided:
+		anim.play("Explosion")
 		#explote it
+	else:
+		anim.play("fade")
 		pass

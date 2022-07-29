@@ -16,10 +16,10 @@ autostart = true
 [node name="Positions" type="Node" parent="."]
 
 [node name="Position_1" type="Position2D" parent="Positions"]
-position = Vector2( -252.958, -230.305 )
+position = Vector2( -1347, -790 )
 
 [node name="Position_2" type="Position2D" parent="Positions"]
-position = Vector2( 1113.82, 657.55 )
+position = Vector2( 1451, 1081 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
@@ -36,4 +36,9 @@ margin_top = -53.0
 margin_right = 396.0
 margin_bottom = 0.0
 
+[node name="SpawnPowerUp" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
 [connection signal="timeout" from="CheckEnd" to="." method="_on_CheckEnd_timeout"]
+[connection signal="timeout" from="SpawnPowerUp" to="." method="_on_SpawnPowerUp_timeout"]
