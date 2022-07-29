@@ -16,7 +16,7 @@ autostart = true
 [node name="Positions" type="Node" parent="."]
 
 [node name="Position_1" type="Position2D" parent="Positions"]
-position = Vector2( -1347, -790 )
+position = Vector2( 1158, 838 )
 
 [node name="Position_2" type="Position2D" parent="Positions"]
 position = Vector2( 1451, 1081 )
@@ -37,7 +37,7 @@ margin_right = 396.0
 margin_bottom = 0.0
 
 [node name="SpawnPowerUp" type="Timer" parent="."]
-wait_time = 10.0
+wait_time = 3.0
 autostart = true
 
 [connection signal="timeout" from="CheckEnd" to="." method="_on_CheckEnd_timeout"]

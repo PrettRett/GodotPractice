@@ -16,6 +16,7 @@ onready var myTime = $selfDestroyer
 onready var selfType = arrowType.DEFAULT
 onready var selfLoad = load("res://multPlayer/platShoot/MultArrow2D.tscn")
 onready var explodeArea = $Area2D
+onready var blastSprite = $exploteSprite
 
 var GRAVITY = 800.0
 
@@ -44,6 +45,7 @@ var followObj = null
 func _ready():
 	rpc_config("shoot",MultiplayerAPI.RPC_MODE_REMOTESYNC)
 	anim.play("normal")
+	blastSprite.visible = false
 
 func masterSetArrowType(type):
 	rpc("setArrowType",type)
@@ -101,7 +103,8 @@ func bind_postion(obj):
 	followObj = obj
 
 func master_shoot(speedValue,initPos):
-	rpc("shoot",speedValue,initPos)
+	if is_network_master():
+		rpc("shoot",speedValue,initPos)
 
 remotesync func shoot(speedValue,initPos):
 	if selfType == arrowType.MULTIPLE:
@@ -112,7 +115,7 @@ remotesync func shoot(speedValue,initPos):
 	global_position = initPos
 	speed = speedValue*speedModifier
 	imShot = true
-	myTime.start()
+	#myTime.start()
 
 func set_speed(speed_value):
 	speed = speed_value
@@ -131,11 +134,14 @@ func _process(delta):
 				if !collided:
 					collided = true
 					if selfType != arrowType.EXPLOSIVE:
+						print("fade")
 						anim.play("fade")
 						if collision.get_collider().has_method("hitted"):
 							collision.get_collider().hitted(speed*dmgModifier,self,collision)
 							get_parent().add_score(speed.length())
 					else:
+						print("explote")
+						blastSprite.visible = true
 						anim.play("Explosion")
 						#get objects to attack
 						var vecDmg = Vector2(blastDmg,0)
@@ -163,6 +169,7 @@ remotesync func destroy() -> void:
 func _on_selfDestroyer_timeout():
 	imShot = false
 	if selfType != arrowType.EXPLOSIVE and !collided:
+		blastSprite.visible = true
 		anim.play("Explosion")
 		#explote it
 	else:

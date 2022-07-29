@@ -31,7 +31,6 @@ var recoil = false
 var shooting = false
 var is_alive = true
 var cameraToSet = true
-var createdArrow = null
 var finalSpeed = Vector2(0,0)
 remotesync var score = 0
 
@@ -39,6 +38,8 @@ var pushed_val = Vector2(0,0)
 var pushed_time = 0
 
 var arrow = preload("res://multPlayer/platShoot/MultArrow2D.tscn")
+var createdArrow = null
+var arrowType = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -169,12 +170,15 @@ remotesync func spawn(position):
 func is_player_dead():
 	return not is_alive
 
+func setArrowType(type):
+	arrowType = type
+
 remotesync func createArrow(id):
 	createdArrow = GlobalAction.instance_node_at_location(arrow,get_parent(),self.global_position)
 	createdArrow.set_network_master(id)
 	createdArrow.bind_postion(($Sprite/Position2D as Position2D))
 	createdArrow.avoid(self)
-	createdArrow.setArrowType(createdArrow.arrowType.EXPLOSIVE)
+	createdArrow.setArrowType(arrowType)
 
 func hitted(dmg_val,src,collision):
 	if get_tree().has_network_peer():

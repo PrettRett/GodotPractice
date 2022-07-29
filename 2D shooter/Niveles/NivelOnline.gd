@@ -58,7 +58,7 @@ func _ready():
 	var auxIndex = 0
 	
 	for child in CommonPool.get_children():
-		var startPosition = Vector2(xPosArray[auxIndex]*posDelta.x,yPosArray[auxIndex]*posDelta.y)
+		var startPosition = Vector2(position_1.global_position.x + xPosArray[auxIndex]*posDelta.x,position_1.global_position.y + yPosArray[auxIndex]*posDelta.y)
 		auxIndex += 1
 		instance_character(int(child.name), child,startPosition)
 		#Create player
@@ -120,6 +120,17 @@ func _on_SpawnPowerUp_timeout():
 	var newxPos = rand_range(position_2.global_position.x, position_1.global_position.x)
 	var newyPos = rand_range(position_2.global_position.y, position_1.global_position.y)
 	
+	var newPowerUp = GlobalAction.instance_node_at_location(powerUp,self,Vector2(newxPos,newyPos))
 	
+	var randChoice = rand_range(0,100)
+	
+	if randChoice < 50:
+		newPowerUp.setPowerUpType(newPowerUp.powerUpType.LONG)
+	elif randChoice < 75:
+		newPowerUp.setPowerUpType(newPowerUp.powerUpType.MULTIPLE)
+	elif randChoice < 90:
+		newPowerUp.setPowerUpType(newPowerUp.powerUpType.EXPLOSIVE)
+	
+	($SpawnPowerUp as Timer).wait_time = 3
 	
 	pass # Replace with function body.

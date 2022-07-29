@@ -6,9 +6,10 @@
 
 [sub_resource type="Animation" id=4]
 resource_name = "Explosion"
+length = 2.0
 step = 1.0
 tracks/0/type = "value"
-tracks/0/path = NodePath("AnimationPlayer/Sprite:visible")
+tracks/0/path = NodePath("exploteSprite:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -20,7 +21,7 @@ tracks/0/keys = {
 "values": [ true, false ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("AnimationPlayer/Sprite:frame")
+tracks/1/path = NodePath("exploteSprite:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -99,7 +100,7 @@ scale = Vector2( 0.2, 0.2 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
+modulate = Color( 1, 1, 1, 0.9 )
 position = Vector2( 0, 30 )
 scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 1 )
@@ -111,11 +112,6 @@ frame = 14
 anims/Explosion = SubResource( 4 )
 anims/fade = SubResource( 1 )
 anims/normal = SubResource( 2 )
-
-[node name="Sprite" type="Sprite" parent="AnimationPlayer"]
-scale = Vector2( 2, 2 )
-texture = ExtResource( 3 )
-hframes = 8
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 scale = Vector2( 1.5, 1.5 )
@@ -130,5 +126,10 @@ collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 3 )
+
+[node name="exploteSprite" type="Sprite" parent="."]
+scale = Vector2( 10, 10 )
+texture = ExtResource( 3 )
+hframes = 8
 
 [connection signal="timeout" from="selfDestroyer" to="." method="_on_selfDestroyer_timeout"]

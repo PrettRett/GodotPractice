@@ -1,5 +1,7 @@
 extends Area2D
 
+signal power_upped(type)
+
 enum powerUpType {
 	DEFAULT,
 	LONG,
@@ -35,6 +37,15 @@ func setPowerUpType(type):
 
 func getPowerUpType(type):
 	return pUpType
+
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_Node2D_body_entered(body):
+	if body.has_method("setArrowType"):
+		body.setArrowType(pUpType)
+		queue_free()
+	pass # Replace with function body.

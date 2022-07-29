@@ -1,10 +1,269 @@
-Godot Engine v3.4.2.stable.official.45eaa2daf - https://godotengine.org
-OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 1050/PCIe/SSE2
+Godot Engine v3.4.4.stable.official.419e713a2 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Quadro P520/PCIe/SSE2
 OpenGL ES Batching: ON
  
 label4
 Create butt
 passed :1
-(273.355591, 177.570999)
+(58.599998, 48.599998)
 [4]
 [3]
+explote
+[@KinematicArrow2D@18:[KinematicBody2D:6747], @KinematicArrow2D@19:[KinematicBody2D:6756], @KinematicArrow2D@20:[KinematicBody2D:6765], @KinematicArrow2D@21:[KinematicBody2D:6774]]
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@24:[KinematicBody2D:7246], @KinematicArrow2D@25:[KinematicBody2D:7255], @KinematicArrow2D@26:[KinematicBody2D:7264], @KinematicArrow2D@27:[KinematicBody2D:7273]]
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@29:[KinematicBody2D:7702], @KinematicArrow2D@30:[KinematicBody2D:7711], @KinematicArrow2D@31:[KinematicBody2D:7720], @KinematicArrow2D@32:[KinematicBody2D:7729]]
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@35:[KinematicBody2D:8123], @KinematicArrow2D@36:[KinematicBody2D:8132], @KinematicArrow2D@37:[KinematicBody2D:8141], @KinematicArrow2D@38:[KinematicBody2D:8150]]
+[@KinematicArrow2D@39:[KinematicBody2D:8407], @KinematicArrow2D@40:[KinematicBody2D:8416], @KinematicArrow2D@41:[KinematicBody2D:8425], @KinematicArrow2D@42:[KinematicBody2D:8434]]
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@45:[KinematicBody2D:8725], @KinematicArrow2D@46:[KinematicBody2D:8734], @KinematicArrow2D@47:[KinematicBody2D:8743], @KinematicArrow2D@48:[KinematicBody2D:8752]]
+fade
+fade
+fade
+fade
+fade
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@50:[KinematicBody2D:9148], @KinematicArrow2D@51:[KinematicBody2D:9157], @KinematicArrow2D@52:[KinematicBody2D:9166], @KinematicArrow2D@53:[KinematicBody2D:9175]]
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@55:[KinematicBody2D:9582], @KinematicArrow2D@56:[KinematicBody2D:9591], @KinematicArrow2D@57:[KinematicBody2D:9600], @KinematicArrow2D@58:[KinematicBody2D:9609]]
+fade
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+[@KinematicArrow2D@60:[KinematicBody2D:10037], @KinematicArrow2D@61:[KinematicBody2D:10046], @KinematicArrow2D@62:[KinematicBody2D:10055], @KinematicArrow2D@63:[KinematicBody2D:10064]]
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+[@KinematicArrow2D@64:[KinematicBody2D:10073], @KinematicArrow2D@65:[KinematicBody2D:10082], @KinematicArrow2D@66:[KinematicBody2D:10091], @KinematicArrow2D@67:[KinematicBody2D:10100]]
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+[@KinematicArrow2D@68:[KinematicBody2D:10112], @KinematicArrow2D@69:[KinematicBody2D:10121], @KinematicArrow2D@70:[KinematicBody2D:10130], @KinematicArrow2D@71:[KinematicBody2D:10139]]
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:652) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: body_set_shape_as_one_way_collision (servers/physics_2d/physics_2d_server_sw.cpp:660) - Condition "body->get_space() && flushing_queries" is true.
+ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
+   at: area_set_shape_disabled (servers/physics_2d/physics_2d_server_sw.cpp:362) - Condition "area->get_space() && flushing_queries" is true.
+[@KinematicArrow2D@55:[KinematicBody2D:9582], @KinematicArrow2D@56:[KinematicBody2D:9591], @KinematicArrow2D@57:[KinematicBody2D:9600], @KinematicArrow2D@58:[KinematicBody2D:9609], @KinematicArrow2D@72:[KinematicBody2D:10148], @KinematicArrow2D@73:[KinematicBody2D:10157], @KinematicArrow2D@74:[KinematicBody2D:10166], @KinematicArrow2D@75:[KinematicBody2D:10175]]
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@77:[KinematicBody2D:10808], @KinematicArrow2D@78:[KinematicBody2D:10817], @KinematicArrow2D@79:[KinematicBody2D:10826], @KinematicArrow2D@80:[KinematicBody2D:10835]]
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@81:[KinematicBody2D:11262], @KinematicArrow2D@82:[KinematicBody2D:11271], @KinematicArrow2D@83:[KinematicBody2D:11280], @KinematicArrow2D@84:[KinematicBody2D:11289]]
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@86:[KinematicBody2D:11525], @KinematicArrow2D@87:[KinematicBody2D:11534], @KinematicArrow2D@88:[KinematicBody2D:11543], @KinematicArrow2D@89:[KinematicBody2D:11552]]
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@91:[KinematicBody2D:11959], @KinematicArrow2D@92:[KinematicBody2D:11968], @KinematicArrow2D@93:[KinematicBody2D:11977], @KinematicArrow2D@94:[KinematicBody2D:11986]]
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@97:[KinematicBody2D:12362], @KinematicArrow2D@98:[KinematicBody2D:12371], @KinematicArrow2D@99:[KinematicBody2D:12380], @KinematicArrow2D@100:[KinematicBody2D:12389]]
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@101:[KinematicBody2D:12637], @KinematicArrow2D@102:[KinematicBody2D:12646], @KinematicArrow2D@103:[KinematicBody2D:12655], @KinematicArrow2D@104:[KinematicBody2D:12664]]
+[@KinematicArrow2D@107:[KinematicBody2D:12840], @KinematicArrow2D@108:[KinematicBody2D:12849], @KinematicArrow2D@109:[KinematicBody2D:12858], @KinematicArrow2D@110:[KinematicBody2D:12867]]
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@112:[KinematicBody2D:13111], @KinematicArrow2D@113:[KinematicBody2D:13120], @KinematicArrow2D@114:[KinematicBody2D:13129], @KinematicArrow2D@115:[KinematicBody2D:13138]]
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@117:[KinematicBody2D:13369], @KinematicArrow2D@118:[KinematicBody2D:13378], @KinematicArrow2D@119:[KinematicBody2D:13387], @KinematicArrow2D@120:[KinematicBody2D:13396]]
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@123:[KinematicBody2D:13641], @KinematicArrow2D@124:[KinematicBody2D:13650], @KinematicArrow2D@125:[KinematicBody2D:13659], @KinematicArrow2D@126:[KinematicBody2D:13668]]
+fade
+fade
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@128:[KinematicBody2D:13972], @KinematicArrow2D@129:[KinematicBody2D:13981], @KinematicArrow2D@130:[KinematicBody2D:13990], @KinematicArrow2D@131:[KinematicBody2D:13999]]
+fade
+fade
+fade
+fade
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@134:[KinematicBody2D:14274], @KinematicArrow2D@135:[KinematicBody2D:14283], @KinematicArrow2D@136:[KinematicBody2D:14292], @KinematicArrow2D@137:[KinematicBody2D:14301]]
+fade
+fade
+fade
+fade
+[@KinematicArrow2D@138:[KinematicBody2D:14509], @KinematicArrow2D@139:[KinematicBody2D:14518], @KinematicArrow2D@140:[KinematicBody2D:14527], @KinematicArrow2D@141:[KinematicBody2D:14536]]
+fade
+fade
+fade
+fade
+fade
+fade
