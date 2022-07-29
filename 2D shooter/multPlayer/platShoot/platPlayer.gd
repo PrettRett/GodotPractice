@@ -98,7 +98,7 @@ func _process(delta: float) -> void:
 			finalSpeed = velocity * GlobalAction.multPlayerBaseSpeed*speed_modifier
 			if pushed_time > 0:
 				pushed_time -= delta
-				finalSpeed += pushed_val
+				finalSpeed = pushed_val
 			move_and_collide(finalSpeed*delta)
 			
 			if false:#Input.is_action_pressed("click") and can_shoot and not is_reloading:
@@ -174,6 +174,7 @@ remotesync func createArrow(id):
 	createdArrow.set_network_master(id)
 	createdArrow.bind_postion(($Sprite/Position2D as Position2D))
 	createdArrow.avoid(self)
+	createdArrow.setArrowType(createdArrow.arrowType.EXPLOSIVE)
 
 func hitted(dmg_val,src,collision):
 	if get_tree().has_network_peer():

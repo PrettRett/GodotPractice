@@ -12,7 +12,10 @@ enum arrowType {
 # var b = "text"
 onready var anim = $AnimationPlayer
 onready var myImg = $Sprite
+onready var myTime = $selfDestroyer
 onready var selfType = arrowType.DEFAULT
+onready var selfLoad = load("res://multPlayer/platShoot/MultArrow2D.tscn")
+onready var explodeArea = $Area2D
 
 var GRAVITY = 800.0
 
@@ -23,6 +26,10 @@ var imShot = false
 var speed = Vector2(1,0) setget set_speed
 var speedModifier = 1.0
 var dmgModifier = 1.0
+
+var blastDmg = 2500
+var blastPushVal = 1500
+var blastTime = 0.4
 
 var possibleError = deg2rad(5)
 const nOfAdditional = 4
@@ -60,6 +67,7 @@ remotesync func setArrowType(type):
 		GRAVITY = 400.0
 		speedModifier = 0.5
 		dmgModifier = 3.0
+		myTime.wait_time = 1
 		#set flag for explote on impact
 		pass
 	elif type == arrowType.MULTIPLE:
@@ -69,18 +77,19 @@ remotesync func setArrowType(type):
 		dmgModifier = 1.0
 		#prepare for multiple sync shot
 		for i in range(nOfAdditional):
-			var createdArrow = GlobalAction.instance_node_at_location(self,get_parent(),self.global_position)
+			var createdArrow = GlobalAction.instance_node_at_location(selfLoad,get_parent(),self.global_position)
 			createdArrow.set_network_master(int(get_parent().name))
 			createdArrow.bind_postion(followObj)
 			createdArrow.avoid(self)
 			createdArrow.avoid(avoidArr)
 			createdArrow.avoid(childArr)
 			childArr.append(createdArrow)
+		print(childArr)
 		pass
 	pass
 
 func avoid(obj):
-	if typeof(obj) == Variant.Type.TYPE_ARRAY :
+	if typeof(obj) == TYPE_ARRAY:
 		for element in obj:
 			avoidArr.append(element)
 			add_collision_exception_with(element)
@@ -99,10 +108,11 @@ remotesync func shoot(speedValue,initPos):
 		#shoot all simultaneously
 		for arr in childArr:
 			var chSpeed = speedValue.rotated(rand_range(-possibleError,possibleError))
-			arr.master_shoot(speedValue,initPos)
+			arr.master_shoot(chSpeed,initPos)
 	global_position = initPos
 	speed = speedValue*speedModifier
 	imShot = true
+	myTime.start()
 
 func set_speed(speed_value):
 	speed = speed_value
@@ -126,7 +136,15 @@ func _process(delta):
 							collision.get_collider().hitted(speed*dmgModifier,self,collision)
 							get_parent().add_score(speed.length())
 					else:
-						#explote it
+						#get objects to attack
+						var vecDmg = Vector2(blastDmg,0)
+						for obj in explodeArea.get_overlapping_bodies():
+							if obj.has_method("hitted"):
+								obj.hitted(vecDmg,self,null)
+								get_parent().add_score(blastDmg/5)
+							if obj.has_method("push"):
+								var pushVec = global_position.direction_to(obj.global_position)*blastPushVal
+								obj.push(pushVec,blastTime)
 						pass
 			else:
 				speed = speed.bounce(collision.get_normal())*0.7

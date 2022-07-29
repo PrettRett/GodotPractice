@@ -1,0 +1,22 @@
+Godot Engine v3.4.2.stable.official.45eaa2daf - https://godotengine.org
+OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 1050/PCIe/SSE2
+OpenGL ES Batching: ON
+ 
+label4
+Create butt
+passed :1
+(273.355591, 177.570999)
+[4]
+[3]
+[@KinematicArrow2D@10:[KinematicBody2D:2426], @KinematicArrow2D@11:[KinematicBody2D:2432], @KinematicArrow2D@12:[KinematicBody2D:2438], @KinematicArrow2D@13:[KinematicBody2D:2444]]
+[@KinematicArrow2D@15:[KinematicBody2D:2640], @KinematicArrow2D@16:[KinematicBody2D:2646], @KinematicArrow2D@17:[KinematicBody2D:2652], @KinematicArrow2D@18:[KinematicBody2D:2658]]
+[@KinematicArrow2D@19:[KinematicBody2D:2885], @KinematicArrow2D@20:[KinematicBody2D:2891], @KinematicArrow2D@21:[KinematicBody2D:2897], @KinematicArrow2D@22:[KinematicBody2D:2903]]
+[@KinematicArrow2D@24:[KinematicBody2D:3212], @KinematicArrow2D@25:[KinematicBody2D:3218], @KinematicArrow2D@26:[KinematicBody2D:3224], @KinematicArrow2D@27:[KinematicBody2D:3230]]
+[@KinematicArrow2D@29:[KinematicBody2D:3439], @KinematicArrow2D@30:[KinematicBody2D:3445], @KinematicArrow2D@31:[KinematicBody2D:3451], @KinematicArrow2D@32:[KinematicBody2D:3457]]
+[@KinematicArrow2D@33:[KinematicBody2D:3692], @KinematicArrow2D@34:[KinematicBody2D:3698], @KinematicArrow2D@35:[KinematicBody2D:3704], @KinematicArrow2D@36:[KinematicBody2D:3710]]
+[@KinematicArrow2D@38:[KinematicBody2D:4051], @KinematicArrow2D@39:[KinematicBody2D:4057], @KinematicArrow2D@40:[KinematicBody2D:4063], @KinematicArrow2D@41:[KinematicBody2D:4069]]
+[@KinematicArrow2D@42:[KinematicBody2D:4228], @KinematicArrow2D@43:[KinematicBody2D:4234], @KinematicArrow2D@44:[KinematicBody2D:4240], @KinematicArrow2D@45:[KinematicBody2D:4246]]
+[@KinematicArrow2D@47:[KinematicBody2D:4566], @KinematicArrow2D@48:[KinematicBody2D:4572], @KinematicArrow2D@49:[KinematicBody2D:4578], @KinematicArrow2D@50:[KinematicBody2D:4584]]
+[@KinematicArrow2D@51:[KinematicBody2D:4768], @KinematicArrow2D@52:[KinematicBody2D:4774], @KinematicArrow2D@53:[KinematicBody2D:4780], @KinematicArrow2D@54:[KinematicBody2D:4786]]
+[@KinematicArrow2D@56:[KinematicBody2D:5054], @KinematicArrow2D@57:[KinematicBody2D:5060], @KinematicArrow2D@58:[KinematicBody2D:5066], @KinematicArrow2D@59:[KinematicBody2D:5072]]
+[@KinematicArrow2D@60:[KinematicBody2D:5344], @KinematicArrow2D@61:[KinematicBody2D:5350], @KinematicArrow2D@62:[KinematicBody2D:5356], @KinematicArrow2D@63:[KinematicBody2D:5362]]
