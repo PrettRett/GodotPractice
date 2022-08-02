@@ -2,6 +2,8 @@ extends KinematicBody2D
 
 signal start_shooting
 signal stop_shooting
+signal changeSym(type)
+signal setArrowNum(number)
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -40,6 +42,7 @@ var pushed_time = 0
 var arrow = preload("res://multPlayer/platShoot/MultArrow2D.tscn")
 var createdArrow = null
 var arrowType = 0
+var arrowNumber = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -170,15 +173,32 @@ remotesync func spawn(position):
 func is_player_dead():
 	return not is_alive
 
-func setArrowType(type):
+func recvArrowType(type):
+	print("changed")
 	arrowType = type
+	if type == 1:
+		arrowNumber = 4
+	elif type == 3:
+		arrowNumber = 2
+	elif type == 2:
+		arrowNumber = 3
+	emit_signal("setArrowNum",arrowNumber)
+	emit_signal("changeSym",type)
 
 remotesync func createArrow(id):
 	createdArrow = GlobalAction.instance_node_at_location(arrow,get_parent(),self.global_position)
 	createdArrow.set_network_master(id)
 	createdArrow.bind_postion(($Sprite/Position2D as Position2D))
 	createdArrow.avoid(self)
+	if arrowType != createdArrow.arrowType.DEFAULT:
+		if arrowNumber > 0:
+			arrowNumber -= 1
+		else:
+			arrowType = 0
+			emit_signal("changeSym",arrowType)
+		emit_signal("setArrowNum",arrowNumber)
 	createdArrow.setArrowType(arrowType)
+		
 
 func hitted(dmg_val,src,collision):
 	if get_tree().has_network_peer():

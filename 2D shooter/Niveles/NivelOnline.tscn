@@ -1,9 +1,20 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Mapas/skyTestV2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Niveles/NivelOnline.gd" type="Script" id=2]
 [ext_resource path="res://Mapas/AutoTileForest_light.tres" type="TileSet" id=3]
 [ext_resource path="res://tools/ShootBar.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Elements/Icons.png" type="Texture" id=5]
+[ext_resource path="res://tools/Symbol.png" type="Texture" id=6]
+[ext_resource path="res://Niveles/pUpSprite.gd" type="Script" id=7]
+[ext_resource path="res://Niveles/HBoxContainer.gd" type="Script" id=8]
+[ext_resource path="res://tools/Arcade.ttf" type="DynamicFontData" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 9 )
 
 [node name="Node" type="Node"]
 script = ExtResource( 2 )
@@ -16,7 +27,7 @@ autostart = true
 [node name="Positions" type="Node" parent="."]
 
 [node name="Position_1" type="Position2D" parent="Positions"]
-position = Vector2( 1158, 838 )
+position = Vector2( -1356.84, -785.165 )
 
 [node name="Position_2" type="Position2D" parent="Positions"]
 position = Vector2( 1451, 1081 )
@@ -36,8 +47,54 @@ margin_top = -53.0
 margin_right = 396.0
 margin_bottom = 0.0
 
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+margin_left = 968.0
+margin_top = 544.0
+margin_right = 1364.0
+margin_bottom = 597.0
+texture = ExtResource( 6 )
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/TextureRect"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -367.0
+margin_top = -27.0
+margin_right = -352.0
+margin_bottom = -11.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/TextureRect/CenterContainer"]
+texture = ExtResource( 5 )
+hframes = 16
+vframes = 22
+frame = 99
+region_enabled = true
+region_rect = Rect2( 0, 0, 510, 700 )
+script = ExtResource( 7 )
+
+[node name="HBoxContainer" type="Label" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -32.0
+margin_top = -56.0
+margin_right = 442.0
+grow_horizontal = 0
+custom_fonts/font = SubResource( 1 )
+align = 2
+valign = 1
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="SpawnPowerUp" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 5.0
 autostart = true
 
 [connection signal="timeout" from="CheckEnd" to="." method="_on_CheckEnd_timeout"]

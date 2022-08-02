@@ -10,7 +10,10 @@ onready var powerUp = preload("res://Elements/powerups.tscn")
 
 onready var position_1 = $Positions/Position_1
 onready var position_2 = $Positions/Position_2
+
 onready var shootBar = ($CanvasLayer/TextureProgress)
+onready var powerUpSetted = $CanvasLayer/TextureRect/CenterContainer/Sprite
+onready var arrowCSymbols = $CanvasLayer/HBoxContainer
 
 var nPosQ = 5
 
@@ -29,6 +32,8 @@ func _ready():
 	
 	
 	shootBar.set_network_master(get_tree().get_network_unique_id())
+	powerUpSetted.set_network_master(get_tree().get_network_unique_id())
+	arrowCSymbols.set_network_master(get_tree().get_network_unique_id())
 	
 	var posDelta = (position_2.global_position - position_1.global_position)/nPosQ
 	print(posDelta)
@@ -79,6 +84,8 @@ func instance_character(id, parent, position):
 	character_instance.masterSpawn(position)
 	character_instance.connectShoot($CanvasLayer/TextureProgress)
 	shootBar.connectSignals(character_instance)
+	powerUpSetted.connectSignals(character_instance)
+	arrowCSymbols.connectSignals(character_instance)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -130,7 +137,5 @@ func _on_SpawnPowerUp_timeout():
 		newPowerUp.setPowerUpType(newPowerUp.powerUpType.MULTIPLE)
 	elif randChoice < 90:
 		newPowerUp.setPowerUpType(newPowerUp.powerUpType.EXPLOSIVE)
-	
-	($SpawnPowerUp as Timer).wait_time = 3
 	
 	pass # Replace with function body.

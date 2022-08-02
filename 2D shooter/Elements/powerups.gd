@@ -23,6 +23,7 @@ func _ready():
 func setPowerUpType(type):
 	pUpType = type
 	if type == powerUpType.DEFAULT:
+		pUpSprite.frame_coords = Vector2(3,6)
 		pass
 	elif type == powerUpType.LONG:
 		pUpSprite.frame_coords = Vector2(5,2)
@@ -38,6 +39,8 @@ func setPowerUpType(type):
 func getPowerUpType(type):
 	return pUpType
 
+func getPosition():
+	return pUpSprite.frame_coords
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
@@ -45,7 +48,7 @@ func getPowerUpType(type):
 
 
 func _on_Node2D_body_entered(body):
-	if body.has_method("setArrowType"):
-		body.setArrowType(pUpType)
+	if body.has_method("recvArrowType"):
+		body.recvArrowType(pUpType)
 		queue_free()
 	pass # Replace with function body.
