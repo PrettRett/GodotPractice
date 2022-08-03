@@ -18,6 +18,9 @@ onready var selfLoad = load("res://multPlayer/platShoot/MultArrow2D.tscn")
 onready var explodeArea = $Area2D
 onready var blastSprite = $exploteSprite
 
+onready var hitSound = $HitArrow
+onready var blastSound = $ExploteArrow
+
 var GRAVITY = 800.0
 
 var pup_speed = Vector2(1,0)
@@ -168,11 +171,27 @@ func destroyer():
 remotesync func destroy() -> void:
 	queue_free()
 
+func playMySound():
+	if selfType != arrowType.EXPLOSIVE:
+		hitSound.play()
+	else:
+		blastSound.play()
+
 func _on_selfDestroyer_timeout():
 	imShot = false
 	if selfType != arrowType.EXPLOSIVE and !collided:
 		blastSprite.visible = true
 		anim.play("Explosion")
+		#get objects to attack
+		var vecDmg = Vector2(blastDmg,0)
+		for obj in explodeArea.get_overlapping_bodies():
+			if obj.has_method("hitted"):
+				obj.hitted(vecDmg,self,null)
+				get_parent().add_score(blastDmg/5)
+			if obj.has_method("push"):
+				var pushVec = global_position.direction_to(obj.global_position)*blastPushVal
+				obj.push(pushVec,blastTime)
+		pass
 		#explote it
 	else:
 		anim.play("fade")

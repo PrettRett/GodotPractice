@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Terreno/Versus_platform.tscn" type="PackedScene" id=1]
 [ext_resource path="res://player/Jugador.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://multPlayer/platShoot/platPlayer.gd" type="Script" id=4]
 [ext_resource path="res://tools/fill.png" type="Texture" id=5]
 [ext_resource path="res://tools/bg.png" type="Texture" id=6]
+[ext_resource path="res://Music/Bow_sound.mp3" type="AudioStream" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8.41846, 14.9633 )
@@ -87,6 +88,10 @@ custom_fonts/font = SubResource( 3 )
 text = "ProvName"
 align = 1
 valign = 1
+
+[node name="BowSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+bus = "Bow"
 
 [connection signal="timeout" from="NetUpdate" to="." method="_on_NetUpdate_timeout"]
 [connection signal="timeout" from="AttTimer" to="." method="_on_AttTimer_timeout"]

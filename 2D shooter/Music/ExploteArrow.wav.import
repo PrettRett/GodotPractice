@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ExploteArrow.wav-8ac3f40151a012bb7a3073a2e21a09cc.sample"
+
+[deps]
+
+source_file="res://Music/ExploteArrow.wav"
+dest_files=[ "res://.import/ExploteArrow.wav-8ac3f40151a012bb7a3073a2e21a09cc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

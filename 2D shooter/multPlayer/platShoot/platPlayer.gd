@@ -235,6 +235,11 @@ func _on_Final_Value(value):
 		recoil = true
 		$AttTimer.start()
 		createdArrow = null
+		rpc("playBow")
+
+remotesync func playBow():
+	($BowSound as AudioStreamPlayer2D).play()
+	pass
 
 func _on_AttTimer_timeout():
 	recoil = false

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bow_sound.mp3-abad752ed12a2e603bed11060c25560c.mp3str"
+
+[deps]
+
+source_file="res://Music/Bow_sound.mp3"
+dest_files=[ "res://.import/Bow_sound.mp3-abad752ed12a2e603bed11060c25560c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

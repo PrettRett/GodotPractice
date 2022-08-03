@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Menus/OldWizard.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Menus/MainTitle.gd" type="Script" id=2]
+[ext_resource path="res://Music/POL-a-sinister-puzzle-short.wav" type="AudioStream" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 156
@@ -110,6 +111,10 @@ margin_right = 292.0
 margin_bottom = 44.0
 custom_fonts/font = SubResource( 2 )
 text = "Quit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+autoplay = true
 
 [connection signal="gui_input" from="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer/CenterContainer2" to="." method="_on_CenterContainer2_gui_input"]
 [connection signal="gui_input" from="MarginContainer/ColorRect/CenterContainer/MarginContainer/VBoxContainer/CenterContainerMult" to="." method="_on_CenterContainerMult_gui_input"]
