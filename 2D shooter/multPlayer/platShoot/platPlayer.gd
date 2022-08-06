@@ -52,7 +52,6 @@ func _ready():
 		nameToWrite.erase(10,nameToWrite.length()-10)
 	userNameLabel.text = nameToWrite
 	
-	visible = false
 	($CollisionShape2D as CollisionShape2D).disabled = true
 	pass # Replace with function body.
 
