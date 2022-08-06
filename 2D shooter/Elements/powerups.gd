@@ -46,9 +46,11 @@ func getPosition():
 #func _process(delta):
 #	pass
 
+remotesync func destroy():
+	queue_free()
 
 func _on_Node2D_body_entered(body):
 	if body.has_method("recvArrowType"):
 		body.recvArrowType(pUpType)
-		queue_free()
+		rpc("destroy")
 	pass # Replace with function body.
