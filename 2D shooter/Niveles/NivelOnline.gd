@@ -134,12 +134,12 @@ func _on_SpawnPowerUp_timeout():
 			
 			var randChoice = rand_range(0,100)
 			
-			var type = powerUp.powerUpType.LONG
+			var type = 1
 	
 			if randChoice < 75 and randChoice > 50:
-				type = (powerUp.powerUpType.MULTIPLE)
+				type = (3)
 			elif randChoice < 90:
-				type = (powerUp.powerUpType.EXPLOSIVE)
+				type = (2)
 			
 			rpc("spawnPowerUp", Vector2(newxPos,newyPos),type)
 	
