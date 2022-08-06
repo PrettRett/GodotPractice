@@ -196,4 +196,8 @@ stream = ExtResource( 5 )
 volume_db = 10.0
 bus = "Arrow"
 
+[node name="UpTime" type="Timer" parent="."]
+wait_time = 0.1
+
 [connection signal="timeout" from="selfDestroyer" to="." method="_on_selfDestroyer_timeout"]
+[connection signal="timeout" from="UpTime" to="." method="_on_UpTime_timeout"]

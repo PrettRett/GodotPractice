@@ -21,13 +21,16 @@ onready var blastSprite = $exploteSprite
 onready var hitSound = $HitArrow
 onready var blastSound = $ExploteArrow
 
+onready var updateTime = $UpTime
+
 var GRAVITY = 800.0
 
-var pup_speed = Vector2(1,0)
-puppet var pup_position = Vector2(1,0)
+puppet var pup_speed = Vector2(1,0) setget pup_speUpdate
+puppet var pup_position = Vector2(1,0) setget pup_posUpdate
 var imShot = false
+var timesSent = 0
 
-var speed = Vector2(1,0) setget set_speed
+var speed = Vector2(1,0)
 var speedModifier = 1.0
 var dmgModifier = 1.0
 
@@ -46,7 +49,6 @@ var followObj = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	rpc_config("shoot",MultiplayerAPI.RPC_MODE_REMOTESYNC)
 	anim.play("normal")
 	blastSprite.visible = false
 
@@ -71,7 +73,7 @@ remotesync func setArrowType(type):
 	elif type == arrowType.EXPLOSIVE:
 		myImg.modulate = Color( 1, 0.5, 0, 1 )
 		GRAVITY = 400.0
-		speedModifier = 0.5
+		speedModifier = 0.7
 		dmgModifier = 3.0
 		myTime.wait_time = 1
 		#set flag for explote on impact
@@ -110,6 +112,8 @@ func bind_postion(obj):
 func master_shoot(speedValue,initPos):
 	if is_network_master():
 		rpc("shoot",speedValue,initPos)
+		
+		updateTime.start()
 
 remotesync func shoot(speedValue,initPos):
 	if selfType == arrowType.MULTIPLE:
@@ -119,11 +123,11 @@ remotesync func shoot(speedValue,initPos):
 			arr.master_shoot(chSpeed,initPos)
 	global_position = initPos
 	speed = speedValue*speedModifier
+	rset_unreliable("pup_position",global_position)
+	rset_unreliable("pup_speed",speed)
+	yield(get_tree(),"idle_frame")
 	imShot = true
 	#myTime.start()
-
-func set_speed(speed_value):
-	speed = speed_value
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -139,13 +143,11 @@ func _process(delta):
 				if !collided:
 					collided = true
 					if selfType != arrowType.EXPLOSIVE:
-						print("fade")
 						anim.play("fade")
 						if collision.get_collider().has_method("hitted"):
 							collision.get_collider().hitted(speed*dmgModifier,self,collision)
 							get_parent().add_score(speed.length())
 					else:
-						print("explote")
 						blastSprite.visible = true
 						anim.play("Explosion")
 						#get objects to attack
@@ -165,7 +167,7 @@ func _process(delta):
 			global_position = followObj.global_position
 
 func destroyer():
-	if is_network_master():
+	if get_tree().is_network_server():
 		rpc("destroy")
 
 remotesync func destroy() -> void:
@@ -196,3 +198,24 @@ func _on_selfDestroyer_timeout():
 	else:
 		anim.play("fade")
 		pass
+
+puppet func pup_speUpdate(newSpeed):
+	pup_speed = newSpeed
+	if not is_network_master():
+		speed = pup_speed
+
+puppet func pup_posUpdate(newPos):
+	pup_position = newPos
+	if not is_network_master():
+		global_position = pup_position
+
+func _on_UpTime_timeout():
+	if is_network_master():
+		rset_unreliable("pup_position",global_position)
+		rset_unreliable("pup_speed",speed)
+		timesSent += 1
+		if timesSent > 1:
+			updateTime.stop()
+		else:
+			updateTime.start()
+	pass # Replace with function body.

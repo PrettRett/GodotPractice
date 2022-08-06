@@ -111,9 +111,6 @@ func _process(delta: float) -> void:
 				finalSpeed = pushed_val
 			move_and_collide(finalSpeed*delta)
 			
-			if false:#Input.is_action_pressed("click") and can_shoot and not is_reloading:
-				rpc("instance_bullet", get_tree().get_network_unique_id())
-				
 			if is_alive and Input.is_action_just_pressed("shoot") and recoil == false:
 				if shooting == false:
 					if arrowType != 0:
@@ -127,7 +124,7 @@ func _process(delta: float) -> void:
 					emit_signal("start_shooting")
 				shooting = true
 			
-			if shooting and createdArrow != null:
+			if shooting and is_instance_valid(createdArrow):
 				var mousePos = get_local_mouse_position()
 				var auxPos = (($Sprite/Position2D as Position2D).position)
 				var velocityNormal = auxPos.direction_to(mousePos)
@@ -136,6 +133,11 @@ func _process(delta: float) -> void:
 				bSprite.flip_h=false
 				if Input.is_action_just_released("shoot"):
 					emit_signal("stop_shooting")
+					shooting = false
+					recoil = true
+					$AttTimer.start()
+			elif shooting and not is_instance_valid(createdArrow):
+					rpc("createArrow", get_tree().get_network_unique_id(),arrowType)
 					#createdArrow.master_shoot(velocityNormal.normalized()*600 + (finalSpeed),createdArrow.global_position)
 			
 		else:
@@ -236,12 +238,9 @@ func _on_Final_Value(value):
 		var mousePos = get_local_mouse_position()
 		var velocityNormal = (($Sprite/Position2D as Position2D).position).direction_to(mousePos)
 		var modifier = (value/100*0.75) + 0.75
-		createdArrow.master_shoot((velocityNormal.normalized()*600 + (finalSpeed))*modifier,createdArrow.global_position)
+		createdArrow.master_shoot((velocityNormal.normalized()*600 + (finalSpeed*0.7))*modifier,createdArrow.global_position)
 		bSprite.rotation = PI
 		bSprite.flip_h = img.flip_h
-		shooting = false
-		recoil = true
-		$AttTimer.start()
 		createdArrow = null
 		rpc("playBow")
 
