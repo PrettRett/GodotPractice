@@ -34,7 +34,8 @@ var shooting = false
 var is_alive = true
 var cameraToSet = true
 var finalSpeed = Vector2(0,0)
-remotesync var score = 0
+var score = 0
+puppet var puppet_score = 0
 
 var pushed_val = Vector2(0,0)
 var pushed_time = 0
@@ -67,18 +68,24 @@ func health_change(newHealth):
 	health = newHealth
 
 func add_score(value):
-	score += value
 	if get_tree().has_network_peer():
 		if is_network_master():
-			rset("score",score)
+			score += value
+			rset("puppet_score",score)
 
 func updateScore():
 	if get_tree().has_network_peer():
 		if is_network_master():
-			rset("score",score)
+			rset("puppet_score",score)
 
 func get_score():
-	return score
+	if get_tree().has_network_peer():
+		if is_network_master():
+			return score
+		else:
+			return puppet_score
+	else:
+		return 0
 
 func _process(delta: float) -> void:
 	#if username_text_instance != null:
