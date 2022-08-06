@@ -109,7 +109,14 @@ func _process(delta: float) -> void:
 				
 			if is_alive and Input.is_action_just_pressed("shoot") and recoil == false:
 				if shooting == false:
-					rpc("createArrow", get_tree().get_network_unique_id())
+					if arrowType != createdArrow.arrowType.DEFAULT:
+						if arrowNumber > 0:
+							arrowNumber -= 1
+						else:
+							arrowType = 0
+							emit_signal("changeSym",arrowType)
+						emit_signal("setArrowNum",arrowNumber)
+					rpc("createArrow", get_tree().get_network_unique_id(),arrowType)
 					emit_signal("start_shooting")
 				shooting = true
 			
@@ -186,23 +193,12 @@ func recvArrowType(type):
 			emit_signal("setArrowNum",arrowNumber)
 			emit_signal("changeSym",type)
 
-remotesync func createArrow(id):
+remotesync func createArrow(id,arrowKind):
 	createdArrow = GlobalAction.instance_node_at_location(arrow,get_parent(),self.global_position)
 	createdArrow.set_network_master(id)
 	createdArrow.bind_postion(($Sprite/Position2D as Position2D))
 	createdArrow.avoid(self)
-	if arrowType != createdArrow.arrowType.DEFAULT:
-		if arrowNumber > 0:
-			arrowNumber -= 1
-		else:
-			arrowType = 0
-			if get_tree().has_network_peer():
-				if is_network_master():
-					emit_signal("changeSym",arrowType)
-	if get_tree().has_network_peer():
-		if is_network_master():
-			emit_signal("setArrowNum",arrowNumber)
-	createdArrow.setArrowType(arrowType)
+	createdArrow.setArrowType(arrowKind)
 		
 
 func hitted(dmg_val,src,collision):
