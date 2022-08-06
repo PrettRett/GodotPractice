@@ -109,7 +109,7 @@ func _process(delta: float) -> void:
 				
 			if is_alive and Input.is_action_just_pressed("shoot") and recoil == false:
 				if shooting == false:
-					if arrowType != createdArrow.arrowType.DEFAULT:
+					if arrowType != 0:
 						if arrowNumber > 0:
 							arrowNumber -= 1
 						else:
