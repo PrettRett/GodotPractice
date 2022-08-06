@@ -182,8 +182,10 @@ func recvArrowType(type):
 		arrowNumber = 2
 	elif type == 2:
 		arrowNumber = 3
-	emit_signal("setArrowNum",arrowNumber)
-	emit_signal("changeSym",type)
+	if get_tree().has_network_peer():
+		if is_network_master():
+			emit_signal("setArrowNum",arrowNumber)
+			emit_signal("changeSym",type)
 
 remotesync func createArrow(id):
 	createdArrow = GlobalAction.instance_node_at_location(arrow,get_parent(),self.global_position)
@@ -195,8 +197,12 @@ remotesync func createArrow(id):
 			arrowNumber -= 1
 		else:
 			arrowType = 0
-			emit_signal("changeSym",arrowType)
-		emit_signal("setArrowNum",arrowNumber)
+			if get_tree().has_network_peer():
+				if is_network_master():
+					emit_signal("changeSym",arrowType)
+	if get_tree().has_network_peer():
+		if is_network_master():
+			emit_signal("setArrowNum",arrowNumber)
 	createdArrow.setArrowType(arrowType)
 		
 

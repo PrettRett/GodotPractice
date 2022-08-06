@@ -110,7 +110,7 @@ func _on_CheckEnd_timeout():
 				if not player.is_player_dead():
 					player_alive = player
 					nAlive += 1
-	if false:#nAlive <= 1:
+	if nAlive <= 1:
 		for child in CommonPool.get_children():
 			for player in child.get_children():
 				if player.has_method("is_player_dead"):
@@ -122,20 +122,25 @@ func _on_CheckEnd_timeout():
 		($CheckEnd as Timer).stop()
 	pass # Replace with function body.
 
+remotesync func spawnPowerUp(pUpPos, type):
+	var newPowerUp = GlobalAction.instance_node_at_location(powerUp,self,pUpPos)
+	newPowerUp.setPowerUpType(type)
 
 func _on_SpawnPowerUp_timeout():
-	var newxPos = rand_range(position_2.global_position.x, position_1.global_position.x)
-	var newyPos = rand_range(position_2.global_position.y, position_1.global_position.y)
+	if get_tree().has_network_peer():
+		if get_tree().is_network_server():
+			var newxPos = rand_range(position_2.global_position.x, position_1.global_position.x)
+			var newyPos = rand_range(position_2.global_position.y, position_1.global_position.y)
+			
+			var randChoice = rand_range(0,100)
+			
+			var type = powerUp.powerUpType.LONG
 	
-	var newPowerUp = GlobalAction.instance_node_at_location(powerUp,self,Vector2(newxPos,newyPos))
-	
-	var randChoice = rand_range(0,100)
-	
-	if randChoice < 50:
-		newPowerUp.setPowerUpType(newPowerUp.powerUpType.LONG)
-	elif randChoice < 75:
-		newPowerUp.setPowerUpType(newPowerUp.powerUpType.MULTIPLE)
-	elif randChoice < 90:
-		newPowerUp.setPowerUpType(newPowerUp.powerUpType.EXPLOSIVE)
+			if randChoice < 75 and randChoice > 50:
+				type = (powerUp.powerUpType.MULTIPLE)
+			elif randChoice < 90:
+				type = (powerUp.powerUpType.EXPLOSIVE)
+			
+			rpc("spawnPowerUp", Vector2(newxPos,newyPos),type)
 	
 	pass # Replace with function body.
