@@ -20,9 +20,9 @@ onready var myCamera = $Camera2D
 
 var velocity = Vector2(0, 0)
 
-puppet var puppet_position = Vector2(0, 0) setget puppet_position_set
-puppet var puppet_velocity = Vector2(0,0)
-puppet var puppet_flip_h = true
+var puppet_position = Vector2(0, 0) setget puppet_position_set
+var puppet_velocity = Vector2(0,0)
+var puppet_flip_h = true
 
 remotesync var health = 100.0 setget health_change
 

@@ -139,7 +139,7 @@ remotesync func collision(colideObj, pos):
 	if selfType != arrowType.EXPLOSIVE:
 		anim.play("fade")
 		if colideObj.has_method("hitted"):
-			colideObj.hitted(speed*dmgModifier,self,colliding)
+			colideObj.hitted(speed*dmgModifier,self,colideObj)
 			get_parent().add_score(speed.length())
 	else:
 		blastSprite.visible = true

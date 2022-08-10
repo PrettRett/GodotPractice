@@ -1,0 +1,79 @@
+Godot Engine v3.4.2.stable.official.45eaa2daf - https://godotengine.org
+OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 1050/PCIe/SSE2
+OpenGL ES Batching: ON
+ 
+label4
+Create butt
+Player 1425916050 has connected
+passed :1
+passed :1425916050
+SCRIPT ERROR: Parse Error: The identifier "colliding" isn't declared in the current scope.
+   at: GDScript::reload (res://multPlayer/platShoot/MultArrow2D.gd:142) - Parse Error: The identifier "colliding" isn't declared in the current scope.
+ERROR: Method failed. Returning: ERR_PARSE_ERROR
+   at: reload (modules/gdscript/gdscript.cpp:566) - Method failed. Returning: ERR_PARSE_ERROR
+(561.567993, 373.233002)
+[4, 1]
+[3, 2]
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+   at: _on_Final_Value (res://multPlayer/platShoot/platPlayer.gd:247) - Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+   at: _on_Final_Value (res://multPlayer/platShoot/platPlayer.gd:247) - Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+   at: _on_Final_Value (res://multPlayer/platShoot/platPlayer.gd:247) - Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+   at: _on_Final_Value (res://multPlayer/platShoot/platPlayer.gd:247) - Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+   at: _on_Final_Value (res://multPlayer/platShoot/platPlayer.gd:247) - Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+   at: _on_Final_Value (res://multPlayer/platShoot/platPlayer.gd:247) - Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+changed
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+   at: _on_Final_Value (res://multPlayer/platShoot/platPlayer.gd:247) - Invalid call. Nonexistent function 'master_shoot' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+SCRIPT ERROR: Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
+   at: createArrow (res://multPlayer/platShoot/platPlayer.gd:208) - Invalid call. Nonexistent function 'bind_postion' in base 'KinematicBody2D'.
