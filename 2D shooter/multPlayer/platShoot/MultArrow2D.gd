@@ -123,12 +123,36 @@ remotesync func shoot(speedValue,initPos):
 			arr.master_shoot(chSpeed,initPos)
 	global_position = initPos
 	speed = speedValue*speedModifier
-	rset_unreliable("pup_position",global_position)
-	rset_unreliable("pup_speed",speed)
+	#rset_unreliable("pup_position",global_position)
+	#rset_unreliable("pup_speed",speed)
 	yield(get_tree(),"idle_frame")
 	imShot = true
 	#myTime.start()
 	
+
+puppet func updateMov(pos,vel):
+	pup_position = pos
+	pup_speed = speed
+
+remotesync func collision(colideObj, pos):
+	global_position = pos
+	if selfType != arrowType.EXPLOSIVE:
+		anim.play("fade")
+		if colideObj.has_method("hitted"):
+			colideObj.hitted(speed*dmgModifier,self,colliding)
+			get_parent().add_score(speed.length())
+	else:
+		blastSprite.visible = true
+		anim.play("Explosion")
+		#get objects to attack
+		var vecDmg = Vector2(blastDmg,0)
+		for obj in explodeArea.get_overlapping_bodies():
+			if obj.has_method("hitted"):
+				obj.hitted(vecDmg,self,null)
+				get_parent().add_score(blastDmg/5)
+			if obj.has_method("push"):
+				var pushVec = global_position.direction_to(obj.global_position)*blastPushVal
+				obj.push(pushVec,blastTime)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -142,24 +166,8 @@ func _process(delta):
 				($CollisionPolygon2D as CollisionPolygon2D).disabled = true
 				if !collided:
 					collided = true
-					if selfType != arrowType.EXPLOSIVE:
-						anim.play("fade")
-						if collision.get_collider().has_method("hitted"):
-							collision.get_collider().hitted(speed*dmgModifier,self,collision)
-							get_parent().add_score(speed.length())
-					else:
-						blastSprite.visible = true
-						anim.play("Explosion")
-						#get objects to attack
-						var vecDmg = Vector2(blastDmg,0)
-						for obj in explodeArea.get_overlapping_bodies():
-							if obj.has_method("hitted"):
-								obj.hitted(vecDmg,self,null)
-								get_parent().add_score(blastDmg/5)
-							if obj.has_method("push"):
-								var pushVec = global_position.direction_to(obj.global_position)*blastPushVal
-								obj.push(pushVec,blastTime)
-						pass
+					if get_tree().is_network_server():
+						rpc("collision",collision.get_collider(),global_position)
 			else:
 				speed = speed.bounce(collision.get_normal())*0.7
 	else:
@@ -211,8 +219,9 @@ puppet func pup_posUpdate(newPos):
 
 func _on_UpTime_timeout():
 	if is_network_master():
-		rset_unreliable("pup_position",global_position)
-		rset_unreliable("pup_speed",speed)
+		rpc_unreliable("updateMov",global_position,speed)
+		#rset_unreliable("pup_position",global_position)
+		#rset_unreliable("pup_speed",speed)
 		timesSent += 1
 		if timesSent > 1:
 			updateTime.stop()

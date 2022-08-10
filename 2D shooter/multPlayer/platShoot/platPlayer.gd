@@ -222,13 +222,19 @@ func push(push_val,duration):
 			pushed_val = push_val
 			pushed_time = duration
 
+puppet func updateMovement(pos,vel,flip):
+	puppet_position = pos
+	puppet_velocity = vel
+	puppet_flip_h = flip
+
 func _on_NetUpdate_timeout():
 	if get_tree().has_network_peer():
 		if is_network_master():
 			if is_alive:
-				rset_unreliable("puppet_position", global_position)
-				rset_unreliable("puppet_velocity", velocity)
-				rset_unreliable("puppet_flip_h", img.flip_h)
+				rpc_unreliable("updateMovement",global_position,velocity,img.flip_h)
+				#rset_unreliable("puppet_position", global_position)
+				#rset_unreliable("puppet_velocity", velocity)
+				#rset_unreliable("puppet_flip_h", img.flip_h)
 		else:
 			($NetUpdate as Timer).autostart = false
 			($NetUpdate as Timer).stop()
