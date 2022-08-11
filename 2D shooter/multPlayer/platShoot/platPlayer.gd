@@ -20,7 +20,7 @@ onready var myCamera = $Camera2D
 
 var velocity = Vector2(0, 0)
 
-var puppet_position = Vector2(0, 0) setget puppet_position_set
+var puppet_position = Vector2(0, 0)
 var puppet_velocity = Vector2(0,0)
 var puppet_flip_h = true
 
@@ -137,7 +137,8 @@ func _process(delta: float) -> void:
 					recoil = true
 					$AttTimer.start()
 			elif shooting and not is_instance_valid(createdArrow):
-					rpc("createArrow", get_tree().get_network_unique_id(),arrowType)
+					rpc("createArrow", get_tree().get_network_unique_id(),arrowType,ConnServer.networked_object_name_index)
+					ConnServer.networked_object_name_index += 1
 					#createdArrow.master_shoot(velocityNormal.normalized()*600 + (finalSpeed),createdArrow.global_position)
 			
 		else:
@@ -202,8 +203,9 @@ func recvArrowType(type):
 			emit_signal("setArrowNum",arrowNumber)
 			emit_signal("changeSym",type)
 
-remotesync func createArrow(id,arrowKind):
+remotesync func createArrow(id,arrowKind, extraId):
 	createdArrow = GlobalAction.instance_node_at_location(arrow,get_parent(),self.global_position)
+	createdArrow.name = "Arrow" + name + str(extraId)
 	createdArrow.set_network_master(id)
 	createdArrow.bind_postion(($Sprite/Position2D as Position2D))
 	createdArrow.avoid(self)
@@ -226,6 +228,8 @@ puppet func updateMovement(pos,vel,flip):
 	puppet_position = pos
 	puppet_velocity = vel
 	puppet_flip_h = flip
+	tween.interpolate_property(self, "global_position", global_position, puppet_position, 0.1)
+	tween.start()
 
 func _on_NetUpdate_timeout():
 	if get_tree().has_network_peer():

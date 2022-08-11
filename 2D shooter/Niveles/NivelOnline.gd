@@ -80,6 +80,7 @@ func erase_all_characters():
 
 func instance_character(id, parent, position):
 	var character_instance = GlobalAction.instance_node(charBase, parent)
+	character_instance.name = "player" + parent.name
 	character_instance.set_network_master(id)
 	character_instance.masterSpawn(position)
 	character_instance.connectShoot($CanvasLayer/TextureProgress)

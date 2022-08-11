@@ -135,6 +135,8 @@ puppet func updateMov(pos,vel):
 	pup_speed = speed
 
 remotesync func collision(colideObj, pos):
+	imShot = false
+	collided = true
 	global_position = pos
 	if selfType != arrowType.EXPLOSIVE:
 		anim.play("fade")
