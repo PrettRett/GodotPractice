@@ -86,6 +86,7 @@ remotesync func setArrowType(type):
 		#prepare for multiple sync shot
 		for i in range(nOfAdditional):
 			var createdArrow = GlobalAction.instance_node_at_location(selfLoad,get_parent(),self.global_position)
+			createdArrow.name = self.name + str(i)
 			createdArrow.set_network_master(int(get_parent().name))
 			createdArrow.masterSetArrowType(arrowType.DEFAULT)
 			createdArrow.bind_postion(followObj)

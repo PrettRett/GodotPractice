@@ -120,7 +120,8 @@ func _process(delta: float) -> void:
 							arrowType = 0
 							emit_signal("changeSym",arrowType)
 						emit_signal("setArrowNum",arrowNumber)
-					rpc("createArrow", get_tree().get_network_unique_id(),arrowType)
+					rpc("createArrow", get_tree().get_network_unique_id(),arrowType,ConnServer.networked_object_name_index)
+					ConnServer.networked_object_name_index += 1
 					emit_signal("start_shooting")
 				shooting = true
 			
@@ -206,6 +207,8 @@ func recvArrowType(type):
 remotesync func createArrow(id,arrowKind, extraId):
 	createdArrow = GlobalAction.instance_node_at_location(arrow,get_parent(),self.global_position)
 	createdArrow.name = "Arrow" + name + str(extraId)
+	if not is_network_master():
+		ConnServer.networked_object_name_index += 1
 	createdArrow.set_network_master(id)
 	createdArrow.bind_postion(($Sprite/Position2D as Position2D))
 	createdArrow.avoid(self)
