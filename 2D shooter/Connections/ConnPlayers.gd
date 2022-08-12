@@ -117,3 +117,11 @@ func returnToMenu():
 
 func _on_Button_pressed():
 	rpc("switch_to_game")
+
+
+func _on_Button2_pressed():
+	ConnServer.total_disconnection()
+	for child in CommonPool.get_children():
+		child.queue_free()
+	get_tree().change_scene("res://Menus/MainTitle.tscn")
+	pass # Replace with function body.

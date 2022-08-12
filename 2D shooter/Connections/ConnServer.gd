@@ -49,6 +49,16 @@ func join_server() -> void:
 	get_tree().set_network_peer(client)
 	client_connection_timeout_timer.start()
 
+func total_disconnection():
+	client_connection_timeout_timer.stop()
+	reset_network_connection()
+	if is_instance_valid(client):
+		client.close_connection()
+		client = null
+	if is_instance_valid(server):
+		server.close_connection()
+		server = null
+
 func reset_network_connection() -> void:
 	if get_tree().has_network_peer():
 		get_tree().network_peer = null
