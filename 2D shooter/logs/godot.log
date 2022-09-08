@@ -4,10 +4,89 @@ OpenGL ES Batching: ON
  
 label4
 Create butt
+Player 1600410622 has connected
+Player 1758509293 has connected
 passed :1
+passed :1600410622
+passed :1758509293
 (561.567993, 373.233002)
-[4]
-[3]
+[4, 1, 1]
+[3, 2, 0]
+changed
+flechas: 2
+flechas: 1
+[Arrowplayer110:[KinematicBody2D:4076], Arrowplayer111:[KinematicBody2D:4090], Arrowplayer112:[KinematicBody2D:4104], Arrowplayer113:[KinematicBody2D:4118]]
+flechas: 0
+[Arrowplayer150:[KinematicBody2D:4500], Arrowplayer151:[KinematicBody2D:4514], Arrowplayer152:[KinematicBody2D:4528], Arrowplayer153:[KinematicBody2D:4542]]
+flechas: 0
+changed
+flechas: 4
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@16" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@16.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@16.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+flechas: 3
+flechas: 2
+flechas: 1
+flechas: 0
+flechas: 0
+i died: 1600410622
+changed
+flechas: 3
+flechas: 2
+i died: 1
+[Arrowplayer1758509293550:[KinematicBody2D:13510], Arrowplayer1758509293551:[KinematicBody2D:13524], Arrowplayer1758509293552:[KinematicBody2D:13538], Arrowplayer1758509293553:[KinematicBody2D:13552]]
+game has ended, for all
+ERROR: (Node not found: "CommonPool/1758509293/player1758509293" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1758509293/player1758509293" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1758509293/player1758509293" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1758509293/player1758509293" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1758509293/player1758509293" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1758509293/player1758509293" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1758509293/player1758509293" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1758509293/player1758509293.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+passed :1
+passed :1600410622
+passed :1758509293
+(561.567993, 373.233002)
+[2, 0, 2]
+[3, 5, 4]
 changed
 flechas: 3
 flechas: 2
@@ -15,12 +94,38 @@ flechas: 1
 flechas: 0
 flechas: 0
 changed
+flechas: 3
 flechas: 2
 flechas: 1
-[Arrowplayer190:[KinematicBody2D:5126], Arrowplayer191:[KinematicBody2D:5140], Arrowplayer192:[KinematicBody2D:5154], Arrowplayer193:[KinematicBody2D:5168]]
+[Arrowplayer1758509293880:[KinematicBody2D:22189], Arrowplayer1758509293881:[KinematicBody2D:22203], Arrowplayer1758509293882:[KinematicBody2D:22217], Arrowplayer1758509293883:[KinematicBody2D:22231]]
 flechas: 0
-[Arrowplayer1100:[KinematicBody2D:5492], Arrowplayer1101:[KinematicBody2D:5506], Arrowplayer1102:[KinematicBody2D:5520], Arrowplayer1103:[KinematicBody2D:5534]]
 flechas: 0
 changed
 flechas: 3
 flechas: 2
+flechas: 1
+flechas: 0
+flechas: 0
+ERROR: (Node not found: "ConnPlayers/Node/Node2D" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: ConnPlayers/Node/Node2D.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: ConnPlayers/Node/Node2D.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+flechas: 3
+flechas: 2
+flechas: 1
+flechas: 0
+i died: 1758509293
+flechas: 0
+i died: 1600410622
+ERROR: (Node not found: "CommonPool/1600410622/Arrowplayer1600410622179" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1600410622/Arrowplayer1600410622179.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1600410622/Arrowplayer1600410622179.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+flechas: 2
+game has ended, for all

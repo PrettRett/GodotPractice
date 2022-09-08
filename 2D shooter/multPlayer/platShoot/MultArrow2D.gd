@@ -135,7 +135,7 @@ puppet func updateMov(pos,vel):
 	pup_position = pos
 	pup_speed = speed
 
-remotesync func collision(colideObj, pos):
+func collision(colideObj, pos):
 	imShot = false
 	collided = true
 	global_position = pos
@@ -169,8 +169,8 @@ func _process(delta):
 				($CollisionPolygon2D as CollisionPolygon2D).disabled = true
 				if !collided:
 					collided = true
-					if get_tree().is_network_server():
-						rpc("collision",collision.get_collider(),global_position)
+					collision(collision.get_collider(), global_position)
+					#rpc("collision",collision.get_collider(),global_position)
 			else:
 				speed = speed.bounce(collision.get_normal())*0.7
 	else:

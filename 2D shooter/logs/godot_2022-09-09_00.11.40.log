@@ -1,0 +1,1022 @@
+Godot Engine v3.4.2.stable.official.45eaa2daf - https://godotengine.org
+OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 1050/PCIe/SSE2
+OpenGL ES Batching: ON
+ 
+label4
+label4
+Create butt
+Player 471996375 has connected
+passed :1
+passed :471996375
+(561.567993, 373.233002)
+[4, 1]
+[3, 2]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@11" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@11.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@11.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@12" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@12.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@12.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@13" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@13.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@13.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+changed
+flechas: 3
+flechas: 2
+flechas: 1
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@14" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@14.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@14.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+flechas: 0
+flechas: 0
+changed
+flechas: 3
+flechas: 2
+flechas: 1
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@15" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@15.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@15.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+flechas: 3
+flechas: 2
+flechas: 1
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@18" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@18.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@18.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+[Arrowplayer471996375550:[KinematicBody2D:18935], Arrowplayer471996375551:[KinematicBody2D:18949], Arrowplayer471996375552:[KinematicBody2D:18963], Arrowplayer471996375553:[KinematicBody2D:18977]]
+[Arrowplayer471996375560:[KinematicBody2D:19834], Arrowplayer471996375561:[KinematicBody2D:19848], Arrowplayer471996375562:[KinematicBody2D:19862], Arrowplayer471996375563:[KinematicBody2D:19876]]
+flechas: 0
+changed
+flechas: 3
+flechas: 2
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@21" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@21.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@21.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+flechas: 1
+flechas: 0
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@22" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@22.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@22.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+flechas: 0
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@19" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@19.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@19.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@24" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@24.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@24.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+i died: 1
+game has ended, for all
+passed :1
+passed :471996375
+(561.567993, 373.233002)
+[4, 1]
+[1, 3]
+i died: 1
+game has ended, for all
+Player 1912020877 has connected
+passed :1
+passed :471996375
+passed :1912020877
+(561.567993, 373.233002)
+[5, 3, 1]
+[1, 2, 3]
+changed
+flechas: 3
+flechas: 2
+flechas: 1
+flechas: 0
+flechas: 0
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@13" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@13.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@13.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@37" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@37.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@37.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@38" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@38.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@38.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@14" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@14.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@14.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer4719963751690:[KinematicBody2D:44010], Arrowplayer4719963751691:[KinematicBody2D:44024], Arrowplayer4719963751692:[KinematicBody2D:44038], Arrowplayer4719963751693:[KinematicBody2D:44052]]
+[Arrowplayer4719963751730:[KinematicBody2D:44678], Arrowplayer4719963751731:[KinematicBody2D:44692], Arrowplayer4719963751732:[KinematicBody2D:44706], Arrowplayer4719963751733:[KinematicBody2D:44720]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@15" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@15.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@15.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@39" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@39.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@39.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+flechas: 3
+flechas: 2
+flechas: 1
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@17" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@17.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@17.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@41" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@41.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@41.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@40" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@40.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@40.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer19120208771830:[KinematicBody2D:46675], Arrowplayer19120208771831:[KinematicBody2D:46689], Arrowplayer19120208771832:[KinematicBody2D:46703], Arrowplayer19120208771833:[KinematicBody2D:46717]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@16" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@16.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@16.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+flechas: 0
+flechas: 0
+[Arrowplayer19120208771900:[KinematicBody2D:47556], Arrowplayer19120208771901:[KinematicBody2D:47570], Arrowplayer19120208771902:[KinematicBody2D:47584], Arrowplayer19120208771903:[KinematicBody2D:47598]]
+[Arrowplayer4719963751920:[KinematicBody2D:47761], Arrowplayer4719963751921:[KinematicBody2D:47775], Arrowplayer4719963751922:[KinematicBody2D:47789], Arrowplayer4719963751923:[KinematicBody2D:47803]]
+[Arrowplayer19120208771930:[KinematicBody2D:48180], Arrowplayer19120208771931:[KinematicBody2D:48194], Arrowplayer19120208771932:[KinematicBody2D:48208], Arrowplayer19120208771933:[KinematicBody2D:48222]]
+[Arrowplayer4719963751970:[KinematicBody2D:49054], Arrowplayer4719963751971:[KinematicBody2D:49068], Arrowplayer4719963751972:[KinematicBody2D:49082], Arrowplayer4719963751973:[KinematicBody2D:49096]]
+changed
+flechas: 2
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@18" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@18.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@18.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+[Arrowplayer19120208772010:[KinematicBody2D:49980], Arrowplayer19120208772011:[KinematicBody2D:49994], Arrowplayer19120208772012:[KinematicBody2D:50008], Arrowplayer19120208772013:[KinematicBody2D:50022]]
+flechas: 1
+[Arrowplayer12030:[KinematicBody2D:50371], Arrowplayer12031:[KinematicBody2D:50385], Arrowplayer12032:[KinematicBody2D:50399], Arrowplayer12033:[KinematicBody2D:50413]]
+[Arrowplayer19120208772050:[KinematicBody2D:50731], Arrowplayer19120208772051:[KinematicBody2D:50745], Arrowplayer19120208772052:[KinematicBody2D:50759], Arrowplayer19120208772053:[KinematicBody2D:50773]]
+flechas: 0
+[Arrowplayer12060:[KinematicBody2D:51012], Arrowplayer12061:[KinematicBody2D:51026], Arrowplayer12062:[KinematicBody2D:51040], Arrowplayer12063:[KinematicBody2D:51054]]
+i died: 1
+[Arrowplayer12070:[KinematicBody2D:51238], Arrowplayer12071:[KinematicBody2D:51252], Arrowplayer12072:[KinematicBody2D:51266], Arrowplayer12073:[KinematicBody2D:51280]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@43" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@43.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@43.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@19" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@19.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@19.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@20" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@20.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@20.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@44" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@44.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@44.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer4719963752310:[KinematicBody2D:54394], Arrowplayer4719963752311:[KinematicBody2D:54408], Arrowplayer4719963752312:[KinematicBody2D:54422], Arrowplayer4719963752313:[KinematicBody2D:54436]]
+[Arrowplayer4719963752340:[KinematicBody2D:54800], Arrowplayer4719963752341:[KinematicBody2D:54814], Arrowplayer4719963752342:[KinematicBody2D:54828], Arrowplayer4719963752343:[KinematicBody2D:54842]]
+[Arrowplayer19120208772380:[KinematicBody2D:55369], Arrowplayer19120208772381:[KinematicBody2D:55383], Arrowplayer19120208772382:[KinematicBody2D:55397], Arrowplayer19120208772383:[KinematicBody2D:55411]]
+[Arrowplayer19120208772420:[KinematicBody2D:55932], Arrowplayer19120208772421:[KinematicBody2D:55946], Arrowplayer19120208772422:[KinematicBody2D:55960], Arrowplayer19120208772423:[KinematicBody2D:55974]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@22" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@22.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@22.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@46" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@46.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@46.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer19120208772480:[KinematicBody2D:56611], Arrowplayer19120208772481:[KinematicBody2D:56625], Arrowplayer19120208772482:[KinematicBody2D:56639], Arrowplayer19120208772483:[KinematicBody2D:56653]]
+[Arrowplayer19120208772500:[KinematicBody2D:56853], Arrowplayer19120208772501:[KinematicBody2D:56867], Arrowplayer19120208772502:[KinematicBody2D:56881], Arrowplayer19120208772503:[KinematicBody2D:56895]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@21" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@21.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@21.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@45" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@45.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@45.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer19120208772570:[KinematicBody2D:57821], Arrowplayer19120208772571:[KinematicBody2D:57835], Arrowplayer19120208772572:[KinematicBody2D:57849], Arrowplayer19120208772573:[KinematicBody2D:57863]]
+[Arrowplayer19120208772590:[KinematicBody2D:57914], Arrowplayer19120208772591:[KinematicBody2D:57928], Arrowplayer19120208772592:[KinematicBody2D:57942], Arrowplayer19120208772593:[KinematicBody2D:57956]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@48" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@48.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@48.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@24" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@24.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@24.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+i died: 1912020877
+game has ended, for all
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+passed :1
+passed :471996375
+passed :1912020877
+(561.567993, 373.233002)
+[3, 2, 3]
+[5, 4, 1]
+ERROR: (Node not found: "ConnPlayers/Node/Node2D" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: ConnPlayers/Node/Node2D.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: ConnPlayers/Node/Node2D.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer4719963752710:[KinematicBody2D:61849], Arrowplayer4719963752711:[KinematicBody2D:61863], Arrowplayer4719963752712:[KinematicBody2D:61877], Arrowplayer4719963752713:[KinematicBody2D:61891]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@32" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@32.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@32.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@56" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@56.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@56.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+i died: 1
+[Arrowplayer4719963752740:[KinematicBody2D:62366], Arrowplayer4719963752741:[KinematicBody2D:62380], Arrowplayer4719963752742:[KinematicBody2D:62394], Arrowplayer4719963752743:[KinematicBody2D:62408]]
+[Arrowplayer19120208772750:[KinematicBody2D:62586], Arrowplayer19120208772751:[KinematicBody2D:62600], Arrowplayer19120208772752:[KinematicBody2D:62614], Arrowplayer19120208772753:[KinematicBody2D:62628]]
+[Arrowplayer19120208772770:[KinematicBody2D:62848], Arrowplayer19120208772771:[KinematicBody2D:62862], Arrowplayer19120208772772:[KinematicBody2D:62876], Arrowplayer19120208772773:[KinematicBody2D:62890]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@34" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@34.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@34.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@58" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@58.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@58.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@57" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@57.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@57.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@33" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@33.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@33.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer4719963752830:[KinematicBody2D:63188], Arrowplayer4719963752831:[KinematicBody2D:63202], Arrowplayer4719963752832:[KinematicBody2D:63216], Arrowplayer4719963752833:[KinematicBody2D:63230]]
+[Arrowplayer19120208772840:[KinematicBody2D:63264], Arrowplayer19120208772841:[KinematicBody2D:63278], Arrowplayer19120208772842:[KinematicBody2D:63292], Arrowplayer19120208772843:[KinematicBody2D:63306]]
+[Arrowplayer19120208772850:[KinematicBody2D:63339], Arrowplayer19120208772851:[KinematicBody2D:63353], Arrowplayer19120208772852:[KinematicBody2D:63367], Arrowplayer19120208772853:[KinematicBody2D:63381]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@35" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@35.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@35.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@59" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@59.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@59.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer4719963752870:[KinematicBody2D:63452], Arrowplayer4719963752871:[KinematicBody2D:63466], Arrowplayer4719963752872:[KinematicBody2D:63480], Arrowplayer4719963752873:[KinematicBody2D:63494]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@60" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@60.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@60.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@36" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@36.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@36.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@37" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@37.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@37.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@61" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@61.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@61.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer19120208773020:[KinematicBody2D:63761], Arrowplayer19120208773021:[KinematicBody2D:63775], Arrowplayer19120208773022:[KinematicBody2D:63789], Arrowplayer19120208773023:[KinematicBody2D:63803]]
+[Arrowplayer19120208773030:[KinematicBody2D:63843], Arrowplayer19120208773031:[KinematicBody2D:63857], Arrowplayer19120208773032:[KinematicBody2D:63871], Arrowplayer19120208773033:[KinematicBody2D:63885]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@63" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@63.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@63.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@39" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@39.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@39.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer4719963753170:[KinematicBody2D:64145], Arrowplayer4719963753171:[KinematicBody2D:64159], Arrowplayer4719963753172:[KinematicBody2D:64173], Arrowplayer4719963753173:[KinematicBody2D:64187]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@38" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@38.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@38.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@62" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@62.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@62.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer4719963753190:[KinematicBody2D:64238], Arrowplayer4719963753191:[KinematicBody2D:64252], Arrowplayer4719963753192:[KinematicBody2D:64266], Arrowplayer4719963753193:[KinematicBody2D:64280]]
+i died: 1912020877
+ERROR: (Node not found: "CommonPool/1912020877/Arrowplayer1912020877318" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/Arrowplayer1912020877318.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/Arrowplayer1912020877318.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+game has ended, for all
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/471996375/player471996375" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/471996375/player471996375.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+passed :1
+passed :471996375
+passed :1912020877
+(561.567993, 373.233002)
+[4, 4, 5]
+[3, 1, 2]
+changed
+flechas: 3
+flechas: 2
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@71" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@71.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@71.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+flechas: 1
+flechas: 0
+flechas: 0
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@46" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@46.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@46.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@70" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@70.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@70.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+i died: 1
+[Arrowplayer4719963753630:[KinematicBody2D:70861], Arrowplayer4719963753631:[KinematicBody2D:70875], Arrowplayer4719963753632:[KinematicBody2D:70889], Arrowplayer4719963753633:[KinematicBody2D:70903]]
+[Arrowplayer4719963753640:[KinematicBody2D:70959], Arrowplayer4719963753641:[KinematicBody2D:70973], Arrowplayer4719963753642:[KinematicBody2D:70987], Arrowplayer4719963753643:[KinematicBody2D:71001]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@49" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@49.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@49.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@73" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@73.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@73.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@51" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@51.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@51.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@45" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@45.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@45.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@69" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@69.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@69.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@74" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@74.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@74.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@50" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@50.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@50.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@72" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@72.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@72.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@48" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@48.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@48.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@76" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@76.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@76.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@52" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@52.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@52.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@54" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@54.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@54.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@78" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@78.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@78.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@81" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@81.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@81.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+[Arrowplayer4719963753910:[KinematicBody2D:71465], Arrowplayer4719963753911:[KinematicBody2D:71479], Arrowplayer4719963753912:[KinematicBody2D:71493], Arrowplayer4719963753913:[KinematicBody2D:71507]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@57" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@57.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@57.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@47" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@47.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@47.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer4719963753930:[KinematicBody2D:71559], Arrowplayer4719963753931:[KinematicBody2D:71573], Arrowplayer4719963753932:[KinematicBody2D:71587], Arrowplayer4719963753933:[KinematicBody2D:71601]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@58" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@58.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@58.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@82" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@82.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@82.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@77" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@77.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@77.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@53" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@53.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@53.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@80" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@80.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@80.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@56" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@56.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@56.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@79" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@79.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@79.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@55" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@55.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@55.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer4719963754120:[KinematicBody2D:71944], Arrowplayer4719963754121:[KinematicBody2D:71958], Arrowplayer4719963754122:[KinematicBody2D:71972], Arrowplayer4719963754123:[KinematicBody2D:71986]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@61" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@61.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@61.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@65" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@65.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@65.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+[Arrowplayer19120208774140:[KinematicBody2D:72043], Arrowplayer19120208774141:[KinematicBody2D:72057], Arrowplayer19120208774142:[KinematicBody2D:72071], Arrowplayer19120208774143:[KinematicBody2D:72085]]
+[Arrowplayer19120208774150:[KinematicBody2D:72123], Arrowplayer19120208774151:[KinematicBody2D:72137], Arrowplayer19120208774152:[KinematicBody2D:72151], Arrowplayer19120208774153:[KinematicBody2D:72165]]
+[Arrowplayer4719963754160:[KinematicBody2D:72193], Arrowplayer4719963754161:[KinematicBody2D:72207], Arrowplayer4719963754162:[KinematicBody2D:72221], Arrowplayer4719963754163:[KinematicBody2D:72235]]
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@62" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@62.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@62.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@87" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@87.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@87.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@63" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@63.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@63.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer4719963754180:[KinematicBody2D:72305], Arrowplayer4719963754181:[KinematicBody2D:72319], Arrowplayer4719963754182:[KinematicBody2D:72333], Arrowplayer4719963754183:[KinematicBody2D:72347]]
+[Arrowplayer4719963754200:[KinematicBody2D:72401], Arrowplayer4719963754201:[KinematicBody2D:72415], Arrowplayer4719963754202:[KinematicBody2D:72429], Arrowplayer4719963754203:[KinematicBody2D:72443]]
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@84" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@84.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@84.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@60" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@60.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@60.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@67" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@67.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@67.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@91" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@91.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@91.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@68" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@68.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@68.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@92" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@92.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@92.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@69" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@69.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@69.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@93" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@93.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@93.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@59" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@59.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@59.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@95" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@95.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@95.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+changed
+ERROR: (Node not found: "ConnPlayers/Node/@Node2D@71" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get path from RPC: ConnPlayers/Node/@Node2D@71.
+   at: _process_get_node (core/io/multiplayer_api.cpp:251) - Failed to get path from RPC: ConnPlayers/Node/@Node2D@71.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+[Arrowplayer4719963754540:[KinematicBody2D:73029], Arrowplayer4719963754541:[KinematicBody2D:73043], Arrowplayer4719963754542:[KinematicBody2D:73057], Arrowplayer4719963754543:[KinematicBody2D:73071]]
+[Arrowplayer4719963754560:[KinematicBody2D:73128], Arrowplayer4719963754561:[KinematicBody2D:73142], Arrowplayer4719963754562:[KinematicBody2D:73156], Arrowplayer4719963754563:[KinematicBody2D:73170]]
+i died: 471996375
+game has ended, for all
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+ERROR: (Node not found: "CommonPool/1912020877/player1912020877" (relative to "/root").)
+   at: get_node (scene/main/node.cpp:1325) - Condition "!node" is true. Returned: nullptr
+ERROR: Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+   at: _process_get_node (core/io/multiplayer_api.cpp:267) - Failed to get cached path from RPC: CommonPool/1912020877/player1912020877.
+ERROR: Invalid packet received. Requested node was not found.
+   at: _process_packet (core/io/multiplayer_api.cpp:203) - Condition "node == nullptr" is true.
+Player 471996375 has disconnected
