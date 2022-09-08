@@ -114,7 +114,6 @@ func master_shoot(speedValue,initPos):
 	if is_network_master():
 		rpc("shoot",speedValue,initPos)
 		
-		updateTime.start()
 
 remotesync func shoot(speedValue,initPos):
 	if selfType == arrowType.MULTIPLE:
@@ -132,8 +131,8 @@ remotesync func shoot(speedValue,initPos):
 	
 
 puppet func updateMov(pos,vel):
-	pup_position = pos
-	pup_speed = speed
+	global_position = pos
+	speed = vel
 
 func collision(colideObj, pos):
 	imShot = false

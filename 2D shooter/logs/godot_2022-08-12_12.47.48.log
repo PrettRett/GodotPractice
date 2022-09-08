@@ -1,0 +1,8 @@
+Godot Engine v3.4.4.stable.official.419e713a2 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Quadro P520/PCIe/SSE2
+OpenGL ES Batching: ON
+ 
+label4
+Create butt
+ERROR: Can't 'free' a reference.
+   at: call (core/object.cpp:880) - Method failed. Returning: Variant()
